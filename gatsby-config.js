@@ -7,35 +7,21 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require('dotenv').config()
+const {
+  notionConfig,
+  sourceSystemConfig
+} = require('./config/plugins-gatbsby');
+const {
+  siteMetadata
+} = require('./config/metadata-gatsby');
+
 module.exports = {
-  siteMetadata: {
-    title: `Dimas Prasetyo (Tyo)Dev`,
-    author: {
-      name: `Dimas Prasetyo`,
-      summary: `who lives and works in Jakarta Indonesia building useful things.`,
-    },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
-  },
+  ...siteMetadata,
   plugins: [
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    ...sourceSystemConfig,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -107,28 +93,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // {
-    //   resolve: `gatsby-source-notion-api`,
-    //   options: {
-    //     token: `$INTEGRATION_TOKEN`,
-    //     databaseId: `$DATABASE_ID`,
-    //     propsToFrontmatter: true,
-    //     lowerTitleLevel: true,
-    //   },
-    // }
+    ...notionConfig
   ],
 }
