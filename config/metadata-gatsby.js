@@ -1,14 +1,14 @@
 module.exports = {
   siteMetaData: {
-    title: '',
-    author: '',
-    siteUrl: 'https://yoursite-url.com',
+    title: 'Prasetyo Dev',
+    author: 'Dimas Prasetyo',
+    siteUrl: 'https://prasetyodev.id',
     seo: {
       description: '',
       robots: 'index, follow',
       keywords: '',
       index: '2023',
-      canonical: 'https://yourarticle.com/articles'
+      canonical: 'https://https://prasetyodev.id/articles'
     },
     openGraph: {}
   }

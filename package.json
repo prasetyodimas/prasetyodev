@@ -1,15 +1,16 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "prasetyodev",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Tech Portofolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dimas Prasetyo",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.4",
     "@fontsource/merriweather": "^5.0.3",
+    "@notionhq/client": "^2.2.13",
     "dotenv": "^16.3.1",
     "gatsby": "^5.12.4",
     "gatsby-plugin-feed": "^5.12.0",
