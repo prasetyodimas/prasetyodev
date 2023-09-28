@@ -1,0 +1,4 @@
+v17.5.0
+echo "v17.5.0" > .nvmrc
+echo "lts/*" > .nvmrc
+echo "node" > .nvmrc
