@@ -18,11 +18,11 @@ const {
   transformerRemarkConfig
 } = require('./config/plugins-gatbsby');
 const {
-  siteMetadata
+  configSiteMetaData
 } = require('./config/metadata-gatsby');
 
 module.exports = {
-  ...siteMetadata,
+  ...configSiteMetaData,
   plugins: [
     ...imageConfig,
     ...sharpConfig,
