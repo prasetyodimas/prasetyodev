@@ -42,10 +42,11 @@ The purpose of this application is to create a professional portfolio and blog.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* Gatsby React Framework.
-* CSS Prepocessor ( SCSS ).
-* Markdown.
-* Gatsby Cloud
+* [Gatsby React Framework](https://www.gatsbyjs.com)
+* [CSS Prepocessor ( SCSS )](https://sass-lang.com)
+* [Markdown](https://www.markdownguide.org)
+* [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/login)
+* [Jamstack](https://jamstack.org)
 
 <!-- GETTING STARTED -->
 ## Getting Started
