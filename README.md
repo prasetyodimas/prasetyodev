@@ -45,6 +45,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Gatsby React Framework.
 * CSS Prepocessor ( SCSS ).
 * Markdown.
+* Gatsby Cloud
 
 <!-- GETTING STARTED -->
 ## Getting Started
