@@ -45,6 +45,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Gatsby React Framework.
 * CSS Prepocessor ( SCSS ).
 * Markdown.
+* Gatsby Cloud
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -64,8 +65,7 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
@@ -73,20 +73,20 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. How to running`
+   ```
+   npm run start / gatsby develop
    ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+If you want to use the project template that I use, I will share it for free. I have tweaked or customized the settings according to your needs. I use Gatsby framework technology. If you are interested in learning, you can directly check the official documentation.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://www.gatsbyjs.com/)_
 
 ## Contact
 
-Linkedin : [@linkedin](https://www.linkedin.com/in/dimas-prasetyo) - Dimas Prasetyo
+Linkedin : [@Dimas Prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
 
-Email : [@email](https://mailto:dimasprasetyo485@gmail.com) - Dimas Prasetyo
+Email : dimasprasetyo485@gmail.com
