@@ -96,6 +96,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       author: Author
       siteUrl: String
       social: Social
+      seo: Seo
+      title: String
+      description: String
     }
 
     type Author {
@@ -104,7 +107,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Social {
-      twitter: String
+      facebook: String
+      linkedin: String
     }
 
     type MarkdownRemark implements Node {
@@ -120,6 +124,15 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Fields {
       slug: String
+    }
+
+    type Seo {
+      slug: String
+      description: String
+      robots: String
+      keywords: String
+      index: ID
+      canonical: String
     }
   `)
 }
