@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="docs/logo/logo-sample.png" alt="Logo" width="auto" height="80">
+    <img src="docs/logo/prasetyodev.png" alt="Logo" width="auto" height="80">
   </a>
 
   <h3 align="center">Dimas Prasetyo </h3>
@@ -19,6 +19,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#architechture">Software Architecture</a></li>
       </ul>
     </li>
     <li>
@@ -79,7 +80,10 @@ _Below is an example of how you can instruct your audience on installing and set
    npm run start / gatsby develop
    ```
 
-<!-- USAGE EXAMPLES -->
+## Software Architechture
+
+Software Architecture: In the realm of software development, "software architecture" refers to the high-level structure and organization of a software system. It defines the components, modules, and their relationships within a software application. Software architects make decisions about the system's structure to ensure it meets performance, scalability, and maintainability requirements.
+
 ## Usage
 
 If you want to use the project template that I use, I will share it for free. I have tweaked or customized the settings according to your needs. I use Gatsby framework technology. If you are interested in learning, you can directly check the official documentation.
@@ -91,3 +95,11 @@ _For more examples, please refer to the [Documentation](https://www.gatsbyjs.com
 Linkedin : [@Dimas Prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
 
 Email : dimasprasetyo485@gmail.com
+
+
+## Holopin
+
+Digital badges, but actually cool.
+Reward & collect verifiable digital badges for skills, achievements, and memories. Build collections and create your own badge board. Show off via LinkedIn, Twitter, GitHub and GitLab.
+
+[![An image of @prasetyodimas's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/prasetyodimas)](https://holopin.io/@prasetyodimas)
