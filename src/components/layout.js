@@ -20,7 +20,7 @@ const Layout = ({ location, title, children }) => {
               .pauseFor(2000)
               .deleteAll()
               .typeString("Welcome to my portfolio site and blog :)")
-              .pauseFor(5000)
+              .pauseFor(3000)
               .deleteAll()
               .typeString(`{${title}}`)
               .start();

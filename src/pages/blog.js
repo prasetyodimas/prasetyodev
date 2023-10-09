@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
+import Bio from "../components/bio"
 
 export const pageQuery = graphql`
   {
@@ -65,6 +66,7 @@ const Blog = ({ data, location }) => {
           )
         })}
       </ol>
+      <Bio className="mt-5"/>
     </Layout>
   )
 }

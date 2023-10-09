@@ -1,7 +1,10 @@
+@import "./variables/color.scss";
+@import "./variables/typography.scss";
+
 @import "./layout/reset.scss";
 @import "./layout/layout";
 @import "./layout/link";
-@import "./variables/color.scss";
+@import "./layout/footer";
 
 @import "./components/header.scss";
 @import "./components/navbar.scss";
