@@ -15,7 +15,8 @@ const {
   transformerSharpConfig,
   imageConfig,
   feedConfig,
-  transformerRemarkConfig
+  transformerRemarkConfig,
+  configCssPrepocessor
 } = require('./config/plugins-gatbsby');
 const {
   configSiteMetaData
@@ -28,6 +29,7 @@ module.exports = {
     ...sharpConfig,
     ...feedConfig,
     ...sourceSystemConfig,
+    ...configCssPrepocessor,
     ...transformerRemarkConfig,
     ...transformerSharpConfig,
   ]

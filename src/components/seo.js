@@ -43,6 +43,8 @@ const Seo = ({ description, title, children }) => {
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&family=Phudu:wght@300;600&display=swap" rel="stylesheet"/>
       {children}
     </>
   )
