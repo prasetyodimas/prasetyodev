@@ -1,10 +1,9 @@
 // custom typefaces
-import "@fontsource-variable/montserrat"
-import "@fontsource/merriweather"
-// normalize CSS across browsers
-import "./src/normalize.css"
-// custom CSS styles
-import "./src/style.css"
+// import "@fontsource-variable/montserrat"
+// import "@fontsource/merriweather"
+import '@fontsource-variable/overpass-mono';
 
-// Highlighting for code blocks
+import "./src/normalize.css"
+import "./src/core-temp.css"
 import "prismjs/themes/prism.css"
+import "./src/styles/core.scss"

@@ -6,6 +6,7 @@ const { transformerSharpConfig } = require('./plugin/transformer-sharp');
 const { imageConfig } = require('./plugin/image');
 const { feedConfig } = require('./plugin/feed');
 const { transformerRemarkConfig } = require('./plugin/transformer-remark');
+const { configCssPrepocessor } = require('./plugin/css-prepocessor');
 
 module.exports = {
   trackingGA: trackingGA,
@@ -15,5 +16,6 @@ module.exports = {
   feedConfig: feedConfig,
   sourceSystemConfig: sourceSystemConfig,
   transformerSharpConfig: transformerSharpConfig,
-  transformerRemarkConfig: transformerRemarkConfig
+  transformerRemarkConfig: transformerRemarkConfig,
+  configCssPrepocessor: configCssPrepocessor
 }

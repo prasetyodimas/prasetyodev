@@ -103,3 +103,7 @@ Digital badges, but actually cool.
 Reward & collect verifiable digital badges for skills, achievements, and memories. Build collections and create your own badge board. Show off via LinkedIn, Twitter, GitHub and GitLab.
 
 [![An image of @prasetyodimas's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/prasetyodimas)](https://holopin.io/@prasetyodimas)
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/prasetyodimas)
+
+[![Peerlist](https://github-readme-badge.peerlist.io/api/prasetyodimas?style=for-the-badge)](https://peerlist.io/prasetyodimas)
