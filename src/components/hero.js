@@ -1,13 +1,14 @@
 import React, { Fragment } from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Typewriter from "typewriter-effect"
+import { StaticImage } from "gatsby-plugin-image"
+import Buttons from "../components/buttons"
 
 const Hero = () => {
   return (
     <Fragment>
       <div className="col-lg-12 col-xxl-12 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5">
-          <div className="col-10 col-sm-8 col-lg-6">
+          <div className="col-xs-12 col-sm-8 col-lg-6">
             <span className="d-flex justify-content-lg-end p-2">
               <StaticImage
                 layout="fixed"
@@ -21,7 +22,7 @@ const Hero = () => {
               />
             </span>
           </div>
-          <div className="col-lg-6">
+          <div className="col-xs-12 col-sm-8 col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               <Typewriter
                 onInit={(typewriter) => {
@@ -32,10 +33,12 @@ const Hero = () => {
                 }}
               />
             </h1>
-            <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <p className="lead text-transform-minus-2">
+              A seasoned Frontend Developer Specialist with 5++ years of experience is a highly skilled professional
+              who specializes in creating and maintaining the user interface (UI) and user experience (UX) of web applications.
+            </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Contact</button>
-              <button type="button" className="btn btn-outline-secondary btn-lg px-4">Download CV</button>
+              <Buttons propClass="btn-bloby" propRedirect="/about">Know more about me</Buttons>
             </div>
           </div>
         </div>

@@ -6,24 +6,20 @@
 }
 
 html {
-  line-height: var(--lineHeight-normal);
-  font-size: var(--fontSize-root);
+  line-height: $lineHeight-normal;
+  font-size: $fontSize-root;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: $fontBodyPrimary !important;
+  font-family: $font-body-primary !important;
   font-size: $fontSize-1;
   color: $black;
 }
 
-footer {
-  // padding: var(--spacing-6) var(--spacing-0);
-}
-
 hr {
-  // background: var(--color-accent);
+  background-color: $color-accent;
   height: 1px;
   border: 0;
 }
@@ -31,42 +27,42 @@ hr {
 /* Heading */
 
 h1, h2, h3, h4, h5, h6 {
-  // font-family: var(--font-heading);
-  // margin-top: var(--spacing-12);
-  // margin-bottom: var(--spacing-6);
+  // font-family: $font-heading;
+  margin-top: $spacing-12;
+  margin-bottom: $spacing-6;
   // line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
 
 h2, h3, h4, h5, h6 {
   // font-weight: var(--fontWeight-bold);
-  // color: var(--color-heading);
+  color: $color-heading;
 }
 
 h1 {
-  // font-weight: var(--fontWeight-black);
-  // font-size: var(--fontSize-6);
+  font-weight: $fontWeight-black;
+  font-size: $fontSize-6;
   // color: var(--color-heading-black);
 }
 
 h2 {
-  // font-size: var(--fontSize-5);
+  font-size: var($fontSize-5);
 }
 
 h3 {
-  // font-size: var(--fontSize-4);
+  font-size: $fontSize-4;
 }
 
 h4 {
-  // font-size: var(--fontSize-3);
+  font-size: $fontSize-3;
 }
 
 h5 {
-  // font-size: var(--fontSize-2);
+  font-size: $fontSize-2;
 }
 
 h6 {
-  // font-size: var(--fontSize-1);
+  font-size: $fontSize-1;
 }
 
 h1 > a {
@@ -83,10 +79,10 @@ h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 
 p {
   // line-height: var(--lineHeight-relaxed);
-  // --baseline-multiplier:0.179;
-  // --x-height-multiplier:0.35;
-  // margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
-  // padding: var(--spacing-0);
+  --baseline-multiplier:0.179;
+  --x-height-multiplier:0.35;
+  margin: $spacing-0 $spacing-0 $spacing-8 $spacing-0;
+  padding: $spacing-0;
 }
 
 ul, ol {
@@ -152,7 +148,7 @@ table {
 
 /* Link */
 a {
-  // color: var(--color-primary);
+  color: $color-primary;
 
   &:hover, &:focus {
     text-decoration: none;

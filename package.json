@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.4",
+    "@fontsource-variable/overpass-mono": "^5.0.13",
     "@fontsource/merriweather": "^5.0.3",
     "@notionhq/client": "^2.2.13",
     "dotenv": "^16.3.1",

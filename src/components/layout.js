@@ -11,27 +11,30 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <p className="main-heading">
+      <div className="main-heading">
         <Link to="/" className="link-nounderline typewriter">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
               .typeString(`{${title}}`)
-              .pauseFor(2000)
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString(`{ Dimas Prasetyo }`)
+              .pauseFor(1000)
               .deleteAll()
               .typeString("Welcome to my portfolio site and blog :)")
-              .pauseFor(3000)
+              .pauseFor(2000)
               .deleteAll()
-              .typeString(`{${title}}`)
+              .typeString(`{ Dimas Prasetyo }`)
               .start();
             }}
           />
         </Link>
-      </p>
+      </div>
     )
   } else {
     header = (
-      <p>
+      <Fragment>
         <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -40,7 +43,7 @@ const Layout = ({ location, title, children }) => {
             .start();
           }}
         />
-      </p>
+      </Fragment>
     )
   }
 

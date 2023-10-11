@@ -28,13 +28,11 @@ export const pageQuery = graphql`
 `
 
 const Blog = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={`Blog`}>
       <Seo title="Blog"/>
-      This is Blog page
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
