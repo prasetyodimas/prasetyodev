@@ -34,7 +34,7 @@ const Blog = ({ data, location }) => {
   return (
     <Layout location={location} title={`Blog`}>
       <Seo title="Blog"/>
-      <BlockElement className="main-heading" component="div">
+      <BlockElement className="blog-wrapper" component="div">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -67,7 +67,7 @@ const Blog = ({ data, location }) => {
           })}
         </ol>
       </BlockElement>
-      <Bio className="mt-5"/>
+      <Bio className="mt-5 d-flex justify-content-center"/>
     </Layout>
   )
 }
