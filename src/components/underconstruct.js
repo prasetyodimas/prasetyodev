@@ -1,9 +1,13 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import BlockElement from "./blockElement"
 
-const UnderConstruction = ({children}) => {
+const UnderConstruction = () => {
   return(
-    <div className="underconstruct-content d-flex justify-content-center">
+    <BlockElement
+      className="underconstruct-content d-flex justify-content-center"
+      component="div"
+    >
       <StaticImage
         layout="fixed"
         src="../images/underconstruct/maintenances.jpg"
@@ -14,7 +18,7 @@ const UnderConstruction = ({children}) => {
         loading="lazy"
         className="img-fluid "
       />
-    </div>
+    </BlockElement>
   )
 }
 
