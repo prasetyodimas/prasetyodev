@@ -104,6 +104,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Author {
       name: String
+      quoutes: String
       summary: String
     }
 
