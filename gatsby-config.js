@@ -16,15 +16,18 @@ const {
   imageConfig,
   feedConfig,
   transformerRemarkConfig,
-  configCssPrepocessor
+  configCssPrepocessor,
+  sitemapConfig
 } = require('./config/plugins-gatbsby');
 const {
   configSiteMetaData
 } = require('./config/metadata-gatsby');
+const sitemap = require('./config/plugin/sitemap');
 
 module.exports = {
   ...configSiteMetaData,
   plugins: [
+    ...sitemapConfig,
     ...imageConfig,
     ...sharpConfig,
     ...feedConfig,

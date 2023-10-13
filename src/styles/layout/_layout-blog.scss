@@ -1,4 +1,10 @@
 @import "../variables/spacing";
+@import "../variables/typography";
+
+.main-heading {
+  font-size: $fontSize-4;
+  margin: 0;
+}
 
 .blog-wrapper {
   margin: 0 auto;

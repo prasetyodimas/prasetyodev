@@ -1,8 +1,6 @@
 import React, { Fragment } from "react"
-import { Link } from "gatsby"
 import Footer from "../components/footer"
 import Navbar from "./navbar"
-import BlockElement from "./blockElement"
 import Typewriter from "typewriter-effect"
 
 const Layout = ({ location, title, children }) => {
@@ -12,26 +10,24 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <BlockElement className="main-heading" component="div">
-        <Link to="/" className="link-nounderline typewriter">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-              .typeString(`{${title}}`)
-              .pauseFor(1000)
-              .deleteAll()
-              .typeString(`{ Dimas Prasetyo }`)
-              .pauseFor(1000)
-              .deleteAll()
-              .typeString("Welcome to my portfolio site and blog :)")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString(`{ Dimas Prasetyo }`)
-              .start();
-            }}
-          />
-        </Link>
-      </BlockElement>
+      <h1 className="main-heading">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+            .typeString(`{${title}}`)
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString(`{ Dimas Prasetyo }`)
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString("Welcome to my portfolio site and blog :)")
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString(`{ Dimas Prasetyo }`)
+            .start();
+          }}
+        />
+      </h1>
     )
   } else {
     header = (
