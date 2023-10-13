@@ -8,12 +8,16 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "gatsby": "^5.12.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
     "@fontsource-variable/montserrat": "^5.0.4",
     "@fontsource-variable/overpass-mono": "^5.0.13",
     "@fontsource/merriweather": "^5.0.3",
-    "@notionhq/client": "^2.2.13",
     "dotenv": "^16.3.1",
-    "gatsby": "^5.12.4",
+    "gatsby-plugin-sitemap": "^6.12.1",
     "gatsby-plugin-feed": "^5.12.0",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
@@ -26,13 +30,10 @@
     "gatsby-source-notion-api": "^0.12.0",
     "gatsby-transformer-remark": "^6.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
+    "typewriter-effect": "^2.21.0",
+    "@notionhq/client": "^2.2.13",
     "prismjs": "^1.29.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
     "sass": "^1.69.0",
-    "typewriter-effect": "^2.21.0"
-  },
-  "devDependencies": {
     "prettier": "^2.8.8"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
