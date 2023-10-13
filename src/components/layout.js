@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import Footer from "../components/footer"
 import Navbar from "./navbar"
+import BlockElement from "./blockElement"
 import Typewriter from "typewriter-effect"
 
 const Layout = ({ location, title, children }) => {
@@ -11,7 +12,7 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <div className="main-heading">
+      <BlockElement className="main-heading" component="div">
         <Link to="/" className="link-nounderline typewriter">
           <Typewriter
             onInit={(typewriter) => {
@@ -30,7 +31,7 @@ const Layout = ({ location, title, children }) => {
             }}
           />
         </Link>
-      </div>
+      </BlockElement>
     )
   } else {
     header = (

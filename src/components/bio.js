@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import BlockElement from "../components/blockElement"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -27,12 +28,11 @@ const Bio = () => {
     }
   `)
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <BlockElement className="bio" component="div">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -52,7 +52,7 @@ const Bio = () => {
           </a>
         </p>
       )}
-    </div>
+    </BlockElement>
   )
 }
 

@@ -1,0 +1,7 @@
+@import "../variables/spacing";
+
+.blog-wrapper {
+  margin: 0 auto;
+  max-width: $max-width-wrapper;
+  padding: $spacing-10;
+}

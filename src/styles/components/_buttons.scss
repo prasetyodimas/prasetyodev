@@ -1,5 +1,7 @@
 @import "../variables/color";
 
+$numOfBlobs: 4;
+
 .btn-bloby {
   z-index: 1;
   position: relative;
@@ -87,7 +89,6 @@
       transform: translate3d(0,150%,0) scale(1.4);
     }
 
-    $numOfBlobs: 4;
     @for $i from 1 through $numOfBlobs {
       &:nth-child(#{$i}) {
         left: calc($i - 1) * calc(95% / $numOfBlobs);
@@ -103,5 +104,4 @@
       }
     }
   }
-
 }
