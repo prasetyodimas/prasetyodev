@@ -98,6 +98,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       seo: Seo
       title: String
+      keywords: String
       description: String
     }
 

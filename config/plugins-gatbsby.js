@@ -7,6 +7,7 @@ const { imageConfig } = require('./plugin/image');
 const { feedConfig } = require('./plugin/feed');
 const { transformerRemarkConfig } = require('./plugin/transformer-remark');
 const { configCssPrepocessor } = require('./plugin/css-prepocessor');
+const { sitemapConfig } = require('./plugin/sitemap');
 
 module.exports = {
   trackingGA: trackingGA,
@@ -17,5 +18,6 @@ module.exports = {
   sourceSystemConfig: sourceSystemConfig,
   transformerSharpConfig: transformerSharpConfig,
   transformerRemarkConfig: transformerRemarkConfig,
-  configCssPrepocessor: configCssPrepocessor
+  configCssPrepocessor: configCssPrepocessor,
+  sitemapConfig: sitemapConfig
 }
