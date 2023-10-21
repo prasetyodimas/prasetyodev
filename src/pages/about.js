@@ -13,7 +13,7 @@ const About = ({ location }) => {
             Great to see you here! I am Dimas Prasetyo, a Diploma Degree graduate from Technology of Yogyakarta University. I am a <b>Frontend Developer Specialist</b>
             I have participated in several open source project and built several projects, <b>demonstrating my ability to write concise and clean code</b>,
             Passionate about <b>web development Specialist</b>, creating about mobile first friendly <b>Progressive web application</b>, understanding good in <b>seacrh enginee optimation</b> pratice,
-            specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>( mobile, tablet /phablet, destkop)</b>.
+            specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>(Mobile, Tablet/Phablet, Destkop)</b>.
             And also have some experience about <b>leadership include role of team leadership</b>.
           </p>
         </div>
