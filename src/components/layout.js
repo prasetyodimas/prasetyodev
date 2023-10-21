@@ -2,7 +2,6 @@ import React, { Fragment } from "react"
 import Footer from "../components/footer"
 import Navbar from "./navbar"
 import Typewriter from "typewriter-effect"
-import Social from "../components/social"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -50,7 +49,6 @@ const Layout = ({ location, title, children }) => {
       <Navbar title={header}/>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main className="container">{children}</main>
-        <Social/>
         <Footer/>
       </div>
     </Fragment>

@@ -66,8 +66,11 @@ const Blog = ({ data, location }) => {
             )
           })}
         </ol>
+        <div className="d-flex justify-content-center p-4">
+          <Bio className="mt-5"/>
+        </div>
       </BlockElement>
-      <Bio className="mt-5 d-flex justify-content-center"/>
+
     </Layout>
   )
 }
