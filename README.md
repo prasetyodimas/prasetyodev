@@ -48,6 +48,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [Markdown](https://www.markdownguide.org)
 * [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/login)
 * [Jamstack](https://jamstack.org)
+* [GraphQL](https://graphql.org/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
