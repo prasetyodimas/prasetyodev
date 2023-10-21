@@ -93,7 +93,7 @@ _For more examples, please refer to the [Documentation](https://www.gatsbyjs.com
 
 ## Contact
 
-Linkedin : [@Dimas Prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
+Linkedin : [@dimas-prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
 
 Email : dimasprasetyo485@gmail.com
 
