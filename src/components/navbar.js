@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg" aria-label="Fifth navbar example">
+    <nav className="navbar navbar-expand-lg" aria-label="Navbar site">
       <div className="container">
         <a className="navbar-brand" href="/">{props.title}</a>
         <button className="navbar-toggler collapsed" type="button" aria-expanded="false" aria-label="Toggle navigation">
