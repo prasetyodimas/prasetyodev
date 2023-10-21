@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import Typewriter from "typewriter-effect"
 import { StaticImage } from "gatsby-plugin-image"
 import Buttons from "../components/buttons"
+import Social from "../components/social"
 
 const Hero = () => {
   return (
@@ -34,9 +35,10 @@ const Hero = () => {
               />
             </h1>
             <p className="lead text-transform-minus-2">
-              A seasoned Frontend Developer Specialist with 5++ years of experience is a highly skilled professional
-              who specializes in creating and maintaining the user interface (UI) and user experience (UX) of web applications.
+              A seasoned <b>Frontend Developer Specialist</b> with <b>5++</b> years of experience is a highly skilled professional
+              who specializes in creating and maintaining the user interface <b>(UI)</b> and user experience <b>(UX)</b> of web applications.
             </p>
+            <Social/>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <Buttons propClass="btn-bloby" propRedirect="/about">Know more about me</Buttons>
             </div>

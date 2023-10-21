@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Social = () => {
   return(
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-start mb-3">
       <SocialIcon
         network="github"
         target="_blank"
