@@ -7,12 +7,14 @@ const About = ({ location }) => {
   return (
     <Layout location={location} title={'About'}>
       <Seo title="About"/>
-      <div className="section-about-me row">
+      <div className="d-flex section-about-me row">
         <div className="col-sm-12 col-md-8 col-lg-10">
           <p>
-            Great to see you here! I am Sneha Farkya, a BCA graduate from Medi-Caps University, Indore. I am a Frontend Developer and Technical Writer.
-            In my role as a Front-end developer, I combine technical expertise with creativity. My passion for designing and developing user-friendly web applications has lead me to sharpen my skills in HTML, CSS, and JavaScript to provide dynamic, responsive user interfaces.
-            I have participated in several hackathons and built several projects, demonstrating my ability to write concise and clean code, and document the project Recently, I participated in the SheBuilds hackathon and got a special mention by organizers.
+            Great to see you here! I am Dimas Prasetyo, a Diploma Degree graduate from Technology of Yogyakarta University. I am a <b>Frontend Developer Specialist</b>
+            I have participated in several open source project and built several projects, <b>demonstrating my ability to write concise and clean code</b>,
+            Passionate about <b>web development Specialist</b>, creating about mobile first friendly <b>Progressive web application</b>, understanding good in <b>seacrh enginee optimation</b> pratice,
+            specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>( mobile, tablet /phablet, destkop)</b>.
+            And also have some experience about <b>leadership include role of team leadership</b>.
           </p>
         </div>
         <div className="col-sm-12 col-md-4 col-lg-2">
@@ -24,7 +26,7 @@ const About = ({ location }) => {
             quality={95}
             alt="Profile picture"
             loading="lazy"
-            className="img-fluid img-rounded"
+            className="img-fluid rounded mx-auto"
           />
         </div>
       </div>
