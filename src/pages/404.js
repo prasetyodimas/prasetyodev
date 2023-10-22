@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import BlockElement from "../components/blockElement"
 
 export const pageQuery = graphql`
   query {
@@ -18,8 +19,10 @@ const NotFoundPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <h2>404: Not Found</h2>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <BlockElement component="div" type="min-height">
+        <h2>404: Not Found</h2>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </BlockElement>
     </Layout>
   )
 }

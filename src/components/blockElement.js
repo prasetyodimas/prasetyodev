@@ -1,11 +1,21 @@
 import React, { Fragment } from "react"
 
-const BlockElement = ({className, children, component}) => {
+const BlockElement = ({className, children, component, type = ""}) => {
 
   let componentType;
   if (component === 'div') {
     componentType = (
-      <div className={className}>
+      <div className={className}
+        style={{
+          ...type ? {
+            minHeight: '500px',
+          } : {},
+          ...type === 'auto' ? {
+            height: 'auto',
+          } : {}
+        }}
+        id="whoops-error"
+      >
         {children}
       </div>
     )
@@ -13,7 +23,17 @@ const BlockElement = ({className, children, component}) => {
 
   if (component === 'span') {
     componentType = (
-      <span className={className}>
+      <span className={className}
+        style={{
+          ...type ? {
+            minHeight: '500px',
+          } : {},
+          ...type === 'auto' ? {
+            height: 'auto',
+          } : {}
+        }}
+        id="whoops-error"
+      >
         {children}
       </span>
     )
