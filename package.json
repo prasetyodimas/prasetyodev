@@ -34,6 +34,7 @@
     "prettier": "^2.8.8",
     "prismjs": "^1.29.0",
     "react-social-icons": "^6.4.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.0",
     "typewriter-effect": "^2.21.0"
   },
