@@ -3,6 +3,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "../components/blockElement"
+import Timelines from "../components/timelines"
 
 const About = ({ location }) => {
   return (
@@ -17,10 +18,10 @@ const About = ({ location }) => {
           className="col-sm-12 col-md-8 col-lg-10 order-2 order-sm-1 order-md-1 order-lg-1"
         >
           <p>
-            Great to see you here! I am Dimas Prasetyo, a Diploma Degree graduate from Technology of Yogyakarta University. I am a <b>Frontend Developer Specialist</b>
-            I have participated in several open source project and built several projects, <b>demonstrating my ability to write concise and clean code</b>,
-            Passionate about <b>web development Specialist</b>, creating about mobile first friendly <b>Progressive web application</b>, understanding good in <b>seacrh enginee optimation</b> pratice,
-            specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>(Mobile, Tablet/Phablet, Destkop)</b>.
+            Great to see you here! I am Dimas Prasetyo, a Diploma Degree graduate from Technology of Yogyakarta University.<br/>
+            I am a <b>Frontend Developer Specialist</b>, I have participated in several open source project and built several projects, <b>demonstrating my ability to write concise and clean code</b>,
+            Passionate about <b>web development Specialist</b>, creating about mobile first friendly <b>Progressive web application</b>, understanding good in <b>search engine optimation</b> practice,
+            specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>(Mobile, Tablet/Phablet, Desktop)</b>.<br/>
             And also have some experience about <b>leadership include role of team leadership</b>.
           </p>
         </BlockElement>
@@ -40,6 +41,7 @@ const About = ({ location }) => {
           />
         </BlockElement>
       </BlockElement>
+      <Timelines className="mb-5 d-block"/>
     </Layout>
   )
 }

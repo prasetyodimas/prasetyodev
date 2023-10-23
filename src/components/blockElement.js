@@ -14,7 +14,6 @@ const BlockElement = ({className, children, component, type = ""}) => {
             height: 'auto',
           } : {}
         }}
-        id="whoops-error"
       >
         {children}
       </div>
@@ -32,7 +31,6 @@ const BlockElement = ({className, children, component, type = ""}) => {
             height: 'auto',
           } : {}
         }}
-        id="whoops-error"
       >
         {children}
       </span>
