@@ -1,11 +1,14 @@
 import React, { Fragment } from "react"
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import Icon from '../components/icon';
+import Skills from '../components/skils';
+import 'react-vertical-timeline-component/style.min.css'
 
 const Timelines = () => {
+
   return (
     <Fragment>
+      <h4>Experience</h4>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -69,6 +72,7 @@ const Timelines = () => {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      <Skills/>
     </Fragment>
   )
 }
