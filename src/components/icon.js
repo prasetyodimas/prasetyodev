@@ -1,10 +1,19 @@
 import React, { Fragment } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Icons = ({ path, width, height, quality, alt, classes }) => {
-  console.log(path)
-  console.log(width)
-  console.log(height)
+
+  const data = useStaticQuery(graphql` {
+    allFile(filter: { extension: { in: "svg" } }) {
+      edges {
+        node {
+          publicURL
+          name
+        }
+      }
+    }
+  }`)
+
   return (
     <Fragment>
       <img
