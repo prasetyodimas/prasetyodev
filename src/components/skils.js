@@ -30,6 +30,7 @@ import XamppIcon from "../assets/icons/skils/xampp.svg"
 import FigmaIcon from "../assets/icons/skils/figma.svg"
 import HandlebarIcon from "../assets/icons/skils/handlebars.svg"
 import BitbucketIcon from "../assets/icons/skils/bitbucket.svg"
+import NodeIcon from "../assets/icons/skils/node.svg"
 
 const Skills = () => {
   return (
@@ -229,6 +230,15 @@ const Skills = () => {
           <BlockElement className="d-flex justify-content-center" component="span">
             <img
               src={GulpIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={NodeIcon}
               alt="icon"
               className="img-fluid"
             />

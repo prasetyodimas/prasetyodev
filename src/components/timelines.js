@@ -1,7 +1,5 @@
 import React, { Fragment } from "react"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import Icon from '../components/icon';
-import Skills from '../components/skils';
 import 'react-vertical-timeline-component/style.min.css'
 
 const Timelines = () => {
@@ -72,7 +70,6 @@ const Timelines = () => {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
-      <Skills/>
     </Fragment>
   )
 }
