@@ -70,7 +70,6 @@ const Blog = ({ data, location }) => {
           <Bio className="mt-5"/>
         </div>
       </BlockElement>
-
     </Layout>
   )
 }
