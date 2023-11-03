@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "../components/blockElement"
 import Timelines from "../components/timelines"
+import Skills from '../components/skils';
 
 const About = ({ location }) => {
   return (
@@ -42,6 +43,7 @@ const About = ({ location }) => {
         </BlockElement>
       </BlockElement>
       <Timelines className="mb-5 d-block"/>
+      <Skills/>
     </Layout>
   )
 }
