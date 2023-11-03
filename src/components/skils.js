@@ -27,6 +27,9 @@ import WebstromIcon from "../assets/icons/skils/webstrom.svg"
 import MuireactIcon from "../assets/icons/skils/muireact.svg"
 import PostmanIcon from "../assets/icons/skils/postman.svg"
 import XamppIcon from "../assets/icons/skils/xampp.svg"
+import FigmaIcon from "../assets/icons/skils/figma.svg"
+import HandlebarIcon from "../assets/icons/skils/handlebars.svg"
+import BitbucketIcon from "../assets/icons/skils/bitbucket.svg"
 
 const Skills = () => {
   return (
@@ -271,6 +274,33 @@ const Skills = () => {
           <BlockElement className="d-flex justify-content-center" component="span">
             <img
               src={XamppIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={FigmaIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={HandlebarIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={BitbucketIcon}
               alt="icon"
               className="img-fluid"
             />
