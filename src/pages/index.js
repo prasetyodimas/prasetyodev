@@ -52,6 +52,6 @@ export default IndexSite
 export const Head = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
   return (
-    <Seo title={`@${authorName} Frontend Developer`} />
+    <Seo title={`${authorName} Frontend Developer`} />
   )
 }
