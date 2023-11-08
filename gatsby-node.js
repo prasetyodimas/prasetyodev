@@ -140,9 +140,25 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage } = actions;
-  //redirection when regex match
   if (page.path.match(/^\/?404\/?$/)) {
     page.matchPath = "/*";
     createPage(page)
   }
+}
+
+exports.onCreateWebpackConfig = ({ loaders, actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty'
+    }
+  })
+
+  actions.setWebpackConfig({
+    module: {
+      rules: [{
+        test: /canvas/,
+        use: loaders.null()
+      }]
+    }
+  })
 }

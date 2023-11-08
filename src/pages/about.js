@@ -4,7 +4,8 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "../components/blockElement"
 import Timelines from "../components/timelines"
-import Skills from '../components/skils';
+import Skills from '../components/skils'
+import { Link } from "gatsby"
 
 const About = ({ location }) => {
   return (
@@ -25,6 +26,7 @@ const About = ({ location }) => {
             specialist user interface design <b>(UI)</b> and <b>(UX)</b> solutions, make the application run smoothly in other device <b>(Mobile, Tablet/Phablet, Desktop)</b>.<br/>
             And also have some experience about <b>leadership include role of team leadership</b>.
           </p>
+          <Link href="/personalities">See My Personalities</Link>
         </BlockElement>
         <BlockElement
           component="div"
