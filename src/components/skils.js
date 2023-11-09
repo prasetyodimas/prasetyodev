@@ -6,6 +6,7 @@ import JsIcon from "../assets/icons/skils/javascript.svg"
 import TsIcon from "../assets/icons/skils/typescript.svg"
 import SassIcon from "../assets/icons/skils/sass.svg"
 import AngularIcon from "../assets/icons/skils/angular.svg"
+import GatsbyIcon from "../assets/icons/skils/gatsby.svg"
 import JqueryIcon from "../assets/icons/skils/jquery.svg"
 import LaravelIcon from "../assets/icons/skils/laravel.svg"
 import ReactIcon from "../assets/icons/skils/react.svg"
@@ -31,6 +32,10 @@ import FigmaIcon from "../assets/icons/skils/figma.svg"
 import HandlebarIcon from "../assets/icons/skils/handlebars.svg"
 import BitbucketIcon from "../assets/icons/skils/bitbucket.svg"
 import NodeIcon from "../assets/icons/skils/node.svg"
+import JiraIcon from "../assets/icons/skils/jira.svg"
+import StyledComponentIcon from "../assets/icons/skils/styled-component.svg"
+import GoogleAnalyticsIcon from "../assets/icons/skils/google-analytics.svg"
+import GoogleTagIcon from "../assets/icons/skils/google-tag.svg"
 
 const Skills = () => {
   return (
@@ -86,6 +91,15 @@ const Skills = () => {
           <BlockElement className="d-flex justify-content-center" component="span">
             <img
               src={AngularIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={GatsbyIcon}
               alt="icon"
               className="img-fluid"
             />
@@ -316,10 +330,45 @@ const Skills = () => {
             />
           </BlockElement>
         </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={JiraIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={StyledComponentIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={GoogleAnalyticsIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={GoogleTagIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
       </BlockElement>
     </Fragment>
   );
-
 }
 
 export default Skills
