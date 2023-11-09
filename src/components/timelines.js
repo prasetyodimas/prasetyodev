@@ -1,12 +1,18 @@
 import React, { Fragment } from "react"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import BlockElement from "../components/blockElement"
 
 const Timelines = () => {
 
   return (
     <Fragment>
       <h4>Experience</h4>
+      <BlockElement className="p-5 mb-5 mt-5" component="span">
+        <blockquote className="m-5">
+          <p className="text-center">"<b>Experience is a fundamental aspect of human life </b>that involves learning and personal growth through direct interaction with the world. It is a subjective and multifaceted phenomenon, shaped by individual perspectives, emotions, and the cultural and social context in which it occurs. Experience has a significant impact on a person's knowledge, skills and understanding of the world as a whole."</p>
+        </blockquote>
+      </BlockElement>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
