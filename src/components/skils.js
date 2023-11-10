@@ -36,6 +36,7 @@ import JiraIcon from "../assets/icons/skils/jira.svg"
 import StyledComponentIcon from "../assets/icons/skils/styled-component.svg"
 import GoogleAnalyticsIcon from "../assets/icons/skils/google-analytics.svg"
 import GoogleTagIcon from "../assets/icons/skils/google-tag.svg"
+import NetlifyIcon from "../assets/icons/skils/netlify.svg"
 
 const Skills = () => {
   return (
@@ -361,6 +362,15 @@ const Skills = () => {
           <BlockElement className="d-flex justify-content-center" component="span">
             <img
               src={GoogleTagIcon}
+              alt="icon"
+              className="img-fluid"
+            />
+          </BlockElement>
+        </div>
+        <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
+          <BlockElement className="d-flex justify-content-center" component="span">
+            <img
+              src={NetlifyIcon}
               alt="icon"
               className="img-fluid"
             />
