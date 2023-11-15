@@ -1,5 +1,12 @@
 module.exports = {
-  pwaOffline: {
-    plugins: [`gatsby-plugin-offline`]
-  }
+  pwaConfig: [
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          importWorkboxFrom: `cdn`,
+        },
+      }
+    }
+  ]
 }

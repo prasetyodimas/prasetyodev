@@ -17,12 +17,13 @@ const {
   feedConfig,
   transformerRemarkConfig,
   configCssPrepocessor,
-  sitemapConfig
+  sitemapConfig,
+  manifestConfig,
+  pwaConfig
 } = require('./config/plugins-gatbsby');
 const {
   configSiteMetaData
 } = require('./config/metadata-gatsby');
-const sitemap = require('./config/plugin/sitemap');
 
 module.exports = {
   ...configSiteMetaData,
@@ -35,5 +36,7 @@ module.exports = {
     ...configCssPrepocessor,
     ...transformerRemarkConfig,
     ...transformerSharpConfig,
+    ...manifestConfig,
+    ...pwaConfig
   ]
 }

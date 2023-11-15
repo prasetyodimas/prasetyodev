@@ -8,7 +8,8 @@ const { feedConfig } = require('./plugin/feed');
 const { transformerRemarkConfig } = require('./plugin/transformer-remark');
 const { configCssPrepocessor } = require('./plugin/css-prepocessor');
 const { sitemapConfig } = require('./plugin/sitemap');
-const { pwaOffilne } = require('./plugin/pwa-offilne');
+const { manifestConfig } = require('./plugin/manifest');
+const { pwaConfig } = require('./plugin/pwa-offilne');
 
 module.exports = {
   trackingGA: trackingGA,
@@ -21,5 +22,6 @@ module.exports = {
   transformerRemarkConfig: transformerRemarkConfig,
   configCssPrepocessor: configCssPrepocessor,
   sitemapConfig: sitemapConfig,
-  pluginOffline: pwaOffilne
+  pwaConfig: pwaConfig,
+  manifestConfig: manifestConfig
 }
