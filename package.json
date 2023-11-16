@@ -8,23 +8,21 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.12.0",
-    "@react-pdf-viewer/default-layout": "^3.12.0",
     "gatsby": "^5.12.4",
-    "pdfjs-dist": "^3.4.120",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-pdf": "^7.5.1"
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "@fontsource-variable/montserrat": "^5.0.4",
     "@fontsource-variable/overpass-mono": "^5.0.13",
     "@fontsource/merriweather": "^5.0.3",
     "@notionhq/client": "^2.2.13",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
     "dotenv": "^16.3.1",
+    "gatsby-plugin-config": "^1.0.7",
     "gatsby-plugin-feed": "^5.12.0",
-    "gatsby-plugin-google-analytics": "^5.12.0",
-    "gatsby-plugin-google-analytics-gdpr": "^0.0.5",
+    "gatsby-plugin-google-gtag": "^5.12.3",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-offline": "^6.12.3",
@@ -38,6 +36,7 @@
     "gatsby-source-notion-api": "^0.12.0",
     "gatsby-transformer-remark": "^6.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
+    "pdfjs-dist": "^3.4.120",
     "prettier": "^2.8.8",
     "prismjs": "^1.29.0",
     "react-social-icons": "^6.4.0",

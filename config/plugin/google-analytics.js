@@ -1,19 +1,18 @@
+const config = require('gatsby-plugin-config');
+
 module.exports = {
   trackingGaConfig: [
     {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-YT5JG5R9LM",
-        head: true,
-        enableDevelopment: true,
-        anonymizeIP: true,
-        autoStartWithCookiesEnabled: false,
-        reactGaOptions: {
-          debug: true,
-          gaOptions: {
-            sampleRate: 10
-          }
-        }
+        trackingIds: [
+          `${config.GA_SECRET}`
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          delayOnRouteUpdate: 0,
+        },
       }
     }
   ]
