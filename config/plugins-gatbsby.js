@@ -6,7 +6,7 @@ const { transformerSharpConfig } = require('./plugin/transformer-sharp');
 const { imageConfig } = require('./plugin/image');
 const { feedConfig } = require('./plugin/feed');
 const { transformerRemarkConfig } = require('./plugin/transformer-remark');
-const { configCssPrepocessor } = require('./plugin/css-prepocessor');
+const { cssPrepocessorConfig } = require('./plugin/css-prepocessor');
 const { sitemapConfig } = require('./plugin/sitemap');
 const { manifestConfig } = require('./plugin/manifest');
 const { pwaConfig } = require('./plugin/pwa-offilne');
@@ -20,7 +20,7 @@ module.exports = {
   sourceSystemConfig: sourceSystemConfig,
   transformerSharpConfig: transformerSharpConfig,
   transformerRemarkConfig: transformerRemarkConfig,
-  configCssPrepocessor: configCssPrepocessor,
+  cssPrepocessorConfig: cssPrepocessorConfig,
   sitemapConfig: sitemapConfig,
   pwaConfig: pwaConfig,
   manifestConfig: manifestConfig
