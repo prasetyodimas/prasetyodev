@@ -1,4 +1,3 @@
-const { trackingGA } = require('./plugin/google-analytics');
 const { notionConfig } = require('./plugin/notion');
 const { sourceSystemConfig } = require('./plugin/source-system');
 const { sharpConfig } = require('./plugin/sharp');
@@ -10,9 +9,10 @@ const { cssPrepocessorConfig } = require('./plugin/css-prepocessor');
 const { sitemapConfig } = require('./plugin/sitemap');
 const { manifestConfig } = require('./plugin/manifest');
 const { pwaConfig } = require('./plugin/pwa-offilne');
+const { trackingGaConfig } = require('./plugin/google-analytics');
 
 module.exports = {
-  trackingGA: trackingGA,
+  trackingGaConfig: trackingGaConfig,
   notionConfig: notionConfig,
   sharpConfig: sharpConfig,
   imageConfig: imageConfig,
@@ -23,5 +23,5 @@ module.exports = {
   cssPrepocessorConfig: cssPrepocessorConfig,
   sitemapConfig: sitemapConfig,
   pwaConfig: pwaConfig,
-  manifestConfig: manifestConfig
+  manifestConfig: manifestConfig,
 }
