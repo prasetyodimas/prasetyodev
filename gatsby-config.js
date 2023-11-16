@@ -16,7 +16,7 @@ const {
   imageConfig,
   feedConfig,
   transformerRemarkConfig,
-  configCssPrepocessor,
+  cssPrepocessorConfig,
   sitemapConfig,
   manifestConfig,
   pwaConfig
@@ -33,7 +33,7 @@ module.exports = {
     ...sharpConfig,
     ...feedConfig,
     ...sourceSystemConfig,
-    ...configCssPrepocessor,
+    ...cssPrepocessorConfig,
     ...transformerRemarkConfig,
     ...transformerSharpConfig,
     ...manifestConfig,
