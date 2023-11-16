@@ -1,9 +1,18 @@
+const config = require('gatsby-plugin-config');
+
 module.exports = {
-  trackingGA: [
+  trackingGaConfig: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: ""
+        trackingIds: [
+          `${config.GA_SECRET}`
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          delayOnRouteUpdate: 0,
+        },
       }
     }
   ]

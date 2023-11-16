@@ -19,7 +19,8 @@ const {
   cssPrepocessorConfig,
   sitemapConfig,
   manifestConfig,
-  pwaConfig
+  pwaConfig,
+  trackingGaConfig
 } = require('./config/plugins-gatbsby');
 const {
   configSiteMetaData
@@ -37,6 +38,7 @@ module.exports = {
     ...transformerRemarkConfig,
     ...transformerSharpConfig,
     ...manifestConfig,
-    ...pwaConfig
+    ...pwaConfig,
+    ...trackingGaConfig
   ]
 }
