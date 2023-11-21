@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import PropTypes from 'prop-types'
 
 export const pageQuery = graphql`
   {
@@ -41,6 +42,10 @@ const IndexSite = ({ data, location }) => {
     </Fragment>
   )
 }
+
+IndexSite.propTypes = {
+  location: PropTypes.object
+};
 
 export default IndexSite
 
