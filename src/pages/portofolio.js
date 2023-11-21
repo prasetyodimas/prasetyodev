@@ -3,6 +3,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Cards from "../components/cards"
 import { StaticImage } from "gatsby-plugin-image"
+import PropTypes from 'prop-types'
 
 const Portofolio = ({ location }) => {
   return (
@@ -59,7 +60,7 @@ const Portofolio = ({ location }) => {
             quality={95}
           />
           <Cards
-            title="Mitra Pricebook"
+            title="Mitra"
             descriptions="Pricebook Partner is an application used to help shop partners or partners of our company, with the PWA mobile application used to manage inventory data, sales analysis, user behavior, user visitors and shop branding in selling gadgets."
             path="../src/images/profile-pic"
             tags="PWA, Web-Application"
@@ -86,5 +87,9 @@ const Portofolio = ({ location }) => {
     </Layout>
   )
 }
+
+Portofolio.propTypes = {
+  location: PropTypes.object
+};
 
 export default Portofolio

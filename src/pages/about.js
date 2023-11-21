@@ -6,6 +6,7 @@ import BlockElement from "../components/blockElement"
 import Timelines from "../components/timelines"
 import Skills from '../components/skils'
 import { Link } from "gatsby"
+import PropTypes from 'prop-types'
 
 const About = ({ location }) => {
   return (
@@ -49,5 +50,9 @@ const About = ({ location }) => {
     </Layout>
   )
 }
+
+About.propTypes = {
+  location: PropTypes.object
+};
 
 export default About

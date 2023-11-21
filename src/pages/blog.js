@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Bio from "../components/bio"
 import BlockElement from "../components/blockElement"
+import PropTypes from 'prop-types'
 
 export const pageQuery = graphql`
   {
@@ -73,5 +74,9 @@ const Blog = ({ data, location }) => {
     </Layout>
   )
 }
+
+Blog.propTypes = {
+  location: PropTypes.object
+};
 
 export default Blog
