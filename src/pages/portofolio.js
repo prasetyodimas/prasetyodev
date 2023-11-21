@@ -20,6 +20,22 @@ const Portofolio = ({ location }) => {
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
         <div className="col">
           <StaticImage
+            src="../images/my-porto/amtek/kiosk-interface.png"
+            alt="amtek-app"
+            width={500}
+            height={330}
+            quality={95}
+          />
+          <Cards
+            title="AMHES - Amertana Hospital Enterprise Sistem"
+            descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
+            path="../src/images/profile-pic"
+            tags="PWA, Web-Application"
+          >
+          </Cards>
+        </div>
+        <div className="col">
+          <StaticImage
             src="../images/my-porto/pricebook/marzoom-mobile.jpeg"
             alt="marzoom-app"
             width={500}
