@@ -2,7 +2,7 @@ module.exports = {
   configSiteMetaData: {
     siteMetadata: {
       title: 'Prasetyo Dev',
-      keywords: '@dimasprasetyo @prasetyodimas, @prasetyodev, dimas prasetyo, frontend developer, frontend lead, frontend specialist, prasetyodev, prasetyo dimas, tyo',
+      keywords: '@prasetyodev, frontend developer, frontend lead, frontend specialist, prasetyodev, prasetyo-dimas, tyodev, tech enthusiast, frontend, webdev, webdeveloper',
       description: 'Welcome to prasetyodev a professional site portofolio & blog, the purpose of this application is to create a professional portfolio and blog.',
       author: {
         name: 'Dimas Prasetyo',
