@@ -4,8 +4,21 @@ import Layout from "../components/layout"
 import Cards from "../components/cards"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from 'prop-types'
+import Slider from "react-slick"
 
 const Portofolio = ({ location }) => {
+
+  const settings = {
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    speed: 4000,
+    autoplaySpeed: 3500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: "linear"
+  };
+
   return (
     <Layout location={location} title={'Portofolio'}>
       <Seo title="Portofolio"/>
@@ -20,13 +33,29 @@ const Portofolio = ({ location }) => {
       </div>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
         <div className="col">
-          <StaticImage
-            src="../images/my-porto/amtek/kiosk-interface.png"
-            alt="amtek-app"
-            width={500}
-            height={330}
-            quality={95}
-          />
+          <Slider {...settings}>
+            <StaticImage
+              src="../images/my-porto/amtek/kiosk-interface.png"
+              alt="amtek-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/amtek/kiosk-menu.png"
+              alt="amtek-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/amtek/simrs.png"
+              alt="amtek-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+          </Slider>
           <Cards
             title="AMHES - Amertana Hospital Enterprise Sistem"
             descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
@@ -36,13 +65,36 @@ const Portofolio = ({ location }) => {
           </Cards>
         </div>
         <div className="col">
-          <StaticImage
-            src="../images/my-porto/pricebook/marzoom-mobile.jpeg"
-            alt="marzoom-app"
-            width={500}
-            height={330}
-            quality={95}
-          />
+          <Slider {...settings}>
+            <StaticImage
+              src="../images/my-porto/pricebook/marzoom-landing.png"
+              alt="marzoom-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/pricebook/marzoom-handson.png"
+              alt="marzoom-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/pricebook/marzoom-handson-profile-store.png"
+              alt="marzoom-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/pricebook/marzoom-mobile.jpeg"
+              alt="marzoom-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+          </Slider>
           <Cards
             title="Marzoom"
             descriptions="Marzoom is an application that is used to help pricebook users based on the PWA mobile application in searching for information and looking for the cheapest prices as well as being able to find sources of accurate data and high credibility from online and offline (o2o) stores."
@@ -52,13 +104,29 @@ const Portofolio = ({ location }) => {
           </Cards>
         </div>
         <div className="col">
-          <StaticImage
-            src="../images/my-porto/pricebook/mitra-desktop.png"
-            alt="mitra-app"
-            width={500}
-            height={330}
-            quality={95}
-          />
+          <Slider {...settings}>
+            <StaticImage
+              src="../images/my-porto/pricebook/mitra-login-one.png"
+              alt="mitra-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/pricebook/mitra-login-handson.png"
+              alt="mitra-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+            <StaticImage
+              src="../images/my-porto/pricebook/mitra-desktop.png"
+              alt="mitra-app"
+              width={500}
+              height={330}
+              quality={95}
+            />
+          </Slider>
           <Cards
             title="Mitra"
             descriptions="Pricebook Partner is an application used to help shop partners or partners of our company, with the PWA mobile application used to manage inventory data, sales analysis, user behavior, user visitors and shop branding in selling gadgets."
