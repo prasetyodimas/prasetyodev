@@ -46,7 +46,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <Fragment>
-      <Navbar title={header}/>
+      <Navbar title={header} location={location}/>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main className="container">{children}</main>
         <Footer/>
