@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Navbar = (props) => {
-
+  console.log(props.location.pathname)
   const data = useStaticQuery(graphql` {
     allFile(filter: { name: { eq: "resume" } }) {
       edges {
@@ -13,6 +13,10 @@ const Navbar = (props) => {
       }
     }
   }`)
+
+  const isActive = ({ isCurrent }) => {
+    return 'active'
+  }
 
   return (
     <nav className="navbar navbar-expand-lg" aria-label="Navbar site">
