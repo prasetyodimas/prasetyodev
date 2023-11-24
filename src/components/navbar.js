@@ -1,8 +1,12 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
 const Navbar = props => {
+
+  const [navbarState, setNavbarState] = useState('d-none');
+  const [isActive, setIsActive] = useState(false);
+
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { name: { eq: "resume" } }) {
@@ -16,6 +20,12 @@ const Navbar = props => {
     }
   `)
 
+  const handleToggle = () => {
+    setIsActive(!isActive)
+    const menuClassActive = !isActive ? 'd-block' : 'd-none';
+    setNavbarState(menuClassActive)
+  }
+
   return (
     <nav className="navbar navbar-expand-lg" aria-label="Navbar site">
       <div className="container">
@@ -27,11 +37,12 @@ const Navbar = props => {
           type="button"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => handleToggle()}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="navbar-collapse collapse justify-content-md-end">
+        <div className={`navbar-collapse justify-content-md-end ${navbarState}`}>
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/">
