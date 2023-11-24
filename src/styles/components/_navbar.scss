@@ -52,12 +52,15 @@ nav.navbar {
           text-decoration-thickness: 2px;
         }
       }
+      
+      a.active {
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
     }
 
-    a.active {
-      background: none;
-      box-shadow: none;
-    }
+
 
     > {
       .show .dropdown-item {
