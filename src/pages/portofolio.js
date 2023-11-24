@@ -60,7 +60,7 @@ const Portofolio = ({ location }) => {
             title="AMHES - Amertana Hospital Enterprise Sistem"
             descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
             path="../src/images/profile-pic"
-            tags="PWA, Web-Application"
+            tags="Web-Application"
           >
           </Cards>
         </div>

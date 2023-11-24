@@ -1,8 +1,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from 'gatsby'
 
 const Navbar = (props) => {
-  console.log(props.location.pathname)
   const data = useStaticQuery(graphql` {
     allFile(filter: { name: { eq: "resume" } }) {
       edges {
@@ -14,10 +14,6 @@ const Navbar = (props) => {
     }
   }`)
 
-  const isActive = ({ isCurrent }) => {
-    return 'active'
-  }
-
   return (
     <nav className="navbar navbar-expand-lg" aria-label="Navbar site">
       <div className="container">
@@ -28,10 +24,10 @@ const Navbar = (props) => {
 
         <div className="navbar-collapse collapse justify-content-md-end">
           <ul className="navbar-nav mb-2 mb-lg-0">
-            <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-            <li className="nav-item"><a className="nav-link" href="/portofolio">Portofolio</a></li>
-            <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
+            <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/about">About</Link></li>
+            <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/portofolio">Portofolio</Link></li>
+            <li className="nav-item"><Link className="nav-link" activeClassName="active" to="/blog">Blog</Link></li>
             {data.allFile.edges.map((file, index) => {
               return (
                 <li className="nav-item" key={`pdf-${index}`}>

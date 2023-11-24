@@ -7,7 +7,6 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
-  console.log(isRootPath);
 
   if (isRootPath) {
     header = (
@@ -47,7 +46,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <Fragment>
-      <Navbar title={header} location={location}/>
+      <Navbar title={header}/>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main className="container">{children}</main>
         <Footer/>
