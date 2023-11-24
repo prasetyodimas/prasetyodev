@@ -44,341 +44,304 @@ const Skills = () => {
       <h4>Skill & Tools</h4>
       <BlockElement className="row mt-5 mb-5 p-5" component="div">
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={HtmlIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={HtmlIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={CssIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={CssIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={JsIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={JsIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={TsIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={TsIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={SassIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={SassIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={AngularIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={AngularIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GatsbyIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GatsbyIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={JqueryIcon}
-              alt="icon"
-              className="img-fluid pl-5 pr-5"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={JqueryIcon} alt="icon" className="img-fluid pl-5 pr-5" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={LaravelIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={LaravelIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={ReactIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={ReactIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={NotionIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={NotionIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={BootstrapIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={BootstrapIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GithubIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GithubIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GitlabIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GitlabIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={VuetifyIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={VuetifyIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={VueIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={VueIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={StylusIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={StylusIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={PhpIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={PhpIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={PugIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={PugIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={WebpackIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={WebpackIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={NpmIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={NpmIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={MysqlIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={MysqlIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GulpIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GulpIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={NodeIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={NodeIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={VscodeIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={VscodeIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={WebstromIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={WebstromIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={MuireactIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={MuireactIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={PostmanIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={PostmanIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={XamppIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={XamppIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={FigmaIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={FigmaIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={HandlebarIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={HandlebarIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={BitbucketIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={BitbucketIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={JiraIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={JiraIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={StyledComponentIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={StyledComponentIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GoogleAnalyticsIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GoogleAnalyticsIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={GoogleTagIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={GoogleTagIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
         <div className="col-sm-12 col-md-2 col-lg-2 mt-5">
-          <BlockElement className="d-flex justify-content-center" component="span">
-            <img
-              src={NetlifyIcon}
-              alt="icon"
-              className="img-fluid"
-            />
+          <BlockElement
+            className="d-flex justify-content-center"
+            component="span"
+          >
+            <img src={NetlifyIcon} alt="icon" className="img-fluid" />
           </BlockElement>
         </div>
       </BlockElement>
     </Fragment>
-  );
+  )
 }
 
 export default Skills

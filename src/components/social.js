@@ -1,8 +1,8 @@
 import React from "react"
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from "react-social-icons"
 
 const Social = () => {
-  return(
+  return (
     <div className="d-flex justify-content-start mb-3">
       <SocialIcon
         network="github"

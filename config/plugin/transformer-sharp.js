@@ -1,5 +1,3 @@
 module.exports = {
-  transformerSharpConfig: [
-    `gatsby-transformer-sharp`
-  ]
+  transformerSharpConfig: [`gatsby-transformer-sharp`],
 }

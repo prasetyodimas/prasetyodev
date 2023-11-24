@@ -3,11 +3,10 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Cards from "../components/cards"
 import { StaticImage } from "gatsby-plugin-image"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import Slider from "react-slick"
 
 const Portofolio = ({ location }) => {
-
   const settings = {
     dots: false,
     autoplay: true,
@@ -16,18 +15,21 @@ const Portofolio = ({ location }) => {
     autoplaySpeed: 3500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: "linear"
-  };
+    cssEase: "linear",
+  }
 
   return (
-    <Layout location={location} title={'Portofolio'}>
-      <Seo title="Portofolio"/>
+    <Layout location={location} title={"Portofolio"}>
+      <Seo title="Portofolio" />
       <div className="row py-lg-5">
         <div className="col-lg-9 col-md-8 mx-auto">
           <h1 className="fw-light">My Portofolio</h1>
           <p className="lead text-body-secondary">
-            In software development or technology projects, portfolio can refer to a collection of projects that are being managed or have been completed by a team or organization.
-            It includes projects such as software development, system implementation, technology integration, and other projects.
+            In software development or technology projects, portfolio can refer
+            to a collection of projects that are being managed or have been
+            completed by a team or organization. It includes projects such as
+            software development, system implementation, technology integration,
+            and other projects.
           </p>
         </div>
       </div>
@@ -61,8 +63,7 @@ const Portofolio = ({ location }) => {
             descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
             path="../src/images/profile-pic"
             tags="Web-Application"
-          >
-          </Cards>
+          ></Cards>
         </div>
         <div className="col">
           <Slider {...settings}>
@@ -100,8 +101,7 @@ const Portofolio = ({ location }) => {
             descriptions="Marzoom is an application that is used to help pricebook users based on the PWA mobile application in searching for information and looking for the cheapest prices as well as being able to find sources of accurate data and high credibility from online and offline (o2o) stores."
             path="../src/images/profile-pic"
             tags="PWA, Web-Application"
-          >
-          </Cards>
+          ></Cards>
         </div>
         <div className="col">
           <Slider {...settings}>
@@ -132,8 +132,7 @@ const Portofolio = ({ location }) => {
             descriptions="Pricebook Partner is an application used to help shop partners or partners of our company, with the PWA mobile application used to manage inventory data, sales analysis, user behavior, user visitors and shop branding in selling gadgets."
             path="../src/images/profile-pic"
             tags="PWA, Web-Application"
-          >
-          </Cards>
+          ></Cards>
         </div>
         <div className="col">
           <StaticImage
@@ -148,8 +147,7 @@ const Portofolio = ({ location }) => {
             descriptions="The ultimate e-invoicing app tailored to empower MSMEs. With Sabi E-Invoicing, small and medium-sized MSMEs can effortlessly manage and organize their invoicing data, ensuring precision and clarity in their financial records. This invaluable tool not only streamlines your invoicing process but also compiles comprehensive financial histories, making it a breeze for users to request loans and financial services."
             path="../src/images/profile-pic"
             tags="Web-Application"
-          >
-          </Cards>
+          ></Cards>
         </div>
       </div>
     </Layout>
@@ -157,7 +155,7 @@ const Portofolio = ({ location }) => {
 }
 
 Portofolio.propTypes = {
-  location: PropTypes.object
-};
+  location: PropTypes.object,
+}
 
 export default Portofolio

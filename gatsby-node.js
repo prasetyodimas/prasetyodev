@@ -139,9 +139,9 @@ exports.createSchemaCustomization = ({ actions }) => {
 }
 
 exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   if (page.path.match(/^\/?404\/?$/)) {
-    page.matchPath = "/*";
+    page.matchPath = "/*"
     createPage(page)
   }
 }
@@ -149,16 +149,18 @@ exports.onCreatePage = async ({ page, actions }) => {
 exports.onCreateWebpackConfig = ({ loaders, actions }) => {
   actions.setWebpackConfig({
     node: {
-      fs: 'empty'
-    }
+      fs: "empty",
+    },
   })
 
   actions.setWebpackConfig({
     module: {
-      rules: [{
-        test: /canvas/,
-        use: loaders.null()
-      }]
-    }
+      rules: [
+        {
+          test: /canvas/,
+          use: loaders.null(),
+        },
+      ],
+    },
   })
 }

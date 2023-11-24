@@ -15,10 +15,10 @@ const Seo = ({ description, title, children }) => {
         site {
           siteMetadata {
             title
-            keywords,
+            keywords
             description
             social {
-              facebook,
+              facebook
               linkedin
             }
           }

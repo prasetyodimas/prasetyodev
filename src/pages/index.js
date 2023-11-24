@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 export const pageQuery = graphql`
   {
@@ -37,15 +37,15 @@ const IndexSite = ({ data, location }) => {
   return (
     <Fragment>
       <Layout location={location} title={siteTitle}>
-        <Hero className="container"/>
+        <Hero className="container" />
       </Layout>
     </Fragment>
   )
 }
 
 IndexSite.propTypes = {
-  location: PropTypes.object
-};
+  location: PropTypes.object,
+}
 
 export default IndexSite
 
@@ -56,7 +56,5 @@ export default IndexSite
  */
 export const Head = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
-  return (
-    <Seo title={`${authorName} Frontend Developer`} />
-  )
+  return <Seo title={`${authorName} Frontend Developer`} />
 }

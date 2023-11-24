@@ -1,15 +1,15 @@
-const { notionConfig } = require('./plugin/notion');
-const { sourceSystemConfig } = require('./plugin/source-system');
-const { sharpConfig } = require('./plugin/sharp');
-const { transformerSharpConfig } = require('./plugin/transformer-sharp');
-const { imageConfig } = require('./plugin/image');
-const { feedConfig } = require('./plugin/feed');
-const { transformerRemarkConfig } = require('./plugin/transformer-remark');
-const { cssPrepocessorConfig } = require('./plugin/css-prepocessor');
-const { sitemapConfig } = require('./plugin/sitemap');
-const { manifestConfig } = require('./plugin/manifest');
-const { pwaConfig } = require('./plugin/pwa-offilne');
-const { trackingGaConfig } = require('./plugin/google-analytics');
+const { notionConfig } = require("./plugin/notion")
+const { sourceSystemConfig } = require("./plugin/source-system")
+const { sharpConfig } = require("./plugin/sharp")
+const { transformerSharpConfig } = require("./plugin/transformer-sharp")
+const { imageConfig } = require("./plugin/image")
+const { feedConfig } = require("./plugin/feed")
+const { transformerRemarkConfig } = require("./plugin/transformer-remark")
+const { cssPrepocessorConfig } = require("./plugin/css-prepocessor")
+const { sitemapConfig } = require("./plugin/sitemap")
+const { manifestConfig } = require("./plugin/manifest")
+const { pwaConfig } = require("./plugin/pwa-offilne")
+const { trackingGaConfig } = require("./plugin/google-analytics")
 
 module.exports = {
   trackingGaConfig: trackingGaConfig,

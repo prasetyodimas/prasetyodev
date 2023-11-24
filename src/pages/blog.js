@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Bio from "../components/bio"
 import BlockElement from "../components/blockElement"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 export const pageQuery = graphql`
   {
@@ -34,7 +34,7 @@ const Blog = ({ data, location }) => {
 
   return (
     <Layout location={location} title={`Blog`}>
-      <Seo title="Blog"/>
+      <Seo title="Blog" />
       <BlockElement className="blog-wrapper" component="div">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
@@ -68,7 +68,7 @@ const Blog = ({ data, location }) => {
           })}
         </ol>
         <div className="d-flex justify-content-center p-4">
-          <Bio className="mt-5"/>
+          <Bio className="mt-5" />
         </div>
       </BlockElement>
     </Layout>
@@ -76,7 +76,7 @@ const Blog = ({ data, location }) => {
 }
 
 Blog.propTypes = {
-  location: PropTypes.object
-};
+  location: PropTypes.object,
+}
 
 export default Blog

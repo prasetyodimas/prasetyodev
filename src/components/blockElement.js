@@ -1,18 +1,22 @@
 import React, { Fragment } from "react"
 
-const BlockElement = ({className, children, component, type = ""}) => {
-
-  let componentType;
-  if (component === 'div') {
+const BlockElement = ({ className, children, component, type = "" }) => {
+  let componentType
+  if (component === "div") {
     componentType = (
-      <div className={className}
+      <div
+        className={className}
         style={{
-          ...type ? {
-            minHeight: '500px',
-          } : {},
-          ...type === 'auto' ? {
-            height: 'auto',
-          } : {}
+          ...(type
+            ? {
+                minHeight: "500px",
+              }
+            : {}),
+          ...(type === "auto"
+            ? {
+                height: "auto",
+              }
+            : {}),
         }}
       >
         {children}
@@ -20,16 +24,21 @@ const BlockElement = ({className, children, component, type = ""}) => {
     )
   }
 
-  if (component === 'span') {
+  if (component === "span") {
     componentType = (
-      <span className={className}
+      <span
+        className={className}
         style={{
-          ...type ? {
-            minHeight: '500px',
-          } : {},
-          ...type === 'auto' ? {
-            height: 'auto',
-          } : {}
+          ...(type
+            ? {
+                minHeight: "500px",
+              }
+            : {}),
+          ...(type === "auto"
+            ? {
+                height: "auto",
+              }
+            : {}),
         }}
       >
         {children}
@@ -37,9 +46,7 @@ const BlockElement = ({className, children, component, type = ""}) => {
     )
   }
 
-  return(
-    <Fragment>{componentType}</Fragment>
-  )
+  return <Fragment>{componentType}</Fragment>
 }
 
 export default BlockElement
