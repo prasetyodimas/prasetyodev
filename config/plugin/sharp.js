@@ -1,5 +1,3 @@
 module.exports = {
-  sharpConfig: [
-    `gatsby-plugin-sharp`
-  ]
+  sharpConfig: [`gatsby-plugin-sharp`],
 }

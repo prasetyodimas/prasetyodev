@@ -1,5 +1,3 @@
 module.exports = {
-  cssPrepocessorConfig: [
-    `gatsby-plugin-sass`
-  ]
+  cssPrepocessorConfig: [`gatsby-plugin-sass`],
 }

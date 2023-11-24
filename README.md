@@ -10,7 +10,6 @@
   </p>
 </div>
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -35,6 +34,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 The purpose of this application is to create a professional portfolio and blog.
@@ -43,14 +43,15 @@ The purpose of this application is to create a professional portfolio and blog.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Gatsby React Framework](https://www.gatsbyjs.com)
-* [CSS Prepocessor ( SCSS )](https://sass-lang.com)
-* [Markdown](https://www.markdownguide.org)
-* [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/login)
-* [Jamstack](https://jamstack.org)
-* [GraphQL](https://graphql.org/)
+- [Gatsby React Framework](https://www.gatsbyjs.com)
+- [CSS Prepocessor ( SCSS )](https://sass-lang.com)
+- [Markdown](https://www.markdownguide.org)
+- [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/login)
+- [Jamstack](https://jamstack.org)
+- [GraphQL](https://graphql.org/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -59,7 +60,8 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
@@ -72,11 +74,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. How to running`
+3. How to running`
    ```
    npm run start / gatsby develop
    ```
@@ -96,7 +98,6 @@ _For more examples, please refer to the [Documentation](https://www.gatsbyjs.com
 Linkedin : [@Dimas Prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
 
 Email : dimasprasetyo485@gmail.com
-
 
 ## Holopin
 

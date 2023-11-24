@@ -1,13 +1,12 @@
 import React from "react"
 import { navigate } from "gatsby"
 
-const Buttons = ({children, propClass, propRedirect}) => {
-
+const Buttons = ({ children, propClass, propRedirect }) => {
   const onRedirection = () => {
-    navigate(`${propRedirect}`);
+    navigate(`${propRedirect}`)
   }
 
-  return(
+  return (
     <button className={`${propClass}`} onClick={onRedirection}>
       {children}
       <span className="btn-bloby__inner">

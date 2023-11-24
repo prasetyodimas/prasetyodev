@@ -26,21 +26,25 @@ const Hero = () => {
           <div className="col-xs-12 col-sm-8 col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               <Typewriter
-                onInit={(typewriter) => {
+                onInit={typewriter => {
                   typewriter
-                  .typeString(`Frontend Developer Specialist _`)
-                  .pauseFor(1000)
-                  .start();
+                    .typeString(`Frontend Developer Specialist _`)
+                    .pauseFor(1000)
+                    .start()
                 }}
               />
             </h1>
             <p className="lead text-transform-minus-2">
-              A seasoned <b>Frontend Developer Specialist</b> with <b>5++</b> years of experience is a highly skilled professional
-              who specializes in creating and maintaining the user interface <b>(UI)</b> and user experience <b>(UX)</b> of web applications.
+              A seasoned <b>Frontend Developer Specialist</b> with <b>5++</b>{" "}
+              years of experience is a highly skilled professional who
+              specializes in creating and maintaining the user interface{" "}
+              <b>(UI)</b> and user experience <b>(UX)</b> of web applications.
             </p>
-            <Social/>
+            <Social />
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <Buttons propClass="btn-bloby" propRedirect="/about">Know more about me</Buttons>
+              <Buttons propClass="btn-bloby" propRedirect="/about">
+                Know more about me
+              </Buttons>
             </div>
           </div>
         </div>

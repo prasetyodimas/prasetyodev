@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
-require('dotenv').config()
+require("dotenv").config()
 const {
   sharpConfig,
   sourceSystemConfig,
@@ -20,11 +20,9 @@ const {
   sitemapConfig,
   manifestConfig,
   pwaConfig,
-  trackingGaConfig
-} = require('./config/plugins-gatbsby');
-const {
-  configSiteMetaData
-} = require('./config/metadata-gatsby');
+  trackingGaConfig,
+} = require("./config/plugins-gatbsby")
+const { configSiteMetaData } = require("./config/metadata-gatsby")
 
 module.exports = {
   ...configSiteMetaData,
@@ -39,6 +37,6 @@ module.exports = {
     ...transformerSharpConfig,
     ...manifestConfig,
     ...pwaConfig,
-    ...trackingGaConfig
-  ]
+    ...trackingGaConfig,
+  ],
 }
