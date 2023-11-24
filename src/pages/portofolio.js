@@ -149,6 +149,21 @@ const Portofolio = ({ location }) => {
             tags="Web-Application"
           ></Cards>
         </div>
+        <div className="col">
+          <StaticImage
+            src="../images/my-porto/sabi/sabi-landing.png"
+            alt="sabi-landing-page"
+            width={500}
+            height={330}
+            quality={95}
+          />
+          <Cards
+            title="Sabi Landing Page - ( LaaS )"
+            descriptions="Sabi are account aggregator solution that provides access to business solutions with integrated financing aimed at micro and small business owners. Sabi operates as a member of the Investree Group, which is under the supervision and licensing of the Financial Services Authority (OJK)."
+            path="../src/images/profile-pic"
+            tags="Web-Application"
+          ></Cards>
+        </div>
       </div>
     </Layout>
   )
