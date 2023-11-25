@@ -4,6 +4,9 @@
 .main-heading {
   font-size: $fontSize-4;
   margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-2;
+  }
 }
 
 .blog-wrapper {

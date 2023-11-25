@@ -19,7 +19,7 @@ const Hero = () => {
                 quality={95}
                 alt="Profile picture"
                 loading="lazy"
-                className="img-fluid avatar-wobble"
+                className="img-fluid avatar-wobble heros-content-img"
               />
             </span>
           </div>
