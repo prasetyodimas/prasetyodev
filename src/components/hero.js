@@ -5,6 +5,7 @@ import Buttons from "../components/buttons"
 import Social from "../components/social"
 
 const Hero = () => {
+
   return (
     <Fragment>
       <div className="col-lg-12 col-xxl-12 px-4 py-5">
@@ -12,11 +13,7 @@ const Hero = () => {
           <div className="col-xs-12 col-sm-8 col-lg-6">
             <span className="d-flex justify-content-lg-end p-2">
               <StaticImage
-                layout="fixed"
                 src="../images/profile-pic.png"
-                width={500}
-                height={500}
-                quality={95}
                 alt="Profile picture"
                 loading="lazy"
                 className="img-fluid avatar-wobble heros-content-img"
