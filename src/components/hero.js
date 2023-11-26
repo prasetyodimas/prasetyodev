@@ -5,7 +5,6 @@ import Buttons from "../components/buttons"
 import Social from "../components/social"
 
 const Hero = () => {
-
   return (
     <Fragment>
       <div className="col-lg-12 col-xxl-12 px-4 py-5">
