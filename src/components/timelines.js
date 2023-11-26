@@ -10,8 +10,8 @@ const Timelines = () => {
   return (
     <Fragment>
       <h4>Experience</h4>
-      <BlockElement className="p-5 mb-5 mt-5" component="span">
-        <blockquote className="m-5">
+      <BlockElement className="p-5 mb-5 mt-5 experience-content" component="span">
+        <blockquote className="m-5 content-blockqote">
           <p className="text-center">
             "<b>Experience is a fundamental aspect of human life </b>that
             involves learning and personal growth through direct interaction

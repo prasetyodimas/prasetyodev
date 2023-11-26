@@ -1,0 +1,15 @@
+@import "../variables/typography";
+
+.experience-content {
+  display: block;
+  @media screen and (max-width: 600px) {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .content-blockqote {
+    @media screen and (max-width: 600px) {
+      margin: 45px 35px 45px 35px !important;
+      font-size: $fontSize-1;
+    }
+  }
+}
