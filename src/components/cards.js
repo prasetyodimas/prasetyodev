@@ -1,11 +1,10 @@
 import React, { Fragment } from "react"
-import { navigate } from "@reach/router"
 
 const cards = ({ title, descriptions, tags, cta = "" }) => {
   const callToActionPreview = (e, urls) => {
     e.preventDefault()
     if (urls.length > 0) {
-      window.open(`${urls}`, "_blank");
+      window.open(`${urls}`, "_blank")
     }
     return
   }
