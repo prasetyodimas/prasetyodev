@@ -154,7 +154,7 @@ const Portofolio = ({ location }) => {
             quality={95}
           />
           <Cards
-            title="Sungnikah dot(com)"
+            title="Sungnikah.(com)"
             descriptions="Sungnikah is a provider of digital wedding/wedding invitation services such as wedding website design, wedding ceremony design, and souvenir invitation design and brings together clients/users and wedding vendors."
             tags="Web-Application"
             cta="https://sungnikah.com"
@@ -169,7 +169,7 @@ const Portofolio = ({ location }) => {
             quality={95}
           />
           <Cards
-            title="Sabi Landing Page - ( LaaS )"
+            title="Sabi ( LaaS )"
             descriptions="Sabi are account aggregator solution that provides access to business solutions with integrated financing aimed at micro and small business owners. Sabi operates as a member of the Investree Group, which is under the supervision and licensing of the Financial Services Authority (OJK)."
             tags="Web-Application"
             cta="https://getsabi.id"
