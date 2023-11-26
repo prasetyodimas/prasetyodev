@@ -21,9 +21,9 @@ const Portofolio = ({ location }) => {
   return (
     <Layout location={location} title={"Portofolio"}>
       <Seo title="Portofolio" />
-      <div className="row py-lg-5">
-        <div className="col-lg-9 col-md-8 mx-auto">
-          <h1 className="fw-light">My Portofolio</h1>
+      <div className="row content-of-porto py-lg-5">
+        <div className="col-lg-9 col-md-10 mx-auto">
+          <h2 className="heading-porto font-weight font-bold">My Portofolio</h2>
           <p className="lead text-body-secondary">
             In software development or technology projects, portfolio can refer
             to a collection of projects that are being managed or have been
@@ -33,7 +33,7 @@ const Portofolio = ({ location }) => {
           </p>
         </div>
       </div>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-3 g-3 mb-5">
         <div className="col">
           <Slider {...settings}>
             <StaticImage
