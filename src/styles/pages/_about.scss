@@ -1,4 +1,9 @@
 .section-about-me {
   padding: 2em;
   margin-top: 3em;
+  @media screen and (max-width: 600px) {
+    .spacer-0-sm {
+      padding: 0;
+    }
+  }
 }

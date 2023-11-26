@@ -15,9 +15,9 @@ const About = ({ location }) => {
       <BlockElement component="div" className="d-flex section-about-me row">
         <BlockElement
           component="div"
-          className="col-sm-12 col-md-8 col-lg-10 order-2 order-sm-1 order-md-1 order-lg-1"
+          className="col-sm-12 col-md-8 col-lg-10 order-2 order-sm-1 order-md-1 order-lg-1 spacer-0-sm"
         >
-          <p>
+          <p className="about-intro">
             Great to see you here! I am Dimas Prasetyo, a Diploma Degree
             graduate from Technology of Yogyakarta University.
             <br />I am a <b>Frontend Developer Specialist</b>, I have
@@ -37,17 +37,13 @@ const About = ({ location }) => {
         </BlockElement>
         <BlockElement
           component="div"
-          className="col-sm-12 col-md-4 col-lg-2 order-1 order-sm-1 order-md-1 order-lg-2 mb-3"
+          className="col-sm-12 col-md-4 col-lg-2 order-1 order-sm-1 order-md-1 order-lg-2 mb-5"
         >
           <StaticImage
-            layout="fixed"
             src="../images/profile-pic.png"
-            width={200}
-            height={200}
-            quality={95}
             alt="Profile picture"
             loading="lazy"
-            className="img-fluid rounded mx-auto"
+            className="img-fluid avatar-wobble heros-content-img"
           />
         </BlockElement>
       </BlockElement>

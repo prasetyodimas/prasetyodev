@@ -52,7 +52,7 @@ nav.navbar {
           text-decoration-thickness: 2px;
         }
       }
-      
+
       a.active {
         font-weight: bolder;
         text-decoration: underline;
@@ -75,6 +75,9 @@ nav.navbar {
         border-radius: 2px;
       }
     }
+  }
+  & .Typewriter {
+    padding-left: 15px;
   }
 }
 
