@@ -61,7 +61,6 @@ const Portofolio = ({ location }) => {
           <Cards
             title="AMHES - Amertana Hospital Enterprise Sistem"
             descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
-            path="../src/images/profile-pic"
             tags="Web-Application"
           ></Cards>
         </div>
@@ -99,7 +98,6 @@ const Portofolio = ({ location }) => {
           <Cards
             title="Marzoom"
             descriptions="Marzoom is an application that is used to help pricebook users based on the PWA mobile application in searching for information and looking for the cheapest prices as well as being able to find sources of accurate data and high credibility from online and offline (o2o) stores."
-            path="../src/images/profile-pic"
             tags="PWA, Web-Application"
           ></Cards>
         </div>
@@ -130,7 +128,6 @@ const Portofolio = ({ location }) => {
           <Cards
             title="Mitra"
             descriptions="Pricebook Partner is an application used to help shop partners or partners of our company, with the PWA mobile application used to manage inventory data, sales analysis, user behavior, user visitors and shop branding in selling gadgets."
-            path="../src/images/profile-pic"
             tags="PWA, Web-Application"
           ></Cards>
         </div>
@@ -145,22 +142,35 @@ const Portofolio = ({ location }) => {
           <Cards
             title="E-Invoicing"
             descriptions="The ultimate e-invoicing app tailored to empower MSMEs. With Sabi E-Invoicing, small and medium-sized MSMEs can effortlessly manage and organize their invoicing data, ensuring precision and clarity in their financial records. This invaluable tool not only streamlines your invoicing process but also compiles comprehensive financial histories, making it a breeze for users to request loans and financial services."
-            path="../src/images/profile-pic"
             tags="Web-Application"
           ></Cards>
         </div>
         <div className="col">
           <StaticImage
-            src="../images/my-porto/sabi/sabi-landing.png"
+            src="../images/my-porto/sungnikah/sungnikah.png"
+            alt="sungnikah"
+            width={500}
+            height={330}
+            quality={95}
+          />
+          <Cards
+            title="Sungnikah.(com)"
+            descriptions="Sungnikah is a provider of digital wedding/wedding invitation services such as wedding website design, wedding ceremony design, and souvenir invitation design and brings together clients/users and wedding vendors."
+            tags="Web-Application"
+            cta="https://sungnikah.com"
+          ></Cards>
+        </div>
+        <div className="col">
+          <StaticImage
+            src="../images/my-porto/sabi/sabi-landing-1.png"
             alt="sabi-landing-page"
             width={500}
             height={330}
             quality={95}
           />
           <Cards
-            title="Sabi Landing Page - ( LaaS )"
+            title="Sabi ( LaaS )"
             descriptions="Sabi are account aggregator solution that provides access to business solutions with integrated financing aimed at micro and small business owners. Sabi operates as a member of the Investree Group, which is under the supervision and licensing of the Financial Services Authority (OJK)."
-            path="../src/images/profile-pic"
             tags="Web-Application"
             cta="https://getsabi.id"
           ></Cards>
