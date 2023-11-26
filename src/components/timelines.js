@@ -31,9 +31,11 @@ const Timelines = () => {
           date="2022 - present"
           iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
         >
-          <h3 className="vertical-timeline-element-title">Frontend Lead</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h3 className="vertical-timeline-element-title">
             PT Sahabat Bisnis Inovasi
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Frontend Lead
           </h4>
           <p>
             Team Leadership · Communication · Problem Solving · Cross-browser
@@ -49,10 +51,10 @@ const Timelines = () => {
           iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Sr. Frontend Developer
+            PT Sahabat Bisnis Inovasi
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            PT Sahabat Bisnis Inovasi
+            Sr. Frontend Developer
           </h4>
           <p>
             Problem Solving · Cross-browser Compatibility · Analytical Skills ·
@@ -67,10 +69,10 @@ const Timelines = () => {
           iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Frontend Developer
+            PT Pricebook Digital Indonesia
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            PT Pricebook Digital Indonesia
+            Frontend Developer
           </h4>
           <p>
             Redux.js · REST APIs · SCSS · Progressive Web Applications (PWAs) ·
@@ -84,10 +86,10 @@ const Timelines = () => {
           iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Jr. Frontend Developer
+            Amtek Labs ( Software House / IT Consultant )
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Amtek Labs ( Software House / IT Consultant )
+            Jr. Frontend Developer
           </h4>
           <p>
             Bootstrap · Laravel · Google Material Design · Vue · Laravel ·
