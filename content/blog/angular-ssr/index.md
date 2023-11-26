@@ -125,7 +125,7 @@ Ini berarti bahwa segala sesuatu yang berpotensi mengurangi kecepatan aplikasi d
 1. “\***\*window”\*\*** contoh jika kita menggunakan window.location.href =’target_link’
 2. “**\*\***document**\*\***” contoh jika kita ingin memanipulasi DOM element misal document.getElementById(’your_class_name’).
 3. “**navigator**” contoh jika kita ingin enable service worker **_( webworker )_** untuk kerpeluan **PWA.**
-4. “************\*\*\*\*************strategy guard************\*\*\*\*************”
+4. “\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***strategy guard\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***”
 5. Initial Rendering menjadi lambat saat ini masih di cari solusinya.
 
 **Solusi** untuk mengatasi error tersebut :

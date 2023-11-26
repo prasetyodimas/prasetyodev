@@ -10,7 +10,10 @@ const Timelines = () => {
   return (
     <Fragment>
       <h4>Experience</h4>
-      <BlockElement className="p-5 mb-5 mt-5 experience-content" component="span">
+      <BlockElement
+        className="p-5 mb-5 mt-5 experience-content"
+        component="span"
+      >
         <blockquote className="m-5 content-blockqote">
           <p className="text-center">
             "<b>Experience is a fundamental aspect of human life </b>that
@@ -34,9 +37,7 @@ const Timelines = () => {
           <h3 className="vertical-timeline-element-title">
             PT Sahabat Bisnis Inovasi
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Frontend Lead
-          </h4>
+          <h4 className="vertical-timeline-element-subtitle">Frontend Lead</h4>
           <p>
             Team Leadership · Communication · Problem Solving · Cross-browser
             Compatibility · Analytical Skills · TypeScript · PrimeNG · Vuetify ·

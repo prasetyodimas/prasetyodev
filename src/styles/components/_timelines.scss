@@ -23,11 +23,11 @@
     }
   }
   & > .vertical-timeline-element-subtitle {
-    font-size: $fontSize-0;
+    font-size: $fontSize-1;
     font-weight: 300;
     margin-bottom: 10px;
   }
   & p {
-    font-size: $fontSize-0 !important;
+    font-size: $fontSize-0;
   }
 }

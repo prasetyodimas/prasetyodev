@@ -37,6 +37,6 @@ module.exports = {
     ...transformerSharpConfig,
     ...manifestConfig,
     ...pwaConfig,
-    ...trackingGaConfig
+    ...trackingGaConfig,
   ],
 }

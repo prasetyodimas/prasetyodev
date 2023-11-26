@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import imageOpenG from "../images/logo/dp.png";
+import imageOpenG from "../images/logo/dp.png"
 
 const Seo = ({ description, title, children }) => {
   const { site } = useStaticQuery(

@@ -3,9 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
 const Navbar = props => {
-
-  const [navbarState, setNavbarState] = useState('d-none');
-  const [isActive, setIsActive] = useState(false);
+  const [navbarState, setNavbarState] = useState("d-none")
+  const [isActive, setIsActive] = useState(false)
 
   const data = useStaticQuery(graphql`
     {
@@ -22,7 +21,7 @@ const Navbar = props => {
 
   const handleToggle = () => {
     setIsActive(!isActive)
-    const menuClassActive = !isActive ? 'd-block' : 'd-none';
+    const menuClassActive = !isActive ? "d-block" : "d-none"
     setNavbarState(menuClassActive)
   }
 
@@ -42,7 +41,9 @@ const Navbar = props => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`navbar-collapse justify-content-md-end ${navbarState}`}>
+        <div
+          className={`navbar-collapse justify-content-md-end ${navbarState}`}
+        >
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/">
