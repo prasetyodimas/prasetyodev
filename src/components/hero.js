@@ -7,9 +7,9 @@ import Social from "../components/social"
 const Hero = () => {
   return (
     <Fragment>
-      <div className="col-lg-12 col-xxl-12 px-4 py-5">
+      <div className="col-lg-12 col-md-12 col-xxl-12 px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center g-5">
-          <div className="col-xs-12 col-sm-8 col-lg-6">
+          <div className="col-xs-12 col-sm-8 col-md-5 col-lg-6">
             <span className="d-flex justify-content-lg-end p-2">
               <StaticImage
                 src="../images/profile-pic.png"
@@ -19,7 +19,7 @@ const Hero = () => {
               />
             </span>
           </div>
-          <div className="col-xs-12 col-sm-8 col-lg-6">
+          <div className="col-xs-12 col-sm-8 col-md-7 col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               <Typewriter
                 onInit={typewriter => {
