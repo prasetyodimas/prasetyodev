@@ -1,0 +1,15 @@
+.content-skillset {
+  display: block;
+  margin-top: 15px;
+  @media screen and (max-width: 600px) {
+    margin-top: 5px;
+  }
+  & img.skill-img path {
+    max-width: 100%;
+    width: 100%;
+    @media screen and (min-width: 1068px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
