@@ -162,6 +162,7 @@ const Portofolio = ({ location }) => {
             descriptions="Sabi are account aggregator solution that provides access to business solutions with integrated financing aimed at micro and small business owners. Sabi operates as a member of the Investree Group, which is under the supervision and licensing of the Financial Services Authority (OJK)."
             path="../src/images/profile-pic"
             tags="Web-Application"
+            cta="https://getsabi.id"
           ></Cards>
         </div>
       </div>
