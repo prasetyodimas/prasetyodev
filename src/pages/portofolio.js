@@ -175,6 +175,21 @@ const Portofolio = ({ location }) => {
             cta="https://getsabi.id"
           ></Cards>
         </div>
+        <div className="col">
+          <StaticImage
+            src="../images/my-porto/uiii/digital-library-uiii.png"
+            alt="sabi-landing-page"
+            width={500}
+            height={330}
+            quality={95}
+          />
+          <Cards
+            title="UIII Digital Library Aggregator Systems"
+            descriptions="Digital Library Aggregator System, the purpose of this application can be used in various campus or academic institutions, combining information from the OJS, EPRINTS, SLIMS platforms by making it easy to search for information on one platform which includes information on journal data, dissertations, etc."
+            tags="Web-Application"
+            cta="https://library.uiii.ac.id"
+          ></Cards>
+        </div>
       </div>
     </Layout>
   )
