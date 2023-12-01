@@ -21,6 +21,7 @@ const {
   manifestConfig,
   pwaConfig,
   trackingGaConfig,
+  robotTxtConfig,
 } = require("./config/plugins-gatbsby")
 const { configSiteMetaData } = require("./config/metadata-gatsby")
 
@@ -28,6 +29,7 @@ module.exports = {
   ...configSiteMetaData,
   plugins: [
     ...sitemapConfig,
+    ...robotTxtConfig,
     ...imageConfig,
     ...sharpConfig,
     ...feedConfig,

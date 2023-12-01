@@ -10,6 +10,7 @@ const { sitemapConfig } = require("./plugin/sitemap")
 const { manifestConfig } = require("./plugin/manifest")
 const { pwaConfig } = require("./plugin/pwa-offilne")
 const { trackingGaConfig } = require("./plugin/google-analytics")
+const { robotTxtConfig } = require("./plugin/robot-txt")
 
 module.exports = {
   trackingGaConfig: trackingGaConfig,
@@ -24,4 +25,5 @@ module.exports = {
   sitemapConfig: sitemapConfig,
   pwaConfig: pwaConfig,
   manifestConfig: manifestConfig,
+  robotTxtConfig: robotTxtConfig,
 }
