@@ -2,16 +2,18 @@ import React, { Fragment } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Ebook = () => {
-  const data = useStaticQuery(graphql` {
-    allFile(filter: { extension: { in: "pdf" } }) {
-      edges {
-        node {
-          publicURL
-          name
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { in: "pdf" } }) {
+        edges {
+          node {
+            publicURL
+            name
+          }
         }
       }
     }
-  }`)
+  `)
 
   return (
     <Fragment>
@@ -20,7 +22,8 @@ const Ebook = () => {
         {data.allFile.edges.map((file, index) => {
           return (
             <li key={`pdf-${index}`}>
-              <a href={file.node.publicURL}
+              <a
+                href={file.node.publicURL}
                 target="_blank"
                 rel="noreferrer"
                 download
@@ -32,8 +35,7 @@ const Ebook = () => {
         })}
       </ul>
     </Fragment>
-  );
-
+  )
 }
 
 export default Ebook

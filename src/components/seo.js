@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import imageOpenG from "../images/logo/dp.png"
 
 const Seo = ({ description, title, children }) => {
   const { site } = useStaticQuery(
@@ -15,10 +16,10 @@ const Seo = ({ description, title, children }) => {
         site {
           siteMetadata {
             title
-            keywords,
+            keywords
             description
             social {
-              facebook,
+              facebook
               linkedin
             }
           }
@@ -39,8 +40,10 @@ const Seo = ({ description, title, children }) => {
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={imageOpenG} />
       <meta property="og:keyword" content={metaKeywords} />
       <meta property="og:type" content="website" />
+
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:creator"
@@ -49,6 +52,7 @@ const Seo = ({ description, title, children }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:keyword" content={metaKeywords} />
+      <meta name="twitter:image" content={imageOpenG} />
       {children}
     </>
   )

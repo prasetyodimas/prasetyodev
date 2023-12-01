@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "./blockElement"
 
 const UnderConstruction = () => {
-  return(
+  return (
     <BlockElement
       className="underconstruct-content d-flex justify-content-center"
       component="div"

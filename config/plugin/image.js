@@ -1,5 +1,3 @@
 module.exports = {
-  imageConfig: [
-    `gatsby-plugin-image`
-  ]
+  imageConfig: [`gatsby-plugin-image`],
 }

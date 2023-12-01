@@ -36,19 +36,31 @@ nav.navbar {
         margin-right: 2rem;
       }
 
-      a.nav-link.nav-resume {
-        background-color: $color-primary;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        color: $white;
-        padding: 8px 20px 0 20px;
+      a.nav-link {
+        text-decoration: none;
+        &.nav-resume {
+          background-color: $color-primary;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          color: $white;
+          padding: 8px 20px 8px 20px;
+          margin: -5px 0 0 0;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+        }
+      }
+
+      a.active {
+        font-weight: bolder;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
       }
     }
 
-    a.active {
-      background: none;
-      box-shadow: none;
-    }
+
 
     > {
       .show .dropdown-item {
@@ -63,6 +75,9 @@ nav.navbar {
         border-radius: 2px;
       }
     }
+  }
+  & .Typewriter {
+    padding-left: 15px;
   }
 }
 

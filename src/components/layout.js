@@ -10,21 +10,21 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
+      <h1 className="main-heading header-app">
         <Typewriter
-          onInit={(typewriter) => {
+          onInit={typewriter => {
             typewriter
-            .typeString(`{${title}}`)
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString(`{ Dimas Prasetyo }`)
-            .pauseFor(1000)
-            .deleteAll()
-            .typeString("Welcome cheers :)")
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString(`{ Dimas Prasetyo }`)
-            .start();
+              .typeString(`{${title}}`)
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString(`{ Dimas Prasetyo }`)
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Welcome cheers :)")
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(`{ Dimas Prasetyo }`)
+              .start()
           }}
         />
       </h1>
@@ -33,11 +33,8 @@ const Layout = ({ location, title, children }) => {
     header = (
       <Fragment>
         <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-            .typeString(`${title}`)
-            .pauseFor(2000)
-            .start();
+          onInit={typewriter => {
+            typewriter.typeString(`${title}`).pauseFor(2000).start()
           }}
         />
       </Fragment>
@@ -46,10 +43,10 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <Fragment>
-      <Navbar title={header}/>
+      <Navbar title={header} />
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main className="container">{children}</main>
-        <Footer/>
+        <Footer />
       </div>
     </Fragment>
   )

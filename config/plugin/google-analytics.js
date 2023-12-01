@@ -1,19 +1,19 @@
-const config = require('gatsby-plugin-config');
+require("dotenv").config({
+  path: `.env`,
+})
 
 module.exports = {
   trackingGaConfig: [
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          `${config.GA_SECRET}`
-        ],
+        trackingIds: [`${process.env.GATSBY_GA_SECRET}`],
         pluginConfig: {
           head: true,
           respectDNT: true,
           delayOnRouteUpdate: 0,
         },
-      }
-    }
-  ]
+      },
+    },
+  ],
 }
