@@ -8,7 +8,7 @@ module.exports = {
         policy: [
           {
             userAgent: "*",
-            allow: "https://prasetyodev.gatsbyjs.io",
+            allow: "/",
           },
           {
             userAgent: "Mediapartners-Google",
