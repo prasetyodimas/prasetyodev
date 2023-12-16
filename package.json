@@ -41,21 +41,12 @@
     "pdfjs-dist": "^3.4.120",
     "prettier": "^2.8.8",
     "prismjs": "^1.29.0",
-<<<<<<< HEAD
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
-  "devDependencies": {
-    "dotenv": "^16.3.1",
-    "prettier": "^2.8.8"
-=======
     "react-slick": "^0.29.0",
     "react-social-icons": "^6.4.0",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.0",
     "slick-carousel": "^1.8.1",
     "typewriter-effect": "^2.21.0"
->>>>>>> 106e24efd13990257fa2dbf7849ce40364fc04a7
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
