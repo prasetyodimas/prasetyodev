@@ -181,10 +181,11 @@ const Generator = ({ location }) => {
         <div className="col col-md-4 col-lg-4">
           <div className="card p-4">
             <div class="form-group mb-3">
-              <label for="company_name" className="fw-bold">
+              <label htmlFor="company_name" className="fw-bold">
                 Company Name
               </label>
               <input
+                id="company_name"
                 type="text"
                 className="form-control"
                 style={{ width: "100%" }}
@@ -193,10 +194,11 @@ const Generator = ({ location }) => {
               />
             </div>
             <div class="form-group mb-3">
-              <label for="company_address_street" className="fw-bold">
+              <label htmlFor="company_address_street" className="fw-bold">
                 Company Address: Street
               </label>
               <textarea
+                id="company_address_street"
                 class="form-control"
                 rows="4"
                 style={{ width: "100%" }}
@@ -205,10 +207,11 @@ const Generator = ({ location }) => {
               ></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="company_address_city" className="fw-bold">
+              <label htmlFor="company_address_city" className="fw-bold">
                 Company Address: City
               </label>
               <textarea
+                id="company_address_city"
                 class="form-control"
                 rows="4"
                 style={{ width: "100%" }}
@@ -217,10 +220,11 @@ const Generator = ({ location }) => {
               ></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="dear_recepient" className="fw-bold">
+              <label htmlFor="dear_recepient" className="fw-bold">
                 Dear
               </label>
               <input
+                id="dear_recepient"
                 type="text"
                 className="form-control"
                 style={{ width: "100%" }}
@@ -229,10 +233,11 @@ const Generator = ({ location }) => {
               />
             </div>
             <div class="form-group mb-3">
-              <label for="1st-intro-yourself" className="fw-bold">
+              <label htmlFor="1st-intro-yourself" className="fw-bold">
                 1st Paragraph: Briefly Introduce Yourself
               </label>
               <textarea
+                id="1st-intro-yourself"
                 class="form-control"
                 rows="10"
                 style={{ width: "100%" }}
@@ -241,10 +246,11 @@ const Generator = ({ location }) => {
               ></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="1st-intro-yourself" className="fw-bold">
+              <label htmlFor="2st-why-join-company" className="fw-bold">
                 2nd Paragraph: Why You? Why this Company?
               </label>
               <textarea
+                id="2st-why-join-company"
                 class="form-control"
                 rows="12"
                 style={{ width: "100%" }}
@@ -253,10 +259,11 @@ const Generator = ({ location }) => {
               ></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="3rd-call-to-action" className="fw-bold">
+              <label htmlFor="3rd-call-to-action" className="fw-bold">
                 3rd Paragraph: Call to Action
               </label>
               <textarea
+                id="3rd-call-to-action"
                 class="form-control"
                 rows="15"
                 style={{ width: "100%" }}
@@ -265,10 +272,11 @@ const Generator = ({ location }) => {
               ></textarea>
             </div>
             <div class="form-group mb-3">
-              <label for="closing" className="fw-bold">
+              <label htmlFor="closing" className="fw-bold">
                 Closing
               </label>
               <input
+                id="closing"
                 type="text"
                 className="form-control"
                 style={{ width: "100%" }}
@@ -277,10 +285,11 @@ const Generator = ({ location }) => {
               />
             </div>
             <div class="form-group mb-3">
-              <label for="your_name" className="fw-bold">
+              <label htmlFor="your_name" className="fw-bold">
                 Your Name
               </label>
               <input
+                id="your_name"
                 type="text"
                 className="form-control"
                 style={{ width: "100%" }}
