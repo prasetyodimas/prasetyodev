@@ -1,0 +1,17 @@
+@import "../variables/typography";
+
+.bio {
+  font-size: $fontSize-0;
+  display: flex;
+  margin-bottom: $spacing-16;
+  & p {
+    margin-bottom: $spacing-0;
+  }
+}
+
+.bio-avatar {
+  margin-right: $spacing-4;
+  margin-bottom: $spacing-4;
+  min-width: 50px;
+  border-radius: 100%;
+}

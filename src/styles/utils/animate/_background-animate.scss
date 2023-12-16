@@ -1,0 +1,55 @@
+$bg-url: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InNtYWxsR3JpZCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YxZjBmMCIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KICAgIDwvcGF0dGVybj4KICAgIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI3NtYWxsR3JpZCkiLz4KICAgICAgPHBhdGggZD0iTSAxMDAgMCBMIDAgMCAwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjFmMGYwIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIgLz4KPC9zdmc+Cg==";
+$bg-width: 200px;
+$bg-height: 200px;
+
+@-webkit-keyframes bg-scrolling-reverse {
+	100% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@-moz-keyframes bg-scrolling-reverse {
+	100% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@-o-keyframes bg-scrolling-reverse {
+	100% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@keyframes bg-scrolling-reverse {
+	100% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@-webkit-keyframes bg-scrolling {
+	0% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@-moz-keyframes bg-scrolling {
+	0% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@-o-keyframes bg-scrolling {
+	0% {
+		background-position: $bg-width $bg-height;
+	}
+}
+@keyframes bg-scrolling {
+	0% {
+		background-position: $bg-width $bg-height;
+	}
+}
+body {
+	background: url($bg-url) 0 0 repeat;
+	-webkit-animation: bg-scrolling-reverse 20.92s infinite;
+	-moz-animation: bg-scrolling-reverse 20.92s infinite;
+	-o-animation: bg-scrolling-reverse 20.92s infinite;
+	animation: bg-scrolling-reverse 20.92s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+}

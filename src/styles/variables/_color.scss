@@ -1,0 +1,29 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// COLOR SYSTEMS
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// COLOR VARIANT
+$color-primary: #d10054;
+$color-text: #0f0f0f;
+$color-text-light: #4f5969;
+$color-heading: #1a202c;
+$color-heading-black: black;
+$color-accent: #d1dce5;
+
+// BORDER
+$border-w: 2px;

@@ -1,0 +1,19 @@
+@import "../../variables/color";
+
+.text-transform-minus-2 {
+  overflow: hidden;
+  transition: transform .7s ease-in-out;
+  &:hover {
+	  animation: blinky 0.5s 1 linear;
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes blinky {
+  50% {
+	color: $black;
+  }
+  100% {
+	color:rgb(255, 255, 255);
+  }
+}

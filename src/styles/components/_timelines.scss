@@ -1,0 +1,33 @@
+@import "../variables/typography";
+
+.experience-content {
+  display: block;
+  @media screen and (max-width: 600px) {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .content-blockqote {
+    @media screen and (max-width: 600px) {
+      margin: 45px 35px 45px 35px !important;
+      font-size: $fontSize-1;
+    }
+  }
+}
+
+.vertical-timeline-element-content {
+  & > .vertical-timeline-element-title {
+    font-size: $fontSize-3;
+    margin-bottom: 10px;
+    @media screen and (max-width: 600px) {
+      font-size: $fontSize-1;
+    }
+  }
+  & > .vertical-timeline-element-subtitle {
+    font-size: $fontSize-1;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  & p {
+    font-size: $fontSize-0;
+  }
+}

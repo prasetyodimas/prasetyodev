@@ -96,6 +96,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       author: Author
       siteUrl: String
       social: Social
+      seo: Seo
+      title: String
+      keywords: String
+      description: String
     }
 
     type Author {
@@ -104,7 +108,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Social {
-      twitter: String
+      facebook: String
+      linkedin: String
     }
 
     type MarkdownRemark implements Node {
@@ -121,5 +126,41 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Fields {
       slug: String
     }
+
+    type Seo {
+      slug: String
+      description: String
+      robots: String
+      keywords: String
+      index: ID
+      canonical: String
+    }
   `)
+}
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  if (page.path.match(/^\/?404\/?$/)) {
+    page.matchPath = "/*"
+    createPage(page)
+  }
+}
+
+exports.onCreateWebpackConfig = ({ loaders, actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+    },
+  })
+
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /canvas/,
+          use: loaders.null(),
+        },
+      ],
+    },
+  })
 }

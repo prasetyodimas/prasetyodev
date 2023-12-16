@@ -1,0 +1,16 @@
+@import "../variables/spacing";
+@import "../variables/typography";
+
+.main-heading {
+  font-size: $fontSize-4;
+  margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-2;
+  }
+}
+
+.blog-wrapper {
+  margin: 0 auto;
+  max-width: $max-width-wrapper;
+  padding: $spacing-10;
+}
