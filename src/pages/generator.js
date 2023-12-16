@@ -107,6 +107,7 @@ const Generator = ({ location }) => {
     setCallToAction(seederCallToAction())
     setYourName(seederYourName())
     setClosing(seederClosing())
+    scrollToTop()
   }
 
   const replaceSpacerString = value => {
@@ -118,6 +119,10 @@ const Generator = ({ location }) => {
 
   const showTemplate = () => {
     showIsTemplate(!isShowTemplate)
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
   }
 
   return (
