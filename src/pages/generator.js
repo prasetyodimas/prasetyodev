@@ -66,6 +66,11 @@ const Generator = ({ location }) => {
     setCompanyAddreStreet(value)
   }
 
+  const handleChangeAddressCity = e => {
+    const { value } = e.target
+    setCompanyAddresCity(value)
+  }
+
   const handleGreetings = e => {
     const { value } = e.target
     setGretings(value)
@@ -220,8 +225,8 @@ const Generator = ({ location }) => {
                 class="form-control"
                 rows="4"
                 style={{ width: "100%" }}
-                onChange={handleChangeAddress}
-                value={companyAddreStreet}
+                onChange={handleChangeAddressCity}
+                value={companyAddresCity}
               ></textarea>
             </div>
             <div class="form-group mb-3">
