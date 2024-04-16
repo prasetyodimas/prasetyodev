@@ -11,6 +11,7 @@ const { manifestConfig } = require("./plugin/manifest")
 const { pwaConfig } = require("./plugin/pwa-offilne")
 const { trackingGaConfig } = require("./plugin/google-analytics")
 const { robotTxtConfig } = require("./plugin/robot-txt")
+const { contentFullConfig } = require("./plugin/contentfull")
 
 module.exports = {
   trackingGaConfig: trackingGaConfig,
@@ -26,4 +27,5 @@ module.exports = {
   pwaConfig: pwaConfig,
   manifestConfig: manifestConfig,
   robotTxtConfig: robotTxtConfig,
+  contentFullConfig: contentFullConfig
 }
