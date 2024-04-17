@@ -22,6 +22,7 @@ const Seo = ({ description, title, children }) => {
               facebook
               linkedin
             }
+            siteUrl
           }
         }
       }
@@ -30,17 +31,18 @@ const Seo = ({ description, title, children }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const metaKeywords = description || site.siteMetadata.keywords
-  const defaultTitle = site.siteMetadata?.title
+  const metaUrl = description || site.siteMetadata.siteUrl
 
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <title>{title}</title>
       <meta name="keyword" content={metaKeywords} />
       <meta name="description" content={metaDescription} />
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={imageOpenG} />
+      <meta property="og:url" content={metaUrl} />
       <meta property="og:keyword" content={metaKeywords} />
       <meta property="og:type" content="website" />
 
