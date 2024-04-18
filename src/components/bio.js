@@ -44,11 +44,11 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p className="">
+        <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a
-            href={`https://linkedin.com/${social?.linkedin || ``}`}
+            href={`https://linkedin.com/${social?.linkedin}`}
             target="_blank"
             rel="noreferrer"
           >

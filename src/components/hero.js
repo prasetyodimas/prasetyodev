@@ -19,7 +19,7 @@ const Hero = () => {
           </span>
         </div>
         <div className="col-xs-12 col-sm-8 col-md-7 col-lg-6">
-          <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          <h2 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
             <Typewriter
               onInit={typewriter => {
                 typewriter
@@ -28,7 +28,7 @@ const Hero = () => {
                   .start()
               }}
             />
-          </h1>
+          </h2>
           <p className="lead text-transform-minus-2">
             A seasoned <b>Frontend Developer Specialist & Fullstack Developer</b> with <b>5++</b>{" "}
             years of experience is a highly skilled professional who
