@@ -23,6 +23,9 @@ const Seo = ({ description, title, children }) => {
               linkedin
             }
             siteUrl
+            seo {
+              canonical
+            }
           }
         }
       }
@@ -32,6 +35,7 @@ const Seo = ({ description, title, children }) => {
   const metaDescription = description || site.siteMetadata.description
   const metaKeywords = description || site.siteMetadata.keywords
   const metaUrl = description || site.siteMetadata.siteUrl
+  const canonicalUrl = description || site.siteMetadata.seo.canonical
 
   return (
     <>
@@ -46,6 +50,7 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:keyword" content={metaKeywords} />
       <meta property="og:type" content="website" />
 
+
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:creator"
@@ -55,6 +60,9 @@ const Seo = ({ description, title, children }) => {
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:keyword" content={metaKeywords} />
       <meta name="twitter:image" content={imageOpenG} />
+      
+      <link rel="canonical" href={canonicalUrl} />
+
       {children}
     </>
   )
