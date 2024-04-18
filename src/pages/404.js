@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BlockElement from "../components/blockElement"
+import PropTypes from "prop-types"
 
 export const pageQuery = graphql`
   query {
@@ -25,6 +26,11 @@ const NotFoundPage = ({ data, location }) => {
       </BlockElement>
     </Layout>
   )
+}
+
+NotFoundPage.propTypes = {
+  data: PropTypes.object,
+  location: PropTypes.object
 }
 
 export const Head = () => <Seo title="404: Not Found" />

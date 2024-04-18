@@ -31,13 +31,11 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Fragment>
-        <Typewriter
-          onInit={typewriter => {
-            typewriter.typeString(`${title}`).pauseFor(2000).start()
-          }}
-        />
-      </Fragment>
+      <Typewriter
+        onInit={typewriter => {
+          typewriter.typeString(`${title}`).pauseFor(2000).start()
+        }}
+      />
     )
   }
 

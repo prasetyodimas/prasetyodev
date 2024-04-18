@@ -190,7 +190,7 @@ const Generator = ({ location }) => {
         </div>
         <div className="col col-md-4 col-lg-4">
           <div className="card p-4">
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="company_name" className="fw-bold">
                 Company Name
               </label>
@@ -203,33 +203,33 @@ const Generator = ({ location }) => {
                 onChange={handleChangeCompany}
               />
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="company_address_street" className="fw-bold">
                 Company Address: Street
               </label>
               <textarea
                 id="company_address_street"
-                class="form-control"
+                className="form-control"
                 rows="4"
                 style={{ width: "100%" }}
                 onChange={handleChangeAddress}
                 value={companyAddreStreet}
               ></textarea>
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="company_address_city" className="fw-bold">
                 Company Address: City
               </label>
               <textarea
                 id="company_address_city"
-                class="form-control"
+                className="form-control"
                 rows="4"
                 style={{ width: "100%" }}
                 onChange={handleChangeAddressCity}
                 value={companyAddresCity}
               ></textarea>
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="dear_recepient" className="fw-bold">
                 Dear
               </label>
@@ -242,46 +242,46 @@ const Generator = ({ location }) => {
                 onChange={handleGreetings}
               />
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="1st-intro-yourself" className="fw-bold">
                 1st Paragraph: Briefly Introduce Yourself
               </label>
               <textarea
                 id="1st-intro-yourself"
-                class="form-control"
+                className="form-control"
                 rows="10"
                 style={{ width: "100%" }}
                 onChange={handleChange1stIntro}
                 value={renderHTML.parse(oneStIntro)}
               ></textarea>
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="2st-why-join-company" className="fw-bold">
                 2nd Paragraph: Why You? Why this Company?
               </label>
               <textarea
                 id="2st-why-join-company"
-                class="form-control"
+                className="form-control"
                 rows="12"
                 style={{ width: "100%" }}
                 onChange={handleChangeWhyJoinUs}
                 value={renderHTML.parse(whyJoinUs)}
               ></textarea>
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="3rd-call-to-action" className="fw-bold">
                 3rd Paragraph: Call to Action
               </label>
               <textarea
                 id="3rd-call-to-action"
-                class="form-control"
+                className="form-control"
                 rows="15"
                 style={{ width: "100%" }}
                 onChange={handleChangeCallToAction}
                 value={renderHTML.parse(callToAction)}
               ></textarea>
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="closing" className="fw-bold">
                 Closing
               </label>
@@ -294,7 +294,7 @@ const Generator = ({ location }) => {
                 onChange={handleChangeClosing}
               />
             </div>
-            <div class="form-group mb-3">
+            <div className="form-group mb-3">
               <label htmlFor="your_name" className="fw-bold">
                 Your Name
               </label>

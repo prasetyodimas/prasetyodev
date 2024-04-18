@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -35,16 +35,15 @@ const IndexSite = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
-    <Fragment>
-      <Layout location={location} title={siteTitle}>
-        <Hero className="container" />
-      </Layout>
-    </Fragment>
+    <Layout location={location} title={siteTitle}>
+      <Hero className="container" />
+    </Layout>
   )
 }
 
 IndexSite.propTypes = {
   location: PropTypes.object,
+  data: PropTypes.object
 }
 
 export default IndexSite
@@ -54,7 +53,14 @@ export default IndexSite
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = ({ data }) => {
+const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
   return <Seo title={`${authorName} Frontend Developer / Fullstack Developer`} />
 }
+
+Header.propTypes = {
+  data: PropTypes.object
+}
+
+export const Head = Header;
+
