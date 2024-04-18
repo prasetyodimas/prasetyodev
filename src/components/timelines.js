@@ -27,11 +27,26 @@ const Timelines = () => {
         </blockquote>
       </BlockElement>
       <VerticalTimeline>
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#f7f7f7", color: "#000" }}
+          contentArrowStyle={{ borderRight: "7px solid  #f7f7f7" }}
+          date="2024 - present"
+          iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
+        >
+          <h3 className="vertical-timeline-element-title">
+            PT Wide Technology Indonesia
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Software Engineer ( Sr. Frontend Developer )</h4>
+          <p>
+            Micro Frontend / Micro UI · REST APIs · Microservices · Angular · React Tailwind · CSS
+          </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#f7f7f7", color: "#000" }}
           contentArrowStyle={{ borderRight: "7px solid  #f7f7f7" }}
-          date="2022 - present"
+          date="2022 - 2023"
           iconStyle={{ background: "rgb(240 240 240)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
