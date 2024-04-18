@@ -1,5 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
+import PropTypes from "prop-types"
 
 const Buttons = ({ children, propClass, propRedirect }) => {
   const onRedirection = () => {
@@ -19,6 +20,12 @@ const Buttons = ({ children, propClass, propRedirect }) => {
       </span>
     </button>
   )
+}
+
+Buttons.propTypes = {
+  children: PropTypes.object,
+  propClass: PropTypes.string,
+  propRedirect: PropTypes.string
 }
 
 export default Buttons

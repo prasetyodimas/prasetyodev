@@ -53,11 +53,14 @@ export default IndexSite
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = ({ data }) => {
+const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
   return <Seo title={`${authorName} Frontend Developer / Fullstack Developer`} />
 }
 
-Head.propTypes = {
+Header.propTypes = {
   data: PropTypes.object
 }
+
+export const Head = Header;
+

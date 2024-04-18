@@ -1,8 +1,10 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Icon } from "@react-pdf-viewer/core";
+import PropTypes from "prop-types"
 
 const Icons = ({ path, width, height, quality, alt, classes }) => {
-  const data = useStaticQuery(graphql`
+  useStaticQuery(graphql`
     {
       allFile(filter: { extension: { in: "svg" } }) {
         edges {
@@ -13,13 +15,20 @@ const Icons = ({ path, width, height, quality, alt, classes }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <Fragment>
-      <img src={path} width={width} height={height} alt={alt} />
-    </Fragment>
+    <img src={path} width={width} height={height} alt={alt} />
   )
+}
+
+Icon.proptype = {
+  path: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  quality: PropTypes.number,
+  alt: PropTypes.string,
+  classes: PropTypes.string  
 }
 
 export default Icons

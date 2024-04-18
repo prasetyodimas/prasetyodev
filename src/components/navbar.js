@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Navbar = props => {
   const [navbarState, setNavbarState] = useState("d-none")
