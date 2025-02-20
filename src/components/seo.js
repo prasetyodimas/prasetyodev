@@ -58,7 +58,6 @@ const Seo = ({ description, title, children }) => {
       />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:keyword" content={metaKeywords} />
       <meta name="twitter:image" content={imageOpenG} />
       
       <link rel="canonical" href={canonicalUrl} />

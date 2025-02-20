@@ -1,28 +1,27 @@
 module.exports = {
   configSiteMetaData: {
     siteMetadata: {
-      title: "Prasetyo Dev",
-      keywords:
-        "@dimasprasetyo @prasetyodimas, @prasetyodev, dimas prasetyo, frontend developer, frontend lead, frontend specialist, prasetyodev, fullstack developer, prasetyo dimas, webdeveloper, webdev, freelancer web, prasetyodimas, dimasprasetyo",
+      title: "Prasetyo Dev || Prasetyo Dimas || Dimas Prasetyo",
       description: 
-        " Welcome to prasetyodev a professional site portofolio & blog, Empower your online presence with a skilled Web Developer Specialist.",
+        "Welcome to prasetyodev, a professional site portfolio & blog. Empower your online presence with a skilled Web Developer Specialist.",
       author: {
         name: "Dimas Prasetyo",
         summary:
-          "Frontend developers & Fullstack Developer play a vital role in creating the visual and interactive aspects of websites and web applications, ensuring a user-friendly and responsive experience for visitors. They need a strong understanding of HTML, CSS, JavaScript, and related technologies, as well as a keen eye for design and usability.",
+          "Frontend and Fullstack Developer focusing on creating visually appealing and interactive websites and web applications. Expert in HTML, CSS, JavaScript, with a keen eye for design and usability.",
       },
       siteUrl: "https://prasetyodev.gatsbyjs.io",
       seo: {
-        description: "",
+        description: "Optimize your site with Dimas Prasetyo's expertise in frontend and fullstack development. Enhance your web presence with cutting-edge SEO strategies.",
         robots: "index, follow",
-        keywords: "",
+        keywords: "SEO, web development, frontend, fullstack, Dimas Prasetyo",
         index: 2023,
         canonical: "https://prasetyodev.gatsbyjs.io/blog",
       },
       social: {
-        facebook: "",
+        facebook: "prasetyodimas",
         linkedin: "in/dimas-prasetyo",
       },
     },
   },
 }
+
