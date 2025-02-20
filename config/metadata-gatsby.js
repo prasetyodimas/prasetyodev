@@ -1,7 +1,7 @@
 module.exports = {
   configSiteMetaData: {
     siteMetadata: {
-      title: "Prasetyo Dev || Prasetyo Dimas || Dimas Prasetyo",
+      title: "Prasetyo Dev",
       description: 
         "Welcome to prasetyodev, a professional site portfolio & blog. Empower your online presence with a skilled Web Developer Specialist.",
       author: {
