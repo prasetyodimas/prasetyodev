@@ -78,7 +78,7 @@ const Navbar = props => {
                     href={file.node.publicURL}
                     target="_blank"
                     rel="noreferrer"
-                    download
+                    download={`Dimas Prasetyo Resume.pdf`}
                   >
                     Resume
                   </a>
