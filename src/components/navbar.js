@@ -71,6 +71,8 @@ const Navbar = props => {
             {data.allFile.edges.map((file, index) => {
               return (
                 <li className="nav-item" key={`pdf-${index}`}>
+                  {file.node.publicURL}
+                  {index}
                   <a
                     className="nav-link nav-resume"
                     href={file.node.publicURL}
