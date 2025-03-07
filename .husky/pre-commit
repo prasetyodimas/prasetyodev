@@ -1,26 +1,6 @@
 #!/bin/sh
 
-# Ensure commit message file is provided
-if [ -z "$1" ]; then
-  echo "Error: No commit message file provided."
-  exit 1
-fi
-
-# Read the commit message
-commit_msg_file=$(cat "$1")
-
-# Define commit message regex
-commit_regex='^(feat|fix|docs|style|refactor|perf|test|chore|revert): .+$'
-
-# Validate commit message format
-if echo "$commit_msg_file" | grep -Eq "$commit_regex"; then
-  echo "✅ Commit message format is valid."
-else
-  echo "❌ Error: Invalid commit message format."
-  echo "Proper format: <type>: <description>"
-  echo "Allowed types: feat, fix, docs, style, refactor, perf, test, chore, revert"
-  exit 1
-fi
+echo "✅ Running pre-commit hook..."
 
 # Run lint-staged
 npm run lint-staged
