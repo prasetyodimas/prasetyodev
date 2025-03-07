@@ -1,5 +1,5 @@
 ---
-title: Proficiency with state management patterns - React 
+title: Proficiency with state management patterns - React
 date: "2025-02-23T22:18:22.284Z"
 description: "Refers to a person's level of expertise or understanding in applying various state management patterns in application development"
 ---
@@ -28,14 +28,14 @@ Dalam konteks frontend development (terutama di React), ini mencakup:
 
 ### Pola umum dalam state management
 
-  * **Flux/Redux Pattern**
-      + Menggunakan reducer, actions, dan store global
-  * **Atomic State Pattern**
-      + Seperti yang digunakan di Recoil/Jotai
-  * **Selector Pattern**
-      + Meminimalkan re-render dengan memisahkan state yang relevan
-  * **Modular/Slice Pattern**
-      + Memisahkan state ke dalam slice untuk aplikasi skala besar
+- **Flux/Redux Pattern**
+  - Menggunakan reducer, actions, dan store global
+- **Atomic State Pattern**
+  - Seperti yang digunakan di Recoil/Jotai
+- **Selector Pattern**
+  - Meminimalkan re-render dengan memisahkan state yang relevan
+- **Modular/Slice Pattern**
+  - Memisahkan state ke dalam slice untuk aplikasi skala besar
 
 ### Kemampuan
 
@@ -48,8 +48,8 @@ In this case, we discuss Zustand state management:
 
 Zustand is a lightweight state management library for React that offers a simpler and more minimalist approach compared to Redux. Here are some key patterns in state management using Zustand:
 
- 1. Basic Global State
-Pola ini cocok untuk aplikasi kecil atau fitur yang hanya memerlukan state global sederhana.
+1.  Basic Global State
+    Pola ini cocok untuk aplikasi kecil atau fitur yang hanya memerlukan state global sederhana.
 
 ```markdown
     import { create } from 'zustand';
@@ -69,13 +69,12 @@ Pola ini cocok untuk aplikasi kecil atau fitur yang hanya memerlukan state globa
 
 📌 Pola ini sederhana dan cukup untuk state management kecil.
 
-
 🔹 2. Selector Pattern (Avoid Unnecessary Re-renders)
 
 Untuk menghindari re-render berlebihan, gunakan selector agar hanya membaca bagian state yang dibutuhkan.
 
 ```markdown
-   import { create } from 'zustand';
+import { create } from 'zustand';
 
     const useCounterStore = create((set) => ({
         count: 0,
@@ -94,7 +93,6 @@ Untuk menghindari re-render berlebihan, gunakan selector agar hanya membaca bagi
 🔹 3. Middleware Pattern (Logging & Persistence)
 
 Zustand mendukung middleware untuk logging, persistence, atau devtools.
-
 
 ```markdown
     import { create } from 'zustand';
@@ -119,7 +117,6 @@ Zustand mendukung middleware untuk logging, persistence, atau devtools.
 🔹 4. Action Pattern (Encapsulation of Logic)
 
 ```markdown
-
     Untuk meningkatkan keterbacaan, logika dapat dipisahkan dalam fungsi actions.
 
     import { create } from 'zustand';

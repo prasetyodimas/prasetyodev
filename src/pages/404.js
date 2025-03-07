@@ -30,7 +30,7 @@ const NotFoundPage = ({ data, location }) => {
 
 NotFoundPage.propTypes = {
   data: PropTypes.object,
-  location: PropTypes.object
+  location: PropTypes.object,
 }
 
 export const Head = () => <Seo title="404: Not Found" />

@@ -43,7 +43,7 @@ const IndexSite = ({ data, location }) => {
 
 IndexSite.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.object
+  data: PropTypes.object,
 }
 
 export default IndexSite
@@ -55,12 +55,13 @@ export default IndexSite
  */
 const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
-  return <Seo title={`${authorName} Frontend Developer / Fullstack Developer`} />
+  return (
+    <Seo title={`${authorName} Frontend Developer / Fullstack Developer`} />
+  )
 }
 
 Header.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 }
 
-export const Head = Header;
-
+export const Head = Header
