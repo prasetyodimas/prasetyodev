@@ -131,3 +131,6 @@ dist
 
 .cache
 public
+
+#PSI reporting
+report.json

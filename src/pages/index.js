@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import PageSpeedInsight from "../components/pageSpeedInsight"
 import PropTypes from "prop-types"
 
 export const pageQuery = graphql`
@@ -37,6 +38,7 @@ const IndexSite = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero className="container" />
+      <PageSpeedInsight/>
     </Layout>
   )
 }
