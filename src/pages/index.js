@@ -38,7 +38,7 @@ const IndexSite = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero className="container" />
-      <PageSpeedInsight/>
+      <PageSpeedInsight />
     </Layout>
   )
 }
