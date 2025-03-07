@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "✅ Running pre-commit hook..."
+
+# Run lint-staged
+npm run lint-staged

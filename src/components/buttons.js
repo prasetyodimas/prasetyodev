@@ -25,7 +25,7 @@ const Buttons = ({ children, propClass, propRedirect }) => {
 Buttons.propTypes = {
   children: PropTypes.object,
   propClass: PropTypes.string,
-  propRedirect: PropTypes.string
+  propRedirect: PropTypes.string,
 }
 
 export default Buttons

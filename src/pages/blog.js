@@ -29,7 +29,7 @@ export const pageQuery = graphql`
   }
 `
 
-  const Blog = ({ data, location }) => {
+const Blog = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
 
 Blog.propTypes = {
   location: PropTypes.object,
-  data: PropTypes.array
+  data: PropTypes.array,
 }
 
 export default Blog

@@ -50,7 +50,6 @@ const Seo = ({ description, title, children }) => {
       <meta property="og:keyword" content={metaKeywords} />
       <meta property="og:type" content="website" />
 
-
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:creator"
@@ -59,7 +58,7 @@ const Seo = ({ description, title, children }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={imageOpenG} />
-      
+
       <link rel="canonical" href={canonicalUrl} />
 
       {children}

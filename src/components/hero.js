@@ -30,8 +30,9 @@ const Hero = () => {
             />
           </h2>
           <p className="lead text-transform-minus-2">
-            A seasoned <b>Frontend Developer Specialist & Fullstack Developer</b> with <b>5++</b>{" "}
-            years of experience is a highly skilled professional who
+            A seasoned{" "}
+            <b>Frontend Developer Specialist & Fullstack Developer</b> with{" "}
+            <b>5++</b> years of experience is a highly skilled professional who
             specializes in creating and maintaining the user interface{" "}
             <b>(UI)</b> and user experience <b>(UX)</b> of web applications.
           </p>

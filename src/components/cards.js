@@ -37,7 +37,7 @@ cards.proptype = {
   title: PropTypes.string,
   descriptions: PropTypes.string,
   tags: PropTypes.string,
-  cta: PropTypes.string
+  cta: PropTypes.string,
 }
 
 export default cards

@@ -27,7 +27,7 @@ const Timelines = () => {
         </blockquote>
       </BlockElement>
       <VerticalTimeline>
-      <VerticalTimelineElement
+        <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#f7f7f7", color: "#000" }}
           contentArrowStyle={{ borderRight: "7px solid  #f7f7f7" }}
@@ -37,9 +37,12 @@ const Timelines = () => {
           <h3 className="vertical-timeline-element-title">
             PT Wide Technology Indonesia
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Software Engineer ( Sr. Frontend Developer )</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Software Engineer ( Sr. Frontend Developer )
+          </h4>
           <p>
-            Micro Frontend / Micro UI · REST APIs · Microservices · Angular · React Tailwind · CSS
+            Micro Frontend / Micro UI · REST APIs · Microservices · Angular ·
+            React Tailwind · CSS
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
