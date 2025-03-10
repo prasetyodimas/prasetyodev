@@ -40,8 +40,8 @@ const IndexSite = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero className="container" />
-      <MyServices />
-      <ContactMe />
+      {/* <MyServices /> */}
+      {/* <ContactMe /> */}
       <PageSpeedInsight />
     </Layout>
   )

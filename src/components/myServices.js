@@ -56,7 +56,7 @@ const MyServices = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MyServices;
+export default MyServices
