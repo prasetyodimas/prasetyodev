@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.4",
     "@gsap/react": "^2.1.0",
     "gatsby": "^5.12.4",
     "react": "^18.1.0",

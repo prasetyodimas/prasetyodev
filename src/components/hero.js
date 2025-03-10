@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect"
 import { StaticImage } from "gatsby-plugin-image"
 import Buttons from "../components/buttons"
 import Social from "../components/social"
+import BadgeYears from "../components/badgeYears"
 
 const Hero = () => {
   return (
@@ -16,6 +17,7 @@ const Hero = () => {
               loading="lazy"
               className="img-fluid avatar-wobble heros-content-img"
             />
+            <BadgeYears />
           </span>
         </div>
         <div className="col-xs-12 col-sm-8 col-md-7 col-lg-6">

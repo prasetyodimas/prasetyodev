@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b7e80c1-17cc-4387-9342-ccc179268d8e/deploy-status)](https://app.netlify.com/sites/prasetyodev/deploys)
+
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="src/images/logo/dp.png" alt="Logo" width="auto" height="80">
