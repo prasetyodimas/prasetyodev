@@ -17,7 +17,7 @@ const Hero = () => {
               loading="lazy"
               className="img-fluid avatar-wobble heros-content-img"
             />
-            <BadgeYears/>
+            <BadgeYears />
           </span>
         </div>
         <div className="col-xs-12 col-sm-8 col-md-7 col-lg-6">
