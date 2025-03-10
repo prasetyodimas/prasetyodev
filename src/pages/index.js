@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import PageSpeedInsight from "../components/pageSpeedInsight"
-import PropTypes from "prop-types"
+import ContactMe from "../components/contactMe"
+import MyServices from "../components/myServices"
 
 export const pageQuery = graphql`
   {
@@ -38,6 +40,8 @@ const IndexSite = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Hero className="container" />
+      <MyServices />
+      <ContactMe />
       <PageSpeedInsight />
     </Layout>
   )
