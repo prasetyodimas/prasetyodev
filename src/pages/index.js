@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import PageSpeedInsight from "../components/pageSpeedInsight"
-import ContactMe from "../components/contactMe"
-import MyServices from "../components/myServices"
+import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
+// import ContactMe from "../components/contactMe"
+// import MyServices from "../components/myServices"
 
 export const pageQuery = graphql`
   {
@@ -39,6 +40,8 @@ const IndexSite = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <JsonLd data={websiteJsonLd} />
+      <JsonLd data={personJsonLd} />
       <Hero className="container" />
       {/* <MyServices /> */}
       {/* <ContactMe /> */}
