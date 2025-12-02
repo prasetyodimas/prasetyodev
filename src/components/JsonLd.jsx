@@ -3,9 +3,12 @@ import React from "react"
 export const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Your Portfolio Name",
+  name: "Prasetyodev",
+  alternateName: ["Prasetyodimas", "Dimas Prasetyo"],
   url: "https://prasetyodev.netlify.app",
-  description: "A portfolio showcasing projects and skills.",
+  description:
+    "Portfolio & blog of Dimas Prasetyo (Prasetyodimas), Web Developer Specialist.",
+  inLanguage: "id-ID",
   publisher: {
     "@type": "Person",
     name: "Dimas Prasetyo",
