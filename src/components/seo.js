@@ -58,7 +58,10 @@ const Seo = ({ description, title, children }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={imageOpenG} />
-      <meta name="google-site-verification" content="4uCaQFkmAEvTMR4MEHL11M3m1Jw76nx3ci6SdbbYmj8" />
+      <meta
+        name="google-site-verification"
+        content="4uCaQFkmAEvTMR4MEHL11M3m1Jw76nx3ci6SdbbYmj8"
+      />
 
       <link rel="canonical" href={canonicalUrl} />
 
