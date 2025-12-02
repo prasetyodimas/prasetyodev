@@ -6,12 +6,13 @@ export const websiteJsonLd = {
   name: "Prasetyodev",
   alternateName: ["Prasetyodimas", "Dimas Prasetyo"],
   url: "https://prasetyodev.netlify.app",
-  description: "Portfolio & blog of Dimas Prasetyo (Prasetyodimas), Web Developer Specialist.",
+  description:
+    "Portfolio & blog of Dimas Prasetyo (Prasetyodimas), Web Developer Specialist.",
   inLanguage: "id-ID",
   publisher: {
     "@type": "Person",
-    name: "Dimas Prasetyo"
-  }
+    name: "Dimas Prasetyo",
+  },
 }
 
 export const personJsonLd = {
