@@ -23,7 +23,10 @@ const Buttons = ({ children, propClass, propRedirect }) => {
 }
 
 Buttons.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+  ]),
   propClass: PropTypes.string,
   propRedirect: PropTypes.string,
 }
