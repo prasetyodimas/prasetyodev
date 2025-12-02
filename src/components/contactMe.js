@@ -26,7 +26,7 @@ const ContactMe = () => {
     }
     if (formData.message.length < 10)
       newErrors.message = "Message must be at least 10 characters."
-    setErrors(newErrors)
+      setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
 
@@ -55,6 +55,28 @@ const ContactMe = () => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section-title">Get in Touch</h2>
+
+      {/* New Design Showcase Section */}
+      <section className="design-showcase section" id="design-showcase">
+        <h2 className="section-title">Design Showcase</h2>
+        <p className="section-description">
+          I believe in creating designs that are not only visually appealing but also user-friendly and functional. Below are some of my recent design projects:
+        </p>
+        <div className="design-gallery">
+          <div className="design-item">
+            <img src="/path/to/design1.jpg" alt="Design 1" className="design-image" />
+            <p className="design-caption">Project 1: Modern Web App UI</p>
+          </div>
+          <div className="design-item">
+            <img src="/path/to/design2.jpg" alt="Design 2" className="design-image" />
+            <p className="design-caption">Project 2: E-commerce Dashboard</p>
+          </div>
+          <div className="design-item">
+            <img src="/path/to/design3.jpg" alt="Design 3" className="design-image" />
+            <p className="design-caption">Project 3: Mobile App Prototype</p>
+          </div>
+        </div>
+      </section>
 
       <div className="contact__container bd-grid">
         <div className="contact__data">
@@ -94,6 +116,20 @@ const ContactMe = () => {
               {/* <span className="contact__information-data">
                 Yogyakarta, Indonesia
               </span> */}
+            </div>
+
+            <div className="contact__information-item">
+              <span className="contact__information-icon">
+                <i className="bx bxl-linkedin" />
+              </span>
+              <a 
+                href="https://www.linkedin.com/in/your-profile" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="contact__information-data"
+              >
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>
