@@ -16,12 +16,13 @@ export const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Dimas Prasetyo",
+  alternateName: "Prasetyodimas",
   url: "https://prasetyodev.netlify.app/",
   sameAs: [
     "https://github.com/prasetyodimas",
     "https://linkedin.com/in/dimas-prasetyo",
   ],
-  jobTitle: "Web Developer",
+  jobTitle: "Web Developer Specialist",
   worksFor: {
     "@type": "Organization",
     name: "PT Wide Technology Indonesia",

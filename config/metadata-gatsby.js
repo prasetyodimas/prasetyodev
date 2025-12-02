@@ -3,7 +3,7 @@ module.exports = {
     siteMetadata: {
       title: "Prasetyo Dev",
       description:
-        "Welcome to prasetyodev, a professional site portfolio & blog. Empower your online presence with a skilled Web Developer Specialist.",
+        "Prasetyodev – Portfolio & blog Dimas Prasetyo (Prasetyodimas). Temukan proyek, keahlian, dan insight seputar pengembangan web.",
       author: {
         name: "Dimas Prasetyo",
         summary:
@@ -12,7 +12,7 @@ module.exports = {
       siteUrl: "https://prasetyodev.gatsbyjs.io",
       seo: {
         description:
-          "Optimize your site with Dimas Prasetyo's expertise in frontend and fullstack development. Enhance your web presence with cutting-edge SEO strategies.",
+          "Prasetyodev – Portfolio & blog Dimas Prasetyo (Prasetyodimas). Temukan proyek, keahlian, dan insight seputar pengembangan web.",
         robots: "index, follow",
         keywords: "SEO, web development, frontend, fullstack, Dimas Prasetyo",
         index: 2023,

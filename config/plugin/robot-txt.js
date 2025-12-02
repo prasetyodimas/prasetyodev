@@ -3,8 +3,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://prasetyodev.gatsbyjs.io",
-        sitemap: "https://prasetyodev.gatsbyjs.io/sitemap.xml",
+        host: "https://prasetyodev.netlify.app",
+        sitemap: "https://prasetyodev.netlify.app/sitemap/sitemap-0.xml",
         policy: [
           {
             userAgent: "*",
