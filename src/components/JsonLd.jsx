@@ -24,10 +24,15 @@ export const personJsonLd = {
   jobTitle: "Web Developer",
   worksFor: {
     "@type": "Organization",
-    name: "PT Winde Technology Indonesia",
+    name: "PT Wide Technology Indonesia",
   },
 }
 
+/**
+ * A React component that renders a JSON-LD script tag with the given data.
+ * @param {object} data - The data to be rendered as JSON-LD.
+ * @returns {ReactElement} A script tag with the given data rendered as JSON-LD.
+ */
 const JsonLd = ({ data }) => (
   <script
     type="application/ld+json"
