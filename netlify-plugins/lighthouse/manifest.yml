@@ -1,6 +1,10 @@
 name: lighthouse
 inputs:
   - name: site_url
-    description: The URL of the site to run Lighthouse against
+    description: URL to run Lighthouse audit
     required: true
-    type: string
+
+  - name: output_path
+    description: Directory to save Lighthouse JSON
+    required: false
+    default: "public/lighthouse"
