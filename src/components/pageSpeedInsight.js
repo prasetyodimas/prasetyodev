@@ -11,9 +11,12 @@ const PageSpeedInsight = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`lighthouse-report.json?v=${new Date().getTime()}`, {
-        mode: "no-cors",
-      })
+      const response = await fetch(
+        `lighthouse-report.json?v=${new Date().getTime()}`,
+        {
+          mode: "no-cors",
+        }
+      )
       const data = await response.json()
       setData(data)
     }
