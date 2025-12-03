@@ -10,6 +10,7 @@
   "dependencies": {
     "@formspree/react": "^2.5.4",
     "@gsap/react": "^2.1.0",
+    "chrome-aws-lambda": "^10.1.0",
     "gatsby": "^5.12.4",
     "gatsby-source-contentful": "^8.16.0",
     "react": "^18.1.0",

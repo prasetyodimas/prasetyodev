@@ -1,37 +1,38 @@
 const lighthouse = require("lighthouse")
-const chromeLauncher = require("chrome-launcher")
+const chromeLambda = require("chrome-aws-lambda")
 const fs = require("fs")
 const path = require("path")
 
 module.exports = {
-  onPostBuild: async ({ inputs, constants }) => {
-    const url = inputs.site_url || constants.SITE_URL
-    console.log("🔍 Running Lighthouse on:", url)
+  onPostBuild: async ({ inputs, utils }) => {
+    const siteUrl = inputs.site_url
+    const outputPath = inputs.output_path || "public/lighthouse"
 
-    const chrome = await chromeLauncher.launch({
-      chromeFlags: ["--headless", "--no-sandbox"],
+    // Launch Chromium using chrome-aws-lambda
+    const chrome = await chromeLambda.puppeteer.launch({
+      args: chromeLambda.args,
+      defaultViewport: chromeLambda.defaultViewport,
+      executablePath: await chromeLambda.executablePath,
+      headless: true,
+      ignoreHTTPSErrors: true,
     })
 
-    const options = {
-      logLevel: "info",
+    const runnerResult = await lighthouse(siteUrl, {
+      port: (new URL(chrome.wsEndpoint())).port,
       output: "json",
-      port: chrome.port,
-    }
+    })
 
-    const runnerResult = await lighthouse(url, options)
+    // Ensure output directory exists
+    fs.mkdirSync(outputPath, { recursive: true })
 
-    const output = runnerResult.report
+    // Save report
+    const reportPath = path.join(outputPath, "lighthouse-report.json")
+    fs.writeFileSync(reportPath, runnerResult.report)
 
-    const outputPath = path.join(
-      process.cwd(),
-      "public",
-      "lighthouse-report.json"
-    )
+    await chrome.close()
 
-    fs.writeFileSync(outputPath, output)
-
-    console.log("✅ Lighthouse JSON saved at public/lighthouse-report.json")
-
-    await chrome.kill()
+    utils.status.show({
+      summary: `Lighthouse report saved to ${reportPath}`,
+    })
   },
 }
