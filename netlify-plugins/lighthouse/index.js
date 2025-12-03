@@ -18,7 +18,7 @@ module.exports = {
     })
 
     const runnerResult = await lighthouse(siteUrl, {
-      port: (new URL(chrome.wsEndpoint())).port,
+      port: new URL(chrome.wsEndpoint()).port,
       output: "json",
     })
 
