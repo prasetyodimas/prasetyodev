@@ -7,9 +7,17 @@
     [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
+# Plugin bawaan Netlify Lighthouse
+#[[plugins]]
+  #package = "@netlify/plugin-lighthouse"
 
-[plugins.inputs.settings]
-  # opsional: hanya running di production deploy
-  output_path = "lighthouse-results" 
+# Plugin custom untuk menyimpan JSON ke /public
+[[plugins]]
+  package = "./netlify-plugins/lighthouse"
+
+  #[plugins.inputs.settings]
+    #opsional: hanya running di production deploy
+    #output_path = "lighthouse-results" 
+
+  [plugins.inputs]
+    site_url = "https://prasetyodev.netlify.app"
