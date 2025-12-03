@@ -6,3 +6,10 @@
   for = "/*"
     [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[plugins.inputs.settings]
+  # opsional: hanya running di production deploy
+  output_path = "lighthouse-results" 
