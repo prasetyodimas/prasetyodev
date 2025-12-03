@@ -1,1 +1,6 @@
 name: lighthouse
+inputs:
+  - name: site_url
+    description: The URL of the site to run Lighthouse against
+    required: true
+    type: string
