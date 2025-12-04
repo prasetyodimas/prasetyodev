@@ -6,7 +6,7 @@ const path = require("path")
 module.exports = {
   onPostBuild: async ({ inputs, utils }) => {
     const lighthouse = await import("lighthouse")
-    
+
     const siteUrl = inputs.site_url
     const outputPath = inputs.output_path || "public/lighthouse"
 
