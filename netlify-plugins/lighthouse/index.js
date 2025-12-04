@@ -1,4 +1,3 @@
-const lighthouse = require("lighthouse")
 const chromeLambda = require("chrome-aws-lambda")
 const puppeteer = require("puppeteer-core")
 const fs = require("fs")
@@ -6,6 +5,8 @@ const path = require("path")
 
 module.exports = {
   onPostBuild: async ({ inputs, utils }) => {
+    const lighthouse = await import("lighthouse")
+    
     const siteUrl = inputs.site_url
     const outputPath = inputs.output_path || "public/lighthouse"
 
@@ -21,7 +22,7 @@ module.exports = {
     const page = await browser.newPage()
     await page.goto(siteUrl)
 
-    const runnerResult = await lighthouse(siteUrl, {
+    const runnerResult = await lighthouse.default(siteUrl, {
       port: new URL(browser.wsEndpoint()).port,
       output: "json",
     })
