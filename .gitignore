@@ -133,4 +133,4 @@ dist
 public
 
 #PSI reporting
-report.json
+lighthouse-report.json
