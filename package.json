@@ -10,11 +10,8 @@
   "dependencies": {
     "@formspree/react": "^2.5.4",
     "@gsap/react": "^2.1.0",
-    "chrome-aws-lambda": "^10.1.0",
     "gatsby": "^5.12.4",
     "gatsby-source-contentful": "^8.16.0",
-    "lighthouse": "^11.0.0",
-    "puppeteer-core": "^21.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },

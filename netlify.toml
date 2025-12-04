@@ -9,7 +9,7 @@
 
 # Plugin custom untuk menyimpan JSON ke /public
 [[plugins]]
-  package = "./netlify-plugins/lighthouse"
+  package = "@netlify/plugin-lighthouse"
 
   [plugins.inputs]
     site_url = "https://prasetyodev.netlify.app"
