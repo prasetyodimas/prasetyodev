@@ -1,0 +1,65 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.github-activity-anchor {
+  position: relative;
+  top: -80px;
+}
+
+.github-repo-card {
+  display: block;
+  background-color: $gray-100;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1.25rem;
+  }
+}
+
+.github-repo-name {
+  margin-top: 0;
+  font-size: $fontSize-1;
+  color: $color-primary;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.github-repo-description {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.github-repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: $fontSize-0;
+  color: $color-text-light;
+}
+
+.github-repo-language {
+  font-weight: $fontWeight-bold;
+}
+
+.github-profile-link {
+  font-weight: $fontWeight-bold;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,96 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.case-study {
+  @media screen and (max-width: 600px) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+.case-study-title {
+  margin-top: 0;
+  font-size: $fontSize-4;
+  color: $color-heading;
+  margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-2;
+  }
+}
+
+.case-study-roles {
+  font-size: $fontSize-0;
+  color: $color-primary;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.case-study-cta {
+  display: inline-block;
+  font-weight: $fontWeight-bold;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.case-study-panel {
+  background-color: $gray-100;
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  h5 {
+    margin-top: 0;
+    font-size: $fontSize-2;
+    color: $color-heading;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1.25rem;
+  }
+}
+
+.case-study-flow {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    text-align: center;
+    font-size: $fontSize-1;
+    color: $color-text-light;
+    padding-bottom: 1.75rem;
+    margin-bottom: 0;
+
+    &:not(:last-child)::after {
+      content: "↓";
+      position: absolute;
+      bottom: 0.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $color-primary;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: $fontSize-0;
+    }
+  }
+}
+
+.case-study-challenges {
+  margin: 0;
+  padding-left: 1.25rem;
+
+  li {
+    font-size: $fontSize-0;
+    color: $color-text-light;
+    margin-bottom: 0.5rem;
+  }
+}

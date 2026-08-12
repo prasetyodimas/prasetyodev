@@ -1,0 +1,72 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.hero-availability {
+  display: inline-flex;
+  align-items: center;
+  font-size: $fontSize-0;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-light;
+  border: 1px solid $gray-300;
+  border-radius: 30px;
+  padding: 0.35rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-availability-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  margin-right: 0.5rem;
+}
+
+.hero-meta {
+  font-size: $fontSize-0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-text-light;
+  margin-bottom: 0;
+}
+
+.hero-tagline {
+  font-size: $fontSize-3;
+  font-weight: $fontWeight-bold;
+  color: $color-heading;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-2;
+  }
+}
+
+.hero-specialization {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-currently-building {
+  font-size: $fontSize-1;
+  color: $color-text-light;
+
+  a {
+    color: $color-primary;
+    font-weight: $fontWeight-bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn-download-cv {
+  display: inline-block;
+  text-decoration: none;
+}

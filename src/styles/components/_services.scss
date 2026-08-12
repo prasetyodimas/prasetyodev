@@ -1,0 +1,42 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.service-card {
+  background-color: $gray-100;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  h5 {
+    margin-top: 0;
+    font-size: $fontSize-1;
+    color: $color-heading;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: $fontSize-0;
+    color: $color-text-light;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1.25rem;
+  }
+}
+
+.service-card-cta {
+  font-size: $fontSize-0;
+  font-weight: $fontWeight-bold;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
