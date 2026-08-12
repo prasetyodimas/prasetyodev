@@ -1,0 +1,54 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.engineering-journey-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 640px;
+}
+
+.engineering-journey-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "↓";
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color-primary;
+    font-size: $fontSize-2;
+  }
+}
+
+.engineering-journey-year {
+  display: inline-block;
+  font-weight: $fontWeight-bold;
+  font-size: $fontSize-1;
+  color: $white;
+  background: linear-gradient(120deg, $color-primary, #ff4d94);
+  border-radius: 30px;
+  padding: 0.25rem 1.25rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 6px 14px rgba(209, 0, 84, 0.25);
+  transition: transform 0.3s;
+}
+
+.engineering-journey-item:hover .engineering-journey-year {
+  transform: scale(1.08);
+}
+
+.engineering-journey-milestone {
+  font-size: $fontSize-2;
+  color: $color-heading;
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-1;
+  }
+}

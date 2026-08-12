@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { SocialIcon } from "react-social-icons"
 
 const Navbar = props => {
   const [navbarState, setNavbarState] = useState("d-none")
@@ -85,6 +86,11 @@ const Navbar = props => {
                 Blog
               </Link>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#github-activity">
+                GitHub
+              </a>
+            </li>
             {data.allFile.edges.map((file, index) => {
               return (
                 <li className="nav-item" key={`pdf-${index}`}>
@@ -98,6 +104,15 @@ const Navbar = props => {
                 </li>
               )
             })}
+            <li className="nav-item nav-github-icon">
+              <SocialIcon
+                network="github"
+                target="_blank"
+                href="https://github.com/prasetyodimas"
+                style={{ height: 24, width: 24 }}
+                aria-label="GitHub profile"
+              />
+            </li>
           </ul>
         </div>
       </div>

@@ -154,3 +154,18 @@ a {
     text-decoration: none;
   }
 }
+
+.global-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+main.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media screen and (max-width: 600px) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

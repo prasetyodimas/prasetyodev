@@ -41,8 +41,12 @@ import NetlifyIcon from "../assets/icons/skils/netlify.svg"
 const Skills = () => {
   return (
     <Fragment>
-      <h4>Skill & Tools</h4>
-      <BlockElement className="content-skillset row mt-5 mb-5" component="div">
+      <span className="section-eyebrow">Toolkit</span>
+      <h4 className="text-center mt-0 mb-4">Skill & Tools</h4>
+      <BlockElement
+        className="content-skillset section-surface row mt-0 mb-5 px-4 py-5"
+        component="div"
+      >
         <div className="col col-md-12 col-lg-12">
           <div className="row">
             <div className="col col-md-3 col-lg-3 mt-5">

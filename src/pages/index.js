@@ -4,6 +4,11 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import EngineeringJourney from "../components/engineeringJourney"
+import SungnikahCaseStudy from "../components/sungnikahCaseStudy"
+import ServicesSection from "../components/servicesSection"
+import GithubActivity from "../components/githubActivity"
+import GetInTouch from "../components/getInTouch"
 import PageSpeedInsight from "../components/pageSpeedInsight"
 import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
 // import ContactMe from "../components/contactMe"
@@ -43,6 +48,11 @@ const IndexSite = ({ data, location }) => {
       <JsonLd data={websiteJsonLd} />
       <JsonLd data={personJsonLd} />
       <Hero className="container" />
+      <EngineeringJourney />
+      <SungnikahCaseStudy />
+      <ServicesSection />
+      <GithubActivity />
+      <GetInTouch />
       {/* <MyServices /> */}
       {/* <ContactMe /> */}
       <PageSpeedInsight />
@@ -64,9 +74,7 @@ export default IndexSite
  */
 const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
-  return (
-    <Seo title={`${authorName} Frontend Developer / Fullstack Developer`} />
-  )
+  return <Seo title={`${authorName} Software Engineer`} />
 }
 
 Header.propTypes = {

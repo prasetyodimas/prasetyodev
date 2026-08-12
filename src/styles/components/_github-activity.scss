@@ -1,0 +1,233 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.github-activity-anchor {
+  position: relative;
+  top: -80px;
+}
+
+.github-activity-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.github-activity-title {
+  margin: 0;
+  font-size: $fontSize-5;
+  font-weight: $fontWeight-black;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: $color-heading;
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-4;
+  }
+}
+
+.github-view-profile {
+  font-size: $fontSize-0;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.github-contributions-title {
+  margin-top: 0;
+  font-size: $fontSize-1;
+  color: $color-heading;
+  margin-bottom: 1rem;
+}
+
+.github-section-subtitle {
+  margin-top: 0;
+  font-size: $fontSize-0;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: $color-text-light;
+  margin-bottom: 1.25rem;
+}
+
+.github-panel {
+  background-color: $white;
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+}
+
+.github-heatmap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 10px);
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.github-heatmap-day {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.github-heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 0.75rem;
+
+  span {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-text-light;
+  }
+}
+
+.github-stat-card {
+  background-color: $white;
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(209, 0, 84, 0.08);
+    border-color: rgba(209, 0, 84, 0.35);
+  }
+}
+
+.github-stat-value {
+  font-size: $fontSize-4;
+  font-weight: $fontWeight-black;
+  color: $color-heading;
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-3;
+  }
+}
+
+.github-stat-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-light;
+  margin-top: 0.25rem;
+}
+
+.github-repo-card {
+  display: block;
+  background-color: $white;
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(209, 0, 84, 0.08);
+    border-color: rgba(209, 0, 84, 0.35);
+  }
+}
+
+.github-repo-name {
+  margin-top: 0;
+  font-size: $fontSize-1;
+  color: $color-heading;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.github-repo-description {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.github-repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.625rem;
+  color: $color-text-light;
+}
+
+.github-repo-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: $fontWeight-bold;
+}
+
+.github-repo-language-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.github-activity-feed {
+  overflow: hidden;
+}
+
+.github-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid $gray-300;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.github-activity-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-primary;
+}
+
+.github-activity-text {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+  margin-bottom: 0.25rem;
+
+  a {
+    font-weight: $fontWeight-bold;
+    color: $color-heading;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.github-activity-time {
+  font-size: 0.625rem;
+  color: $color-text-light;
+  margin-bottom: 0;
+}

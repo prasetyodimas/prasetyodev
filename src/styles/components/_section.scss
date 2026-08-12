@@ -1,0 +1,91 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.section-surface {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(26, 32, 44, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(15, 15, 15, 0.06);
+  margin-bottom: 3rem;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      $color-primary,
+      #ff7ab0 45%,
+      transparent 90%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 600px) {
+    border-radius: 16px;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-surface--hero {
+  background-image: radial-gradient(
+      circle at 85% 12%,
+      rgba(209, 0, 84, 0.08),
+      transparent 42%
+    ),
+    radial-gradient(circle at 8% 92%, rgba(209, 0, 84, 0.05), transparent 38%);
+}
+
+.section-surface--cta {
+  background-image: linear-gradient(
+    135deg,
+    rgba(209, 0, 84, 0.07),
+    rgba(255, 255, 255, 0) 45%,
+    rgba(209, 0, 84, 0.07)
+  );
+}
+
+.section-eyebrow {
+  display: block;
+  text-align: center;
+  font-size: $fontSize-0;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: $color-primary;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes section-rise {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .section-surface {
+      animation: section-rise both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
