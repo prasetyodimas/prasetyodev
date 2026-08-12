@@ -169,7 +169,10 @@ const GithubActivity = () => {
   }, [])
 
   return (
-    <BlockElement className="github-activity px-4 py-5" component="div">
+    <BlockElement
+      className="github-activity section-surface px-4 py-5"
+      component="div"
+    >
       <div id="github-activity" className="github-activity-anchor" />
       <div className="github-activity-header">
         <h2 className="github-activity-title">GitHub Activity</h2>

@@ -35,10 +35,11 @@ const journeys = [
 const EngineeringJourney = () => {
   return (
     <BlockElement
-      className="engineering-journey px-4 py-5"
+      className="engineering-journey section-surface px-4 py-5"
       component="div"
     >
-      <h4 className="text-center mb-4">Engineering Journey</h4>
+      <span className="section-eyebrow">Career</span>
+      <h4 className="text-center mt-0 mb-4">Engineering Journey</h4>
       <p className="lead text-center text-body-secondary mb-5">
         From frontend specialist to software engineer who understands systems
         end-to-end.

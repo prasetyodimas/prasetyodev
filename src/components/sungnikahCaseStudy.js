@@ -34,8 +34,9 @@ const challenges = [
 
 const SungnikahCaseStudy = () => {
   return (
-    <BlockElement className="case-study px-4 py-5" component="div">
-      <h4 className="text-center mb-4">Flagship Project</h4>
+    <BlockElement className="case-study section-surface px-4 py-5" component="div">
+      <span className="section-eyebrow">Case Study</span>
+      <h4 className="text-center mt-0 mb-4">Flagship Project</h4>
       <div className="row align-items-center g-5 mb-5">
         <div className="col-12 col-md-5 col-lg-6">
           <StaticImage

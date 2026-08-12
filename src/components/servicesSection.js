@@ -36,8 +36,12 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <BlockElement className="services-section px-4 py-5" component="div">
-      <h4 className="text-center mb-4">What I Can Build For You</h4>
+    <BlockElement
+      className="services-section section-surface px-4 py-5"
+      component="div"
+    >
+      <span className="section-eyebrow">Services</span>
+      <h4 className="text-center mt-0 mb-4">What I Can Build For You</h4>
       <p className="lead text-center text-body-secondary mb-5">
         Practical web work for small teams &amp; businesses.
       </p>

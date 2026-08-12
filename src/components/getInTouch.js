@@ -5,11 +5,12 @@ import Social from "../components/social"
 const GetInTouch = () => {
   return (
     <BlockElement
-      className="get-in-touch px-4 py-5 text-center"
+      className="get-in-touch section-surface section-surface--cta px-4 py-5 text-center"
       component="div"
     >
       <div id="get-in-touch" className="get-in-touch-anchor" />
-      <h4 className="mb-4">Get In Touch</h4>
+      <span className="section-eyebrow">Contact</span>
+      <h4 className="mt-0 mb-4">Get In Touch</h4>
       <p className="lead text-body-secondary mb-2">
         Got a website or app idea? Let&apos;s work together.
       </p>

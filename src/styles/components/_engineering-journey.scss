@@ -32,10 +32,16 @@
   font-weight: $fontWeight-bold;
   font-size: $fontSize-1;
   color: $white;
-  background-color: $color-primary;
+  background: linear-gradient(120deg, $color-primary, #ff4d94);
   border-radius: 30px;
   padding: 0.25rem 1.25rem;
   margin-bottom: 0.5rem;
+  box-shadow: 0 6px 14px rgba(209, 0, 84, 0.25);
+  transition: transform 0.3s;
+}
+
+.engineering-journey-item:hover .engineering-journey-year {
+  transform: scale(1.08);
 }
 
 .engineering-journey-milestone {

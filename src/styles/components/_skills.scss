@@ -1,15 +1,25 @@
 .content-skillset {
   display: block;
-  margin-top: 15px;
-  @media screen and (max-width: 600px) {
-    margin-top: 5px;
+
+  .col-6,
+  .col-md-3,
+  .col-lg-3 {
+    display: flex;
+    justify-content: center;
   }
-  & img.skill-img path {
-    max-width: 100%;
-    width: 100%;
-    @media screen and (min-width: 1068px) {
-      max-width: 100%;
-      width: 100%;
+
+  img.skill-img {
+    padding: 0.75rem;
+    background-color: $white;
+    border: 1px solid $gray-200;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 15, 15, 0.04);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+
+    &:hover {
+      transform: translateY(-4px) scale(1.05);
+      border-color: rgba(209, 0, 84, 0.35);
+      box-shadow: 0 10px 22px rgba(209, 0, 84, 0.1);
     }
   }
 }

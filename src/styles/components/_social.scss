@@ -1,0 +1,31 @@
+@import "../variables/color";
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid $gray-200;
+    box-shadow: 0 4px 10px rgba(15, 15, 15, 0.04);
+    transition: all 0.25s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: rgba(209, 0, 84, 0.35);
+      box-shadow: 0 8px 16px rgba(209, 0, 84, 0.1);
+    }
+
+    svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+}

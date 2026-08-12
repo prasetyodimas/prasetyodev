@@ -15,3 +15,56 @@
     }
   }
 }
+
+.porto-grid {
+  .col {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  .slick-slider,
+  .col > .gatsby-image-wrapper {
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    background-color: $white;
+    border: 1px solid $gray-200;
+    border-bottom: none;
+  }
+
+  .card {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid $gray-200;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 12px 24px rgba(15, 15, 15, 0.06) !important;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+
+  .col:hover .card {
+    box-shadow: 0 16px 32px rgba(209, 0, 84, 0.1) !important;
+    border-color: rgba(209, 0, 84, 0.35);
+  }
+
+  .card-body {
+    padding: 1.5rem;
+
+    h2 {
+      margin-top: 0;
+      font-size: $fontSize-2;
+      color: $color-heading;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      font-size: $fontSize-0;
+      color: $color-text-light;
+      line-height: $lineHeight-relaxed;
+    }
+  }
+}
