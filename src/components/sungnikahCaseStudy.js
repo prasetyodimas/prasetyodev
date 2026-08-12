@@ -2,61 +2,100 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "../components/blockElement"
 
-const problems = [
-  "Traditional wedding invitations",
-  "Static website",
-  "Hard to manage",
-  "No scalable content system",
+const highlights = [
+  {
+    label: "Problem",
+    items: [
+      "Traditional wedding invitations were static and hard to customize",
+      "No scalable content system for couples",
+      "Managing themes, media, and guests manually was time-consuming",
+    ],
+  },
+  {
+    label: "Solution",
+    items: [
+      "A multi-tenant SaaS with per-couple customization",
+      "Dynamic theme system that renders unique wedding pages",
+      "SEO-friendly SSR, media upload, and guest management",
+    ],
+  },
+  {
+    label: "Engineering Challenges",
+    items: [
+      "Dynamic theme architecture",
+      "Multi-tenant data isolation",
+      "Image and media management",
+      "SEO & SSR at scale",
+      "Deployment, backup, and monitoring",
+    ],
+  },
 ]
 
-const stacks = [
+const techStack = [
   "Next.js",
-  "Dynamic Theme System",
+  "React",
+  "Node.js",
+  "Express",
   "REST API",
-  "Node.js / Express",
-  "Database",
+  "Dynamic Theme System",
   "Cloud Storage",
-  "Production Infrastructure",
+  "Database",
+  "Monitoring",
+  "CI/CD",
 ]
 
-const challenges = [
-  "Dynamic theme architecture",
-  "Multi-tenant data",
-  "Image/media management",
-  "SEO & SSR",
-  "API architecture",
-  "Authentication",
-  "Deployment & backup",
-  "Monitoring",
-  "Secret management",
-  "Performance",
-]
+const roles = ["Founder", "Product Owner", "Full-stack Engineer"]
 
 const SungnikahCaseStudy = () => {
   return (
-    <BlockElement className="case-study section-surface px-4 py-5" component="div">
+    <BlockElement
+      className="case-study section-surface px-4 py-5"
+      component="div"
+    >
       <span className="section-eyebrow">Case Study</span>
-      <h4 className="text-center mt-0 mb-4">Flagship Project</h4>
-      <div className="row align-items-center g-5 mb-5">
-        <div className="col-12 col-md-5 col-lg-6">
-          <StaticImage
-            src="../images/my-porto/sungnikah/sungnikah.png"
-            alt="Sungnikah platform"
-            loading="lazy"
-            className="img-fluid"
-          />
+      <h4 className="case-study-heading">Flagship Project</h4>
+
+      <div className="case-study-hero">
+        <div className="case-study-media">
+          <div className="case-study-browser">
+            <div className="case-study-browser-bar" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </div>
+            <StaticImage
+              src="../images/my-porto/sungnikah/sungnikah.png"
+              alt="Sungnikah platform"
+              loading="lazy"
+              className="img-fluid"
+            />
+          </div>
         </div>
-        <div className="col-12 col-md-7 col-lg-6">
-          <h2 className="case-study-title fw-bold">
+
+        <div className="case-study-intro">
+          <h2 className="case-study-title">
             Sungnikah — From idea to production SaaS
           </h2>
-          <p className="case-study-roles">
-            Founder · Product Owner · Full-stack Engineer
-          </p>
-          <p className="lead text-body-secondary">
+          <div className="case-study-roles">
+            {roles.map((role, i) => (
+              <span className="case-study-role" key={`role-${i}`}>
+                {role}
+              </span>
+            ))}
+          </div>
+          <p className="case-study-desc">
             A digital wedding invitation SaaS that I built from scratch,
             evolving from a static website into a dynamic, API-driven platform.
+            Couples can create personalized invitations, manage guests, and
+            publish shareable pages with unique themes.
           </p>
+          <div className="case-study-stack">
+            {techStack.map((tech, i) => (
+              <span className="case-study-stack-item" key={`tech-${i}`}>
+                {tech}
+              </span>
+            ))}
+          </div>
           <a
             className="case-study-cta"
             href="https://sungnikah.com"
@@ -67,37 +106,19 @@ const SungnikahCaseStudy = () => {
           </a>
         </div>
       </div>
-      <div className="row g-4">
-        <div className="col-12 col-md-4">
-          <div className="case-study-panel h-100">
-            <h5>Problem</h5>
-            <ol className="case-study-flow">
-              {problems.map((problem, index) => (
-                <li key={`problem-${index}`}>{problem}</li>
-              ))}
-            </ol>
-          </div>
-        </div>
-        <div className="col-12 col-md-4">
-          <div className="case-study-panel h-100">
-            <h5>What I Built</h5>
-            <ol className="case-study-flow">
-              {stacks.map((stack, index) => (
-                <li key={`stack-${index}`}>{stack}</li>
-              ))}
-            </ol>
-          </div>
-        </div>
-        <div className="col-12 col-md-4">
-          <div className="case-study-panel h-100">
-            <h5>Engineering Challenges</h5>
-            <ul className="case-study-challenges">
-              {challenges.map((challenge, index) => (
-                <li key={`challenge-${index}`}>{challenge}</li>
+
+      <div className="case-study-grid">
+        {highlights.map((card, i) => (
+          <div className="case-study-card" key={`card-${i}`}>
+            <span className="case-study-card-label">{card.label}</span>
+            <h5 className="case-study-card-title">{card.label}</h5>
+            <ul className="case-study-card-list">
+              {card.items.map((item, j) => (
+                <li key={`item-${i}-${j}`}>{item}</li>
               ))}
             </ul>
           </div>
-        </div>
+        ))}
       </div>
     </BlockElement>
   )
