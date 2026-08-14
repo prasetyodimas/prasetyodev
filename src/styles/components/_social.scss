@@ -2,30 +2,21 @@
 
 .social-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.65rem;
   align-items: center;
 
   a {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: $white;
-    border: 1px solid $gray-200;
-    box-shadow: 0 4px 10px rgba(15, 15, 15, 0.04);
-    transition: all 0.25s ease;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(15, 15, 15, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
 
     &:hover {
       transform: translateY(-3px);
-      border-color: rgba(209, 0, 84, 0.35);
-      box-shadow: 0 8px 16px rgba(209, 0, 84, 0.1);
-    }
-
-    svg {
-      width: 20px !important;
-      height: 20px !important;
+      box-shadow: 0 8px 16px rgba(209, 0, 84, 0.15);
     }
   }
 }

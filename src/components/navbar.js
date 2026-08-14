@@ -104,15 +104,6 @@ const Navbar = props => {
                 </li>
               )
             })}
-            <li className="nav-item nav-github-icon">
-              <SocialIcon
-                network="github"
-                target="_blank"
-                href="https://github.com/prasetyodimas"
-                style={{ height: 24, width: 24 }}
-                aria-label="GitHub profile"
-              />
-            </li>
           </ul>
         </div>
       </div>

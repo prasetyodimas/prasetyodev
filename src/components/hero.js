@@ -55,6 +55,16 @@ const Hero = () => {
             environments.
           </p>
 
+          <ul className="hero-skills">
+            <li>Frontend Architecture</li>
+            <li>Full-stack Development</li>
+            <li>API &amp; Backend</li>
+            <li>System Design</li>
+            <li>Performance</li>
+            <li>CI/CD &amp; DevOps</li>
+            <li>Product Engineering</li>
+          </ul>
+
           <div className="hero-actions">
             <Buttons propClass="btn-bloby" propRedirect="/portofolio">
               View My Work
@@ -70,28 +80,30 @@ const Hero = () => {
             )}
           </div>
 
-          <p className="hero-skills">
-            Frontend Architecture · Full-stack Development · API &amp; Backend ·
-            System Design · Performance · CI/CD &amp; DevOps · Product
-            Engineering
-          </p>
 
-          <Social />
 
-          <p className="hero-currently-building">
-            Currently building →{" "}
-            <a
-              href="https://sungnikah.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sungnikah
-            </a>
-          </p>
+          <div className="hero-divider" />
 
-          <p className="hero-meta">
-            Depok City, Jawa Barat, Indonesia · Time Zone: UTC+7 (GMT+7)
-          </p>
+          <div className="hero-footer">
+            <Social />
+
+            <div className="hero-footer-info">
+              <p className="hero-currently-building">
+                Currently building &rarr;{" "}
+                <a
+                  href="https://sungnikah.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Sungnikah
+                </a>
+              </p>
+
+              <p className="hero-meta">
+                Depok City, Jawa Barat, Indonesia &middot; UTC+7 (GMT+7)
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="hero-visual">
