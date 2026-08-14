@@ -1,0 +1,33 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.get-in-touch-anchor {
+  position: relative;
+  top: -80px;
+}
+
+.get-in-touch-email {
+  display: inline-block;
+  font-size: $fontSize-2;
+  font-weight: $fontWeight-bold;
+  color: $color-primary;
+  text-decoration: none;
+  margin-bottom: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: $fontSize-1;
+    word-break: break-word;
+  }
+}
+
+.get-in-touch-meta {
+  font-size: $fontSize-0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-text-light;
+  margin-bottom: 0;
+}

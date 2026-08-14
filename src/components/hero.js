@@ -1,52 +1,112 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 import Buttons from "../components/buttons"
 import Social from "../components/social"
 import BadgeYears from "../components/badgeYears"
 
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { name: { eq: "resume" } }) {
+        edges {
+          node {
+            publicURL
+            name
+          }
+        }
+      }
+    }
+  `)
+
+  const resume = data.allFile.edges[0]?.node
+
   return (
-    <div className="col-lg-12 col-md-12 col-xxl-12 px-4 py-5">
-      <div className="row flex-lg-row-reverse align-items-center g-5">
-        <div className="col-xs-12 col-sm-8 col-md-5 col-lg-6">
-          <span className="d-flex justify-content-lg-end p-2">
-            <StaticImage
-              src="../images/profile-pic.png"
-              alt="Profile picture"
-              loading="lazy"
-              className="img-fluid avatar-wobble heros-content-img"
-            />
-            <BadgeYears />
+    <section className="hero section-surface px-4 py-5">
+      <div className="hero-container">
+        <div className="hero-content">
+          <span className="hero-availability">
+            <span className="hero-availability-dot" />
+            Available for new projects
           </span>
-        </div>
-        <div className="col-xs-12 col-sm-8 col-md-7 col-lg-6">
-          <h2 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+
+          <h1 className="hero-title">
             <Typewriter
               onInit={typewriter => {
                 typewriter
-                  .typeString(`Software Engineer _`)
-                  .pauseFor(1000)
+                  .typeString(`Software Engineer`)
+                  .pauseFor(1200)
                   .start()
               }}
             />
-          </h2>
-          <p className="lead text-transform-minus-2">
-            A seasoned{" "}
-            <b>Frontend Developer Specialist & Fullstack Developer</b> with{" "}
-            <b>5++</b> years of experience is a highly skilled professional who
-            specializes in creating and maintaining the user interface{" "}
-            <b>(UI)</b> and user experience <b>(UX)</b> of web applications.
+            <span className="hero-cursor" aria-hidden="true">_</span>
+          </h1>
+
+          <p className="hero-tagline">
+            Building scalable web products from <span>UI</span> to{" "}
+            <span>infrastructure</span>.
           </p>
-          <Social />
-          <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-            <Buttons propClass="btn-bloby" propRedirect="/about">
-              Know more about me
+
+          <p className="hero-bio">
+            Frontend-focused <strong>Software Engineer</strong> with{" "}
+            <strong>8+ years</strong> of experience building scalable web
+            applications across <strong>fintech, banking, SaaS, and startup</strong>{" "}
+            environments.
+          </p>
+
+          <div className="hero-actions">
+            <Buttons propClass="btn-bloby" propRedirect="/portofolio">
+              View My Work
             </Buttons>
+            {resume && (
+              <a
+                className="btn-download-cv"
+                href={resume.publicURL}
+                download="Dimas Prasetyo - Resume.pdf"
+              >
+                Download CV
+              </a>
+            )}
+          </div>
+
+          <p className="hero-skills">
+            Frontend Architecture · Full-stack Development · API &amp; Backend ·
+            System Design · Performance · CI/CD &amp; DevOps · Product
+            Engineering
+          </p>
+
+          <Social />
+
+          <p className="hero-currently-building">
+            Currently building →{" "}
+            <a
+              href="https://sungnikah.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sungnikah
+            </a>
+          </p>
+
+          <p className="hero-meta">
+            Depok City, Jawa Barat, Indonesia · Time Zone: UTC+7 (GMT+7)
+          </p>
+        </div>
+
+        <div className="hero-visual">
+          <div className="hero-image-frame">
+            <StaticImage
+              src="../images/profile-pic.png"
+              alt="Dimas Prasetyo — Software Engineer"
+              loading="eager"
+              className="hero-image"
+            />
+            <BadgeYears />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,0 +1,57 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.page-speed-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-speed-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 1rem 1.25rem;
+  background-color: $white;
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(15, 15, 15, 0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 15, 15, 0.08);
+  }
+}
+
+.page-speed-key {
+  font-size: 0.625rem;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-light;
+  margin-bottom: 0.25rem;
+}
+
+.page-speed-value {
+  font-size: $fontSize-4;
+  font-weight: $fontWeight-black;
+  line-height: 1;
+}
+
+.page-speed-score--good .page-speed-value {
+  color: #198754;
+}
+
+.page-speed-score--fair .page-speed-value {
+  color: #fd7e14;
+}
+
+.page-speed-score--poor .page-speed-value {
+  color: #dc3545;
+}

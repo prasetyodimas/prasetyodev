@@ -1,196 +1,110 @@
-import React from "react"
+import React, { useState } from "react"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
-import Cards from "../components/cards"
+import ProjectModal from "../components/projectModal"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
-import Slider from "react-slick"
+import projectsData from "../data/portfolioProjects"
 
 const Portofolio = ({ location }) => {
-  const settings = {
-    dots: false,
-    autoplay: true,
-    infinite: true,
-    speed: 4000,
-    autoplaySpeed: 3500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    cssEase: "linear",
+  const [selectedProject, setSelectedProject] = useState(null)
+
+  const projectImages = {
+    amhes: [
+      <StaticImage key="amhes-0" src="../images/my-porto/amtek/kiosk-interface.png" alt="AMHES Kiosk Interface" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="amhes-1" src="../images/my-porto/amtek/kiosk-menu.png" alt="AMHES Kiosk Menu" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="amhes-2" src="../images/my-porto/amtek/simrs.png" alt="AMHES SIMRS" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    marzoom: [
+      <StaticImage key="marzoom-0" src="../images/my-porto/pricebook/marzoom-landing.png" alt="Marzoom Landing" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="marzoom-1" src="../images/my-porto/pricebook/marzoom-handson.png" alt="Marzoom Mobile" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="marzoom-2" src="../images/my-porto/pricebook/marzoom-handson-profile-store.png" alt="Marzoom Store Profile" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="marzoom-3" src="../images/my-porto/pricebook/marzoom-mobile.jpeg" alt="Marzoom Mobile App" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    mitra: [
+      <StaticImage key="mitra-0" src="../images/my-porto/pricebook/mitra-login-one.png" alt="Mitra Login" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="mitra-1" src="../images/my-porto/pricebook/mitra-login-handson.png" alt="Mitra Dashboard" width={600} height={400} quality={95} className="img-fluid" />,
+      <StaticImage key="mitra-2" src="../images/my-porto/pricebook/mitra-desktop.png" alt="Mitra Desktop" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    "sabi-e-invoicing": [
+      <StaticImage key="sabi-inv-0" src="../images/my-porto/sabi/e-invoicing.png" alt="Sabi E-Invoicing" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    sungnikah: [
+      <StaticImage key="sungnikah-0" src="../images/my-porto/sungnikah/sungnikah.png" alt="Sungnikah Platform" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    "sabi-laas": [
+      <StaticImage key="sabi-laas-0" src="../images/my-porto/sabi/sabi-landing-1.png" alt="Sabi LaaS Landing" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
+    "uiii-library": [
+      <StaticImage key="uiii-0" src="../images/my-porto/uiii/digital-library-uiii.png" alt="UIII Digital Library" width={600} height={400} quality={95} className="img-fluid" />,
+    ],
   }
+
+  const projects = projectsData.map(p => ({
+    ...p,
+    images: projectImages[p.slug] || [],
+  }))
 
   return (
     <Layout location={location} title={"Portofolio"}>
       <Seo title="Portofolio" />
-      <div className="row content-of-porto py-lg-5">
-        <div className="col-lg-9 col-md-10 mx-auto">
-          <h2 className="heading-porto font-weight font-bold">My Portofolio</h2>
+      <div className="row content-of-porto section-surface px-4 py-5">
+        <div className="col-lg-9 col-md-10 mx-auto text-center">
+          <span className="section-eyebrow">Selected Work</span>
+          <h2 className="heading-porto font-weight font-bold mt-0">
+            My Portofolio
+          </h2>
           <p className="lead text-body-secondary">
-            In software development or technology projects, portfolio can refer
-            to a collection of projects that are being managed or have been
-            completed by a team or organization. It includes projects such as
-            software development, system implementation, technology integration,
-            and other projects.
+            A collection of projects I've built across healthcare, fintech,
+            e-commerce, and SaaS. Click any card to explore the challenges,
+            strategy, achievements, and tech stack behind each project.
           </p>
         </div>
       </div>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-3 g-3 mb-5">
-        <div className="col">
-          <Slider {...settings}>
-            <StaticImage
-              src="../images/my-porto/amtek/kiosk-interface.png"
-              alt="amtek-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/amtek/kiosk-menu.png"
-              alt="amtek-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/amtek/simrs.png"
-              alt="amtek-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-          </Slider>
-          <Cards
-            title="AMHES - Amertana Hospital Enterprise Sistem"
-            descriptions="This project is to build a health industry using technology that is used to support hospital needs starting from integration with laboratory machines, integration of BPJS, INACBG and insurance claims reporting, as well as hospital management including inventory management, doctor's fees and others."
-            tags="Web-Application"
-          ></Cards>
-        </div>
-        <div className="col">
-          <Slider {...settings}>
-            <StaticImage
-              src="../images/my-porto/pricebook/marzoom-landing.png"
-              alt="marzoom-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/pricebook/marzoom-handson.png"
-              alt="marzoom-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/pricebook/marzoom-handson-profile-store.png"
-              alt="marzoom-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/pricebook/marzoom-mobile.jpeg"
-              alt="marzoom-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-          </Slider>
-          <Cards
-            title="Marzoom"
-            descriptions="Marzoom is an application that is used to help pricebook users based on the PWA mobile application in searching for information and looking for the cheapest prices as well as being able to find sources of accurate data and high credibility from online and offline (o2o) stores."
-            tags="PWA, Web-Application"
-          ></Cards>
-        </div>
-        <div className="col">
-          <Slider {...settings}>
-            <StaticImage
-              src="../images/my-porto/pricebook/mitra-login-one.png"
-              alt="mitra-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/pricebook/mitra-login-handson.png"
-              alt="mitra-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-            <StaticImage
-              src="../images/my-porto/pricebook/mitra-desktop.png"
-              alt="mitra-app"
-              width={500}
-              height={330}
-              quality={95}
-            />
-          </Slider>
-          <Cards
-            title="Mitra"
-            descriptions="Pricebook Partner is an application used to help shop partners or partners of our company, with the PWA mobile application used to manage inventory data, sales analysis, user behavior, user visitors and shop branding in selling gadgets."
-            tags="PWA, Web-Application"
-          ></Cards>
-        </div>
-        <div className="col">
-          <StaticImage
-            src="../images/my-porto/sabi/e-invoicing.png"
-            alt="e-invoicing"
-            width={500}
-            height={330}
-            quality={95}
-          />
-          <Cards
-            title="E-Invoicing"
-            descriptions="The ultimate e-invoicing app tailored to empower MSMEs. With Sabi E-Invoicing, small and medium-sized MSMEs can effortlessly manage and organize their invoicing data, ensuring precision and clarity in their financial records. This invaluable tool not only streamlines your invoicing process but also compiles comprehensive financial histories, making it a breeze for users to request loans and financial services."
-            tags="Web-Application"
-          ></Cards>
-        </div>
-        <div className="col">
-          <StaticImage
-            src="../images/my-porto/sungnikah/sungnikah.png"
-            alt="sungnikah"
-            width={500}
-            height={330}
-            quality={95}
-          />
-          <Cards
-            title="Sungnikah.(com)"
-            descriptions="Sungnikah is a provider of digital wedding/wedding invitation services such as wedding website design, wedding ceremony design, and souvenir invitation design and brings together clients/users and wedding vendors."
-            tags="Web-Application"
-            cta="https://sungnikah.com"
-          ></Cards>
-        </div>
-        <div className="col">
-          <StaticImage
-            src="../images/my-porto/sabi/sabi-landing-1.png"
-            alt="sabi-landing-page"
-            width={500}
-            height={330}
-            quality={95}
-          />
-          <Cards
-            title="Sabi ( LaaS )"
-            descriptions="Sabi are account aggregator solution that provides access to business solutions with integrated financing aimed at micro and small business owners. Sabi operates as a member of the Investree Group, which is under the supervision and licensing of the Financial Services Authority (OJK)."
-            tags="Web-Application"
-            cta="https://getsabi.id"
-          ></Cards>
-        </div>
-        <div className="col">
-          <StaticImage
-            src="../images/my-porto/uiii/digital-library-uiii.png"
-            alt="sabi-landing-page"
-            width={500}
-            height={330}
-            quality={95}
-          />
-          <Cards
-            title="UIII Digital Library Aggregator Systems"
-            descriptions="Digital Library Aggregator System, the purpose of this application can be used in various campus or academic institutions, combining information from the OJS, EPRINTS, SLIMS platforms by making it easy to search for information on one platform which includes information on journal data, dissertations, etc."
-            tags="Web-Application"
-            cta="https://library.uiii.ac.id"
-          ></Cards>
-        </div>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-3 g-4 mb-5 porto-grid">
+        {projects.map(project => (
+          <div className="col" key={project.slug}>
+            <div
+              className="porto-card"
+              onClick={() => setSelectedProject(project)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={e => {
+                if (e.key === "Enter") setSelectedProject(project)
+              }}
+            >
+              <div className="porto-card-image">
+                {project.images[0]}
+                <div className="porto-card-overlay">
+                  <span className="porto-card-view">View Details →</span>
+                </div>
+              </div>
+              <div className="porto-card-body">
+                <div className="porto-card-meta">
+                  <span className="porto-card-role">{project.role}</span>
+                  <span className="porto-card-period">{project.period}</span>
+                </div>
+                <h3 className="porto-card-title">{project.title}</h3>
+                <p className="porto-card-summary">{project.summary}</p>
+                <div className="porto-card-tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={`tag-${i}`} className="porto-card-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
+
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </Layout>
   )
 }
