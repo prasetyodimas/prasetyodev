@@ -1,8 +1,11 @@
+const vm = require("vm")
+
 // The standalone Lighthouse HTML report embeds the full result object as
-// `window.__LIGHTHOUSE_JSON__ = {...};</script>`. Lighthouse sanitizes the JSON
-// so it can never contain a literal `</script>`, which makes that the only safe
-// delimiter to split on.
-const LHR_PATTERN = /window\.__LIGHTHOUSE_JSON__\s*=\s*([\s\S]*?);<\/script>/
+// `window.__LIGHTHOUSE_JSON__ = {...}</script>`. Lighthouse sanitizes the
+// payload so it can never contain a literal `</script>`, which makes that the
+// only safe delimiter to split on. The statement terminator is optional
+// because the report is minified.
+const LHR_PATTERN = /window\.__LIGHTHOUSE_JSON__\s*=\s*([\s\S]*?);?<\/script>/
 
 const METRICS = [
   { id: "first-contentful-paint", label: "First Contentful Paint" },
@@ -18,7 +21,13 @@ const parseReportHtml = html => {
   if (!match) {
     throw new Error("No __LIGHTHOUSE_JSON__ payload found in the report")
   }
-  return JSON.parse(match[1])
+  try {
+    return JSON.parse(match[1])
+  } catch (error) {
+    // Minified reports embed the result as a JavaScript object literal with
+    // unquoted keys, which JSON.parse cannot read.
+    return vm.runInNewContext(`(${match[1]})`, Object.create(null))
+  }
 }
 
 /**
