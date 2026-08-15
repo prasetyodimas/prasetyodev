@@ -74,8 +74,6 @@ const PageSpeedInsight = () => {
         if (!data.categories?.length) throw new Error("Report is empty")
         setReport(data)
         setStatus("success")
-        // Let the arcs paint at zero first so they animate into place
-        requestAnimationFrame(() => setAnimated(true))
       } catch (error) {
         setStatus("unavailable")
       }
@@ -83,6 +81,15 @@ const PageSpeedInsight = () => {
 
     fetchReport()
   }, [])
+
+  // Let the arcs paint empty for one frame first so they animate into place
+  useEffect(() => {
+    if (!report) return undefined
+    const frame = requestAnimationFrame(() =>
+      requestAnimationFrame(() => setAnimated(true))
+    )
+    return () => cancelAnimationFrame(frame)
+  }, [report])
 
   const auditedAt = report?.fetchTime
     ? new Date(report.fetchTime).toLocaleDateString("en-US", {
