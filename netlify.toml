@@ -7,13 +7,14 @@
     [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Plugin custom untuk menyimpan JSON ke /public
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 
   [plugins.inputs]
-    site_url = "https://prasetyodev.netlify.app"
-    output_path = "public/lighthouse"
+    # Jalan di onPostBuild supaya report ikut ter-deploy (thresholds kosong = tidak akan fail)
+    fail_deploy_on_score_thresholds = "true"
+    # Relatif terhadap publish dir, hasilnya: /lighthouse/report.html
+    output_path = "lighthouse/report.html"
 
 [functions]
   directory = "netlify/functions"
