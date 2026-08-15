@@ -1,0 +1,11 @@
+name: lighthouse-report-json
+inputs:
+  - name: report_path
+    required: false
+    default: lighthouse/report.html
+    description: Path to the HTML report written by @netlify/plugin-lighthouse, relative to the publish directory
+
+  - name: output_path
+    required: false
+    default: lighthouse-report.json
+    description: Path of the JSON summary to generate, relative to the publish directory
