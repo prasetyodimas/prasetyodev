@@ -151,9 +151,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       fallback: {
         fs: false,
-        // pdfjs-dist optionally requires "canvas" for its Node.js backend,
-        // which is not needed in the browser or during SSR
-        canvas: false,
       },
     },
   })

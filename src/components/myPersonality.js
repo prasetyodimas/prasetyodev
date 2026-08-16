@@ -1,14 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Viewer, Worker } from "@react-pdf-viewer/core"
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout"
-import "@react-pdf-viewer/core/lib/styles/index.css"
-import "@react-pdf-viewer/default-layout/lib/styles/index.css"
 import BlockElement from "../components/blockElement"
 
 const MyPersonality = () => {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin()
-
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { name: { eq: "personality" } }) {
@@ -36,17 +30,16 @@ const MyPersonality = () => {
         </p>
       </div>
       <div className="col-sm-12 col-md-6 col-lg-6">
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-          {data.allFile.edges.map((file, index) => {
-            return (
-              <Viewer
-                key={index}
-                fileUrl={file.node.publicURL}
-                plugins={[defaultLayoutPluginInstance]}
-              />
-            )
-          })}
-        </Worker>
+        {data.allFile.edges.map((file, index) => (
+          <embed
+            key={index}
+            src={file.node.publicURL}
+            type="application/pdf"
+            width="100%"
+            height="600px"
+            style={{ border: "none" }}
+          />
+        ))}
       </div>
     </BlockElement>
   )
