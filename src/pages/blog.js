@@ -34,7 +34,6 @@ const Blog = ({ data, location }) => {
 
   return (
     <Layout location={location} title={`Blog`}>
-      <Seo title="Blog" />
       <BlockElement className="blog-wrapper" component="div">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
@@ -79,5 +78,7 @@ Blog.propTypes = {
   location: PropTypes.object,
   data: PropTypes.array,
 }
+
+export const Head = () => <Seo title="Blog" pathname="/blog/" />
 
 export default Blog

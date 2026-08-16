@@ -76,7 +76,7 @@ export default IndexSite
  */
 const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
-  return <Seo title={`${authorName} Software Engineer`} />
+  return <Seo title={`${authorName} Software Engineer`} pathname="/" />
 }
 
 Header.propTypes = {

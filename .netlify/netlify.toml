@@ -1,0 +1,3027 @@
+functionsDirectory = "/Users/dimasprasetyo/Documents/data/project/prasetyodev/netlify/functions"
+functionsDirectoryOrigin = "config"
+headersOrigin = "config"
+
+[build]
+publish = "/Users/dimasprasetyo/Documents/data/project/prasetyodev/public"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "gatsby clean && gatsby build"
+functions = "/Users/dimasprasetyo/Documents/data/project/prasetyodev/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[functions]
+
+[functions."*"]
+
+[[plugins]]
+origin = "default"
+package = "@netlify/plugin-gatsby"
+
+[plugins.inputs]
+
+[[plugins]]
+origin = "config"
+package = "@netlify/plugin-lighthouse"
+
+[plugins.inputs]
+fail_deploy_on_score_thresholds = "true"
+output_path = "lighthouse/report.html"
+
+[[headers]]
+for = "/page-data/sq/d/1112256957.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/sq/d/1347789620.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/sq/d/2011286901.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/sq/d/242272222.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/sq/d/3379486964.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/sq/d/775736150.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/346e3/mitra-login-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/3c27d/mitra-login-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/448ea/mitra-login-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/49e6c/mitra-login-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/69725/mitra-login-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/6aca2/mitra-login-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/9bb64/mitra-login-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/15ab9b8e1665f219b6e6a28c9c031bd9/ad1c5/mitra-login-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/346e3/digital-library-uiii.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/3c27d/digital-library-uiii.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/448ea/digital-library-uiii.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/49e6c/digital-library-uiii.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/69725/digital-library-uiii.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/6aca2/digital-library-uiii.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/9bb64/digital-library-uiii.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1c140d784bf3f4059911fa118d4ee761/ad1c5/digital-library-uiii.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/346e3/marzoom-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/3c27d/marzoom-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/448ea/marzoom-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/49e6c/marzoom-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/69725/marzoom-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/6aca2/marzoom-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/9bb64/marzoom-handson.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/215d7026707d7a9aff671d438d28cfd8/ad1c5/marzoom-handson.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/346e3/simrs.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/3c27d/simrs.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/448ea/simrs.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/49e6c/simrs.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/69725/simrs.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/6aca2/simrs.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/9bb64/simrs.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2247bfc129089f18014f0cee6c780acf/ad1c5/simrs.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/346e3/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/3c27d/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/448ea/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/49e6c/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/69725/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/6aca2/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/82e8b/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/9bb64/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/a2c6d/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/a9d5c/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/ac262/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/ad1c5/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/b23dc/sungnikah.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/23a88fcdcae699f78a02040dd517ed95/fe0f4/sungnikah.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/3faea/profile-pic.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/4f03f/profile-pic.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/6a679/profile-pic.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/98376/profile-pic.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/a49f4/profile-pic.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/d4bf4/profile-pic.avif/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/e3305/profile-pic.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/e5610/profile-pic.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/e6874/profile-pic.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/e9b55/profile-pic.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/ee81f/profile-pic.avif/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2efff104a8a939f3c2082028fc3b5705/f054e/profile-pic.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/346e3/marzoom-landing.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/3c27d/marzoom-landing.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/448ea/marzoom-landing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/49e6c/marzoom-landing.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/69725/marzoom-landing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/6aca2/marzoom-landing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/9bb64/marzoom-landing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/3139aceac68ecd938b180650beaaded9/ad1c5/marzoom-landing.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/3ad18/marzoom-mobile.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/448ea/marzoom-mobile.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/69725/marzoom-mobile.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/6aca2/marzoom-mobile.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/9bb64/marzoom-mobile.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/9c0d9/marzoom-mobile.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/d6bbc/marzoom-mobile.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5d6f768214d4f082c501a5cbb79b342c/f9d8d/marzoom-mobile.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/40601/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/6bdcf/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/763a5/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/78612/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/c26ae/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/5f4840271b4e4b4c47c7965fd5fa4e4b/f058b/build-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/346e3/kiosk-menu.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/3c27d/kiosk-menu.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/448ea/kiosk-menu.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/49e6c/kiosk-menu.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/69725/kiosk-menu.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/6aca2/kiosk-menu.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/9bb64/kiosk-menu.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/67fff57396301b165c4ea670f0c07fd0/ad1c5/kiosk-menu.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/346e3/mitra-login-one.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/3c27d/mitra-login-one.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/448ea/mitra-login-one.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/49e6c/mitra-login-one.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/69725/mitra-login-one.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/6aca2/mitra-login-one.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/9bb64/mitra-login-one.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6ad659a52a3aa0970bf6dafc4e0f5281/ad1c5/mitra-login-one.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6bfe1c2ee51b9c6fbee606cb6604a7b9/2e750/maintenances.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6bfe1c2ee51b9c6fbee606cb6604a7b9/60d43/maintenances.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6bfe1c2ee51b9c6fbee606cb6604a7b9/83090/maintenances.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6bfe1c2ee51b9c6fbee606cb6604a7b9/99971/maintenances.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/346e3/kiosk-interface.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/3c27d/kiosk-interface.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/448ea/kiosk-interface.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/49e6c/kiosk-interface.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/69725/kiosk-interface.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/6aca2/kiosk-interface.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/9bb64/kiosk-interface.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6cd4d7355498abb07e3403717fa5249e/ad1c5/kiosk-interface.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/0ede0/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/3ac88/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/828fb/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/a6688/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/8058f3f26913fea3b6a89a73344fe94a/ff44c/salty_egg.jpg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/346e3/mitra-desktop.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/3c27d/mitra-desktop.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/448ea/mitra-desktop.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/49e6c/mitra-desktop.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/69725/mitra-desktop.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/6aca2/mitra-desktop.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/9bb64/mitra-desktop.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/91d73e83467a316d177223538fb718d7/ad1c5/mitra-desktop.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/346e3/marzoom-handson-profile-store.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/3c27d/marzoom-handson-profile-store.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/448ea/marzoom-handson-profile-store.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/49e6c/marzoom-handson-profile-store.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/69725/marzoom-handson-profile-store.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/6aca2/marzoom-handson-profile-store.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/9bb64/marzoom-handson-profile-store.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/a100c6b4939938ab90600575ebb6d60d/ad1c5/marzoom-handson-profile-store.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/346e3/sabi-landing-1.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/3c27d/sabi-landing-1.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/448ea/sabi-landing-1.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/49e6c/sabi-landing-1.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/69725/sabi-landing-1.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/6aca2/sabi-landing-1.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/9bb64/sabi-landing-1.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad3895232e4345eea9d9961f1a29ef1c/ad1c5/sabi-landing-1.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/40601/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/6bdcf/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/6ee58/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/78612/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/c26ae/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/afaa4416607608271b4817e88216357e/f058b/project-structure.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/bd29631e65ab305ec7aa329b697ded4f/448ea/e-invoicing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/bd29631e65ab305ec7aa329b697ded4f/69725/e-invoicing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/bd29631e65ab305ec7aa329b697ded4f/6aca2/e-invoicing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/bd29631e65ab305ec7aa329b697ded4f/9bb64/e-invoicing.webp/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/027f0/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/40601/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/6bdcf/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/78612/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/c26ae/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c80cf5384b8faaf3193b1ad6505e87ea/f058b/git-sc.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/_gatsby/slices/_gatsby-scripts-1.html"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-atomics.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-media.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-sandbox-sw.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-sw.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-ww-atomics.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown-ww-sw.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/debug/partytown.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/404.html/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/about/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/angular-ssr/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/blog/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/generator/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/hello-world/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/index/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/my-second-post/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/offline-plugin-app-shell-fallback/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/personalities/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/portofolio/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/profeciency-state-management-in-react/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/02ed792cf63fbbb699c89043ffdd8c13/stylus.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/06a60b8afcab7ccd6de18e5a73c7e482/github.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/095aa03d31897de0fd96d2a324796935/resume.pdf"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/179dcf7d213448c17f3eafdbc5411e66/typescript.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/17dd8736fba34be45d25c5f3c095d96a/handlebars.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/18db8f85b0adc00d2ecd27f0b3c86ff7/webpack.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/19f52dd7b5e081daf141197ac2e2a799/xampp.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/1ce3f9497a8619453c546c24ebf1c9bd/google-tag.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/22ad7883f66436c6933de9ad258bc253/netlify.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2350fcef6253d20f4558ec55cd4bc3d7/angular.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/2b5143185aa840442404aed471cf697f/pug.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/30c2b69c41646ae31953377c9de98720/bitbucket.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/347b383d8393a4714e9c4501359008a5/vue.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/393c0a9a86ff4c3ac326a11cd3b731eb/personality.pdf"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/40bb09cf330a8572980a17db39ba94a5/vuetify.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/42bb886f484a992f9b131d66c35b3cf3/laravel.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/537d89db8ea4258c379b3b829ca9db4a/gatsby.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/539e58464eefd0fdaa05bea4f6f95e2c/less.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6110a6dbb191aede11a56982c1a10e12/php.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/6411e0a48dc0aef51adca74c0746c98d/node.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/69d7a7bfb4cbd3d83a9a9e5b7cc4dd4a/muireact.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/7d170998ca743d58bc34b71183a45370/gulp.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/7d3cfcdcb3e4c1aed21cef67c404acd5/mysql.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/7e1755456137d4a7ab0078c937528b5d/jquery.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/81f206d79b07a1585108952f42c2b36b/grid.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/82374578f8a822b6c9c596fc66c4f7f1/gitlab.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/846599e217960b0a679fa4211cd4684a/styled-component.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/96d601fe3d6f201b81a02b5687f03967/google-analytics.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/974230ff9a0600badd202738b42f9afc/figma.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/9865954417a3994eec0969cf79798edc/vscode.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/9a7a69b679e3377d4857af861fc6d330/sass.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/aac13084ea77c70e2ff37001f8d88e69/notion.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/ad17976d550737d678f1d7353742546e/bootstrap.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/adeaffabfb9c1e1ce39df923d332efae/npm.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/b413fca1479a387b8950f7c408af3d20/javascript.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/be6c7185c085bcee8e7cf7aa233b3a4b/html.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c3750c2a3ff5fbbe2f2c508954e69756/css.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/c3855c3224fb5bcbef336de0e13eb726/jira.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/d025e07bb01794cc7db14011cdaec112/webstrom.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/d0e0e46ab145b72c004aa4f716c60bbc/react.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/d41b50e9f4bd7dead14b02e308533e55/jamstack.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/d41d8cd98f00b204e9800998ecf8427e/sabi.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/f1f566d736d020eaacae46be3c4129cb/postman.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/f3b9627220567408b11df5940035808e/jade.svg/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/partytown-atomics.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/partytown-media.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/partytown-sw.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/~partytown/partytown.js"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-144x144.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-192x192.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-256x256.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-384x384.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-48x48.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-512x512.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-72x72.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/icons/icon-96x96.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/app-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/sitemap/sitemap-0.xml"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/sitemap/sitemap-index.xml"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/jquery-85f0dc274e7876ea70543e12be2e0683.svg/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-cyrillic-400-normal-2e7c71643f6e0e4c1e73f28a7a1798e6.woff/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-cyrillic-400-normal-fde0b55efc50742fb57fbebbb11c572f.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-cyrillic-ext-400-normal-2a880e22b1b888ab54652a36d43b7f16.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-cyrillic-ext-400-normal-7d8546944154663cc54693d15bb31721.woff/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-latin-400-normal-2c455928024d0ee049d896a25f9e30e1.woff/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-latin-400-normal-e009f21405b4d7e893674b69deb4cf4a.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-latin-ext-400-normal-4657f5ab02d5923d223f96a9155a9bdc.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/merriweather-latin-ext-400-normal-7b1ee735b2541bc831bd57bacecc9d41.woff/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/montserrat-cyrillic-ext-wght-normal-639b3c91831427d83cd3984af014778c.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/montserrat-cyrillic-wght-normal-f41a9bc7688bda1e84508030cb5c18fe.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/montserrat-latin-ext-wght-normal-9f73369162c4382215d4317ba362fe1e.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/montserrat-latin-wght-normal-b66f2d18f66f15c3ac56a2f4d68b3be5.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/overpass-mono-cyrillic-wght-normal-1015a5c8e706c3cda254b332ea17d1f2.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/overpass-mono-latin-ext-wght-normal-cfe3930e7924d9b383c0723226305591.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/static/overpass-mono-latin-wght-normal-b6040074173a0669dc3a3b3d401aabb2.woff2/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/page-data/*/page-data.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/12dd3e73875e8070bf4791ee4e63b43f56418d9c-3c72c3645892b91af6fc.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/12dd3e73875e8070bf4791ee4e63b43f56418d9c-3c72c3645892b91af6fc.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/404.html"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/616eb4f1f7d872b7c98a39530726f57bbca8a428-853dcfe0412c042230b4.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/616eb4f1f7d872b7c98a39530726f57bbca8a428-853dcfe0412c042230b4.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/731-6e67538d8a769d6ed20b.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/731-6e67538d8a769d6ed20b.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/731-6e67538d8a769d6ed20b.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/843-97ff84738ae945f36203.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/843-97ff84738ae945f36203.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/9738dc454f38ccafed6d6b8eae3cff73c1825808-09868a8a6bd429774f0f.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/9738dc454f38ccafed6d6b8eae3cff73c1825808-09868a8a6bd429774f0f.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/about/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/angular-ssr/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/app-eb01113bb4f5c9766a35.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/app-eb01113bb4f5c9766a35.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/app-eb01113bb4f5c9766a35.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/blog/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/chunk-map.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---cache-caches-gatsby-plugin-offline-app-shell-js-5ca3f6b1e3f94b6c9b41.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---cache-caches-gatsby-plugin-offline-app-shell-js-5ca3f6b1e3f94b6c9b41.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-404-js-a840b09f24caa8737e2b.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-404-js-a840b09f24caa8737e2b.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-about-js-fcea4ce8983129920ced.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-about-js-fcea4ce8983129920ced.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-about-js-fcea4ce8983129920ced.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-blog-js-c18fd699cca57d541ccd.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-blog-js-c18fd699cca57d541ccd.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-generator-js-526ce5eae5b91f81a27f.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-generator-js-526ce5eae5b91f81a27f.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-index-js-9c4645057ad091a44e0c.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-index-js-9c4645057ad091a44e0c.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-personalities-js-4976407b740bf630ec53.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-personalities-js-4976407b740bf630ec53.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-portofolio-js-b37776a6391178282740.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-pages-portofolio-js-b37776a6391178282740.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-templates-blog-post-js-69793eb9d7e4c03eb1ba.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/component---src-templates-blog-post-js-69793eb9d7e4c03eb1ba.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/favicon-32x32.png/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/favicon.ico/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/framework-29309e60b24d806d2089.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/framework-29309e60b24d806d2089.js.LICENSE.txt"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/framework-29309e60b24d806d2089.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/generator/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/hello-world/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/idb-keyval-3.2.0-iife.min.js"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/manifest.webmanifest/"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/my-second-post/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/offline-plugin-app-shell-fallback/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/personalities/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/portofolio/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/profeciency-state-management-in-react/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/robots.txt"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/rss.xml"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/styles.2691ba3d9b99ac9aed07.css/"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/sw.js"
+
+[headers.values]
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/webpack-runtime-ed72d21dc903eceba9b8.js"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/webpack-runtime-ed72d21dc903eceba9b8.js.map"
+
+[headers.values]
+cache-control = "public, max-age=31536000, immutable"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/webpack.stats.json"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/*/"
+
+[headers.values]
+cache-control = "public, max-age=0, must-revalidate"
+x-xss-protection = "1; mode=block"
+x-content-type-options = "nosniff"
+referrer-policy = "same-origin"
+x-frame-options = "DENY"
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+from = "/page-data/*"
+to = "/page-data/404/page-data.json"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/*"
+to = "/404/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
