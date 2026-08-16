@@ -32,7 +32,6 @@ const Portofolio = ({ location }) => {
 
   return (
     <Layout location={location} title={"Portofolio"}>
-      <Seo title="Portofolio" />
       <PortfolioIntro />
       <PortfolioSectionNav sections={sections} />
       <PortfolioProjectGrid />
@@ -45,5 +44,7 @@ const Portofolio = ({ location }) => {
 Portofolio.propTypes = {
   location: PropTypes.object,
 }
+
+export const Head = () => <Seo title="Portofolio" pathname="/portofolio/" />
 
 export default Portofolio

@@ -118,4 +118,6 @@ About.propTypes = {
   location: PropTypes.object,
 }
 
+export const Head = () => <Seo title="About" pathname="/about/" />
+
 export default About
