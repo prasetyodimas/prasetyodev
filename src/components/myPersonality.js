@@ -1,11 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import loadable from "@loadable/component"
 import BlockElement from "../components/blockElement"
-
-const PDFPersonalityViewer = loadable(() => import("../components/PDFPersonalityViewer"), {
-  ssr: false,
-})
 
 const MyPersonality = () => {
   const data = useStaticQuery(graphql`
@@ -35,10 +30,16 @@ const MyPersonality = () => {
         </p>
       </div>
       <div className="col-sm-12 col-md-6 col-lg-6">
-        <PDFPersonalityViewer
-          files={data.allFile.edges}
-          fallback={<div>Loading PDF viewer...</div>}
-        />
+        {data.allFile.edges.map((file, index) => (
+          <embed
+            key={index}
+            src={file.node.publicURL}
+            type="application/pdf"
+            width="100%"
+            height="600px"
+            style={{ border: "none" }}
+          />
+        ))}
       </div>
     </BlockElement>
   )

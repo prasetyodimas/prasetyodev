@@ -152,9 +152,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       fallback: {
         fs: false,
       },
-      alias: {
-        canvas: false,
-      },
     },
   })
 }
