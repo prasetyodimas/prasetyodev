@@ -16,5 +16,10 @@
     # Relatif terhadap publish dir, hasilnya: /lighthouse/report.html
     output_path = "lighthouse/report.html"
 
+# Harus setelah plugin lighthouse: mengubah report.html jadi /lighthouse-report.json
+# yang dipakai section PageSpeed Insights di homepage
+[[plugins]]
+  package = "./plugins/lighthouse-report-json"
+
 [functions]
   directory = "netlify/functions"

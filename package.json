@@ -7,6 +7,9 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "@formspree/react": "^2.5.4",
     "@gsap/react": "^2.1.0",
