@@ -132,7 +132,6 @@ const Generator = ({ location }) => {
 
   return (
     <Layout location={location} title={`Generator Cover Letter`}>
-      <Seo title="Generator Cover Letter" />
       <BlockElement className="row mt-5 mb-5" component="div">
         <div className="col col-md-8 col-lg-8">
           <div className="card p-5">
@@ -344,5 +343,9 @@ const Generator = ({ location }) => {
 Generator.propTypes = {
   location: PropTypes.object,
 }
+
+export const Head = () => (
+  <Seo title="Generator Cover Letter" pathname="/generator/" />
+)
 
 export default Generator

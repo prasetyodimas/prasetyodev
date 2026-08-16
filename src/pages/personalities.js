@@ -7,7 +7,6 @@ import PropTypes from "prop-types"
 const Personalities = ({ location }) => {
   return (
     <Layout location={location} title={"Personality"}>
-      <Seo title="Personalities" />
       <MyPersonality />
     </Layout>
   )
@@ -16,5 +15,9 @@ const Personalities = ({ location }) => {
 Personalities.propTypes = {
   location: PropTypes.object,
 }
+
+export const Head = () => (
+  <Seo title="Personalities" pathname="/personalities/" />
+)
 
 export default Personalities

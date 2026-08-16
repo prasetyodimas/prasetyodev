@@ -11,7 +11,6 @@ import PropTypes from "prop-types"
 const About = ({ location }) => {
   return (
     <Layout location={location} title={"About"}>
-      <Seo title="About" />
       <BlockElement component="div" className="d-flex section-about-me row">
         <BlockElement
           component="div"
@@ -56,5 +55,7 @@ const About = ({ location }) => {
 About.propTypes = {
   location: PropTypes.object,
 }
+
+export const Head = () => <Seo title="About" pathname="/about/" />
 
 export default About
