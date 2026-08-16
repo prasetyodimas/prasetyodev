@@ -7,24 +7,33 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import imageOpenG from "../images/logo/dp.png"
 
-const Seo = ({ description, title, children }) => {
+const Seo = ({
+  title,
+  description,
+  image,
+  pathname,
+  type = "website",
+  children,
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
-            keywords
+            defaultTitle
             description
+            keywords
+            siteUrl
+            image
+            author {
+              name
+            }
             social {
+              twitter
               facebook
               linkedin
-            }
-            siteUrl
-            seo {
-              canonical
             }
           }
         }
@@ -32,38 +41,71 @@ const Seo = ({ description, title, children }) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaKeywords = description || site.siteMetadata.keywords
-  const metaUrl = description || site.siteMetadata.siteUrl
-  const canonicalUrl = description || site.siteMetadata.seo.canonical
+  const siteMetadata = site.siteMetadata
+
+  const fullTitle = title
+    ? `${title} | ${siteMetadata.title}`
+    : siteMetadata.defaultTitle || siteMetadata.title
+
+  const metaDescription = description || siteMetadata.description
+  const metaKeywords = siteMetadata.keywords
+  const canonicalUrl = `${siteMetadata.siteUrl}${pathname || "/"}`
+
+  const resolveImageUrl = imageSrc => {
+    if (!imageSrc) {
+      imageSrc = siteMetadata.image
+    }
+    if (/^https?:\/\//.test(imageSrc)) {
+      return imageSrc
+    }
+    const normalized = imageSrc.startsWith("/") ? imageSrc : `/${imageSrc}`
+    return `${siteMetadata.siteUrl}${normalized}`
+  }
+
+  const imageUrl = resolveImageUrl(image)
+  const imageAlt = title
+    ? `${title} – ${siteMetadata.title}`
+    : siteMetadata.title
 
   return (
     <>
-      <title>{title}</title>
-      <meta name="keyword" content={metaKeywords} />
+      <title>{fullTitle}</title>
       <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={metaKeywords} />
+      <meta name="author" content={siteMetadata.author.name} />
+      <meta name="robots" content="index, follow" />
 
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:image" content={imageOpenG} />
-      <meta property="og:url" content={metaUrl} />
-      <meta property="og:keyword" content={metaKeywords} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:site_name" content={siteMetadata.title} />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:url" content={imageUrl} />
+      <meta property="og:image:secure_url" content={imageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={imageAlt} />
+      <meta property="og:image:type" content="image/png" />
 
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={siteMetadata.social.twitter || ``} />
       <meta
         name="twitter:creator"
-        content={site.siteMetadata?.social?.twitter || ``}
+        content={siteMetadata.social.twitter || ``}
       />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={imageOpenG} />
+      <meta name="twitter:image" content={imageUrl} />
+      <meta name="twitter:image:alt" content={imageAlt} />
+
+      <link rel="canonical" href={canonicalUrl} />
+
       <meta
         name="google-site-verification"
         content="4uCaQFkmAEvTMR4MEHL11M3m1Jw76nx3ci6SdbbYmj8"
       />
-
-      <link rel="canonical" href={canonicalUrl} />
 
       {children}
     </>
