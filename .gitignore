@@ -134,3 +134,5 @@ public
 
 #PSI reporting
 lighthouse-report.json
+# Local Netlify folder
+.netlify

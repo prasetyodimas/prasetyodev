@@ -146,21 +146,12 @@ exports.onCreatePage = async ({ page, actions }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({ loaders, actions }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
-    node: {
-      fs: "empty",
-    },
-  })
-
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /canvas/,
-          use: loaders.null(),
-        },
-      ],
+    resolve: {
+      fallback: {
+        fs: false,
+      },
     },
   })
 }

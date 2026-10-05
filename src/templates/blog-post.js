@@ -66,7 +66,14 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
-    />
+      pathname={post.fields.slug}
+      type="article"
+    >
+      <meta
+        property="article:published_time"
+        content={new Date(post.frontmatter.date).toISOString()}
+      />
+    </Seo>
   )
 }
 
@@ -87,6 +94,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

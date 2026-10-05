@@ -1,22 +1,94 @@
 @import "../variables/color";
 @import "../variables/typography";
 
-.page-speed-list {
+// Lighthouse score palette
+$page-speed-good: #0cce6b;
+$page-speed-average: #ffa400;
+$page-speed-poor: #ff4e42;
+
+.page-speed-gauges {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.page-speed-tile {
+.page-speed-gauge {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-width: 110px;
-  padding: 1rem 1.25rem;
+  width: 108px;
+}
+
+.page-speed-gauge-svg {
+  // Start the arc at 12 o'clock instead of 3 o'clock
+  transform: rotate(-90deg);
+}
+
+.page-speed-gauge-track {
+  fill: none;
+  stroke: currentColor;
+  opacity: 0.15;
+}
+
+.page-speed-gauge-arc {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.page-speed-gauge-value {
+  position: absolute;
+  top: 54px;
+  transform: translateY(-50%);
+  font-size: $fontSize-4;
+  font-weight: $fontWeight-black;
+  line-height: 1;
+  color: currentColor;
+}
+
+.page-speed-gauge-title {
+  margin-top: 0.75rem;
+  font-size: 0.625rem;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: $color-text-light;
+}
+
+.page-speed-gauge--good {
+  color: $page-speed-good;
+}
+
+.page-speed-gauge--average {
+  color: $page-speed-average;
+}
+
+.page-speed-gauge--poor {
+  color: $page-speed-poor;
+}
+
+.page-speed-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.page-speed-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.875rem 1rem;
   background-color: $white;
   border: 1px solid $gray-200;
   border-radius: 16px;
@@ -29,29 +101,48 @@
   }
 }
 
-.page-speed-key {
+.page-speed-metric-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.625rem;
   font-weight: $fontWeight-bold;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: $color-text-light;
-  margin-bottom: 0.25rem;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
 }
 
-.page-speed-value {
-  font-size: $fontSize-4;
-  font-weight: $fontWeight-black;
+.page-speed-metric-value {
+  font-size: $fontSize-2;
+  font-weight: $fontWeight-bold;
   line-height: 1;
+  color: $color-heading;
 }
 
-.page-speed-score--good .page-speed-value {
-  color: #198754;
+.page-speed-metric--good .page-speed-metric-label::before {
+  background-color: $page-speed-good;
 }
 
-.page-speed-score--fair .page-speed-value {
-  color: #fd7e14;
+.page-speed-metric--average .page-speed-metric-label::before {
+  background-color: $page-speed-average;
 }
 
-.page-speed-score--poor .page-speed-value {
-  color: #dc3545;
+.page-speed-metric--poor .page-speed-metric-label::before {
+  background-color: $page-speed-poor;
+}
+
+.page-speed-footnote {
+  margin: 0;
+  text-align: center;
+  font-size: $fontSize-0;
+  color: $color-text-light;
 }

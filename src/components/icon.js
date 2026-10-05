@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Icon } from "@react-pdf-viewer/core"
 import PropTypes from "prop-types"
 
 const Icons = ({ path, width, height, quality, alt, classes }) => {

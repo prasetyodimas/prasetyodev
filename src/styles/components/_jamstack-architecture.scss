@@ -1,0 +1,108 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.jamstack-architecture {
+  .lead {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.jamstack-architecture-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.jamstack-architecture-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(26, 32, 44, 0.08);
+  border-radius: 16px;
+}
+
+.jamstack-architecture-logo {
+  display: block;
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.jamstack-architecture-logo--gatsby,
+.jamstack-architecture-logo--netlify {
+  height: 40px;
+}
+
+.jamstack-architecture-logo--jamstack {
+  height: 28px;
+}
+
+.jamstack-architecture-separator {
+  font-weight: $fontWeight-bold;
+  color: $color-text-light;
+}
+
+.jamstack-architecture-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jamstack-architecture-item {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(26, 32, 44, 0.08);
+  border-radius: 16px;
+  margin-bottom: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 15, 15, 0.05);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.jamstack-architecture-title {
+  font-size: $fontSize-1;
+  font-weight: $fontWeight-bold;
+  color: $color-heading;
+  margin: 0 0 0.5rem;
+}
+
+.jamstack-architecture-desc {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+  margin: 0;
+  line-height: $lineHeight-relaxed;
+}
+
+@media screen and (max-width: 600px) {
+  .jamstack-architecture-list {
+    grid-template-columns: 1fr;
+  }
+
+  .jamstack-architecture-logo--gatsby,
+  .jamstack-architecture-logo--netlify {
+    height: 32px;
+  }
+
+  .jamstack-architecture-logo--jamstack {
+    height: 24px;
+  }
+}

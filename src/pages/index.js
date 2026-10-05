@@ -10,6 +10,7 @@ import ServicesSection from "../components/servicesSection"
 import GithubActivity from "../components/githubActivity"
 import GetInTouch from "../components/getInTouch"
 import PageSpeedInsight from "../components/pageSpeedInsight"
+import JamstackArchitecture from "../components/jamstackArchitecture"
 import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
 // import ContactMe from "../components/contactMe"
 // import MyServices from "../components/myServices"
@@ -52,6 +53,7 @@ const IndexSite = ({ data, location }) => {
       <SungnikahCaseStudy />
       <ServicesSection />
       <GithubActivity />
+      <JamstackArchitecture />
       <GetInTouch />
       {/* <MyServices /> */}
       {/* <ContactMe /> */}
@@ -74,7 +76,7 @@ export default IndexSite
  */
 const Header = ({ data }) => {
   const authorName = data.site.siteMetadata?.author.name
-  return <Seo title={`${authorName} Software Engineer`} />
+  return <Seo title={`${authorName} Software Engineer`} pathname="/" />
 }
 
 Header.propTypes = {
