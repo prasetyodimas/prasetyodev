@@ -1,0 +1,300 @@
+@import "../variables/color";
+
+// DARK MODE
+// Applied when <html data-theme="dark"> is set (see gatsby-ssr.js + themeToggle).
+
+$dark-bg: #0f1115;
+$dark-surface: #171a21;
+$dark-surface-raised: #1e222b;
+$dark-border: rgba(255, 255, 255, 0.09);
+$dark-text: #e6e8eb;
+$dark-heading: #f2f4f7;
+$dark-text-muted: #9aa3b2;
+$dark-primary: #ff4d94;
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-heading;
+  }
+
+  p,
+  li,
+  td,
+  th {
+    color: $dark-text;
+  }
+
+  a {
+    color: $dark-primary;
+  }
+
+  hr {
+    background-color: rgba(255, 255, 255, 0.14);
+  }
+
+  blockquote {
+    color: $dark-text-muted;
+    border-left-color: $dark-primary;
+  }
+
+  table thead tr th {
+    border-bottom-color: $dark-border;
+  }
+
+  // Navbar
+  nav.navbar {
+    background: rgba(15, 17, 21, 0.82);
+    border-bottom-color: $dark-border;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    .navbar-brand {
+      color: $dark-heading;
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.18);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-collapse {
+      @media screen and (max-width: 991px) {
+        background: rgba(23, 26, 33, 0.97);
+        border-color: $dark-border;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    ul.navbar-nav li.nav-item a.nav-link {
+      color: $dark-text;
+
+      &:hover,
+      &.active {
+        color: $dark-primary;
+        background-color: rgba(255, 77, 148, 0.12);
+      }
+    }
+  }
+
+  // Cards & surfaces
+  .service-card,
+  .skill-group,
+  .porto-card,
+  .about-fact-card,
+  .github-panel,
+  .github-stat-card,
+  .github-repo-card,
+  .page-speed-metric,
+  .project-modal,
+  .project-modal-thumb,
+  .exp-card,
+  .exp-marker,
+  .content-skillset .card,
+  .card {
+    background-color: $dark-surface-raised;
+    border-color: $dark-border;
+    color: $dark-text;
+  }
+
+  .section-surface {
+    background-color: rgba(23, 26, 33, 0.85);
+    border-color: $dark-border;
+  }
+
+  .jamstack-architecture-logos,
+  .jamstack-architecture-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: $dark-border;
+  }
+
+  .porto-nav {
+    background: rgba(15, 17, 21, 0.88);
+    border-color: $dark-border;
+  }
+
+  // Chips, tags & muted pills
+  .skill-chip,
+  .porto-card-tag,
+  .project-modal-tag,
+  .porto-nav-count,
+  .porto-card-image,
+  .project-modal-image-main {
+    background: $dark-surface;
+    border-color: $dark-border;
+    color: $dark-text-muted;
+  }
+
+  .skill-chip:hover {
+    background: $dark-surface-raised;
+  }
+
+  .project-modal-close {
+    background: rgba(30, 34, 43, 0.9);
+    color: $dark-heading;
+  }
+
+  .project-modal::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  // Buttons
+  .btn-bloby {
+    background-color: $dark-surface-raised;
+    border-color: $dark-border;
+    color: $dark-primary;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  // Hero
+  .hero-availability {
+    background-color: $dark-surface-raised;
+    border-color: $dark-border;
+    color: $dark-text-muted;
+  }
+
+  // Footer
+  .footer-area {
+    background: rgba(23, 26, 33, 0.85);
+    border-color: $dark-border;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    color: $dark-text-muted;
+
+    a {
+      color: $dark-primary;
+    }
+  }
+
+  .footer-badge {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: $dark-border;
+  }
+
+  // Muted text
+  .about-lead,
+  .about-fact-desc,
+  .porto-card-summary,
+  .porto-card-meta,
+  .porto-section-desc,
+  .project-modal-summary,
+  .project-modal-section-text,
+  .skill-group-desc,
+  .page-speed-footnote,
+  .page-speed-metric-label,
+  .github-stat-label,
+  .github-repo-description,
+  .github-repo-meta,
+  .github-activity-text,
+  .github-activity-time,
+  .hero-bio,
+  .text-muted {
+    color: $dark-text-muted !important;
+  }
+
+  // Headings inside components
+  .about-title,
+  .about-section-title,
+  .about-fact-value,
+  .porto-card-title,
+  .porto-section-title,
+  .project-modal-title,
+  .project-modal-section-title,
+  .skill-group-title,
+  .skill-chip-label,
+  .github-activity-title,
+  .github-stat-value,
+  .github-repo-name,
+  .page-speed-metric-value,
+  .hero-title,
+  .jamstack-architecture-title {
+    color: $dark-heading;
+  }
+
+  // Forms (contact, generator, etc.)
+  input,
+  textarea,
+  select,
+  .form-control {
+    background-color: $dark-surface-raised;
+    border-color: $dark-border;
+    color: $dark-text;
+
+    &::placeholder {
+      color: $dark-text-muted;
+    }
+
+    &:focus {
+      background-color: $dark-surface-raised;
+      color: $dark-text;
+      border-color: $dark-primary;
+    }
+  }
+
+  // Bootstrap modals & dropdowns
+  .modal-content,
+  .dropdown-menu {
+    background-color: $dark-surface-raised;
+    color: $dark-text;
+    border-color: $dark-border;
+  }
+
+  // Code blocks (prism)
+  code,
+  pre {
+    color: $dark-text;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: $dark-surface;
+  }
+
+  // Theme toggle button
+  .theme-toggle {
+    color: $dark-text;
+    border-color: rgba(255, 255, 255, 0.18);
+
+    &:hover {
+      color: $dark-primary;
+      background-color: rgba(255, 77, 148, 0.12);
+    }
+  }
+}
+
+// Theme toggle button (both themes)
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 0.5rem;
+  padding: 0;
+  color: $color-text;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: $color-primary;
+    background-color: rgba(209, 0, 84, 0.08);
+    border-color: transparent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+}

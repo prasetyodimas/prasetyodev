@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { SocialIcon } from "react-social-icons"
+import ThemeToggle from "./themeToggle"
 
 const Navbar = props => {
   const [navbarState, setNavbarState] = useState("d-none")
@@ -106,6 +107,8 @@ const Navbar = props => {
             })}
           </ul>
         </div>
+
+        <ThemeToggle />
       </div>
     </nav>
   )
