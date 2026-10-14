@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import JsonLd from "../components/JsonLd"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -19,7 +20,7 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h2 itemProp="headline">{post.frontmatter.title}</h2>
+          <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
@@ -61,7 +62,27 @@ const BlogPostTemplate = ({
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = ({ data: { markdownRemark: post, site } }) => {
+  const { siteUrl, author } = site.siteMetadata
+  const publishedIso = new Date(post.frontmatter.date).toISOString()
+  const postUrl = `${siteUrl}${post.fields.slug}`
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.frontmatter.title,
+    description: post.frontmatter.description || post.excerpt,
+    datePublished: publishedIso,
+    inLanguage: "id-ID",
+    mainEntityOfPage: postUrl,
+    url: postUrl,
+    author: {
+      "@type": "Person",
+      name: author.name,
+      url: siteUrl,
+    },
+  }
+
   return (
     <Seo
       title={post.frontmatter.title}
@@ -69,10 +90,8 @@ export const Head = ({ data: { markdownRemark: post } }) => {
       pathname={post.fields.slug}
       type="article"
     >
-      <meta
-        property="article:published_time"
-        content={new Date(post.frontmatter.date).toISOString()}
-      />
+      <meta property="article:published_time" content={publishedIso} />
+      <JsonLd data={articleJsonLd} />
     </Seo>
   )
 }
@@ -88,6 +107,10 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
+        author {
+          name
+        }
       }
     }
     markdownRemark(id: { eq: $id }) {

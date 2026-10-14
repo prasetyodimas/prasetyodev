@@ -33,6 +33,6 @@ NotFoundPage.propTypes = {
   location: PropTypes.object,
 }
 
-export const Head = () => <Seo title="404: Not Found" />
+export const Head = () => <Seo title="404: Not Found" robots="noindex, follow" />
 
 export default NotFoundPage

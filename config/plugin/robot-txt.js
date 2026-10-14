@@ -4,7 +4,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://prasetyodimas.my.id",
-        sitemap: "https://prasetyodimas.my.id/sitemap/sitemap-0.xml",
+        sitemap: "https://prasetyodimas.my.id/sitemap/sitemap-index.xml",
         policy: [
           {
             userAgent: "*",
@@ -15,12 +15,8 @@ module.exports = {
             allow: "/",
           },
           {
-            userAgent: "Googlebot",
-            disallow: "/*.js$",
-          },
-          {
             userAgent: "*",
-            disallow: "/*.json$",
+            disallow: ["/404", "/404.html"],
           },
         ],
       },

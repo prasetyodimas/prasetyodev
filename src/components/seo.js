@@ -14,6 +14,7 @@ const Seo = ({
   image,
   pathname,
   type = "website",
+  robots = "index, follow",
   children,
 }) => {
   const { site } = useStaticQuery(
@@ -69,18 +70,19 @@ const Seo = ({
 
   return (
     <>
+      <html lang="id-ID" />
       <title>{fullTitle}</title>
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
       <meta name="author" content={siteMetadata.author.name} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={robots} />
 
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content={siteMetadata.title} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content="id_ID" />
       <meta property="og:image" content={imageUrl} />
       <meta property="og:image:url" content={imageUrl} />
       <meta property="og:image:secure_url" content={imageUrl} />
