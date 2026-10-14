@@ -5,7 +5,7 @@ export const websiteJsonLd = {
   "@type": "WebSite",
   name: "Prasetyodev",
   alternateName: ["Prasetyodimas", "Dimas Prasetyo"],
-  url: "https://prasetyodev.netlify.app",
+  url: "https://prasetyodimas.my.id",
   description:
     "Portfolio & blog of Dimas Prasetyo (Prasetyodimas), Web Developer Specialist.",
   inLanguage: "id-ID",
@@ -20,7 +20,7 @@ export const personJsonLd = {
   "@type": "Person",
   name: "Dimas Prasetyo",
   alternateName: "Prasetyodimas",
-  url: "https://prasetyodev.netlify.app/",
+  url: "https://prasetyodimas.my.id/",
   sameAs: [
     "https://github.com/prasetyodimas",
     "https://linkedin.com/in/dimas-prasetyo",
