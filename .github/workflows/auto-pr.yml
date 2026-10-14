@@ -1,0 +1,75 @@
+# Automatically opens (or updates) a pull request into `main` whenever a
+# branch with a conventional prefix (feat/, fix/, chore/, ...) is pushed.
+name: Auto PR
+
+on:
+  push:
+    branches:
+      - "feat/**"
+      - "feature/**"
+      - "fix/**"
+      - "bugfix/**"
+      - "hotfix/**"
+      - "chore/**"
+      - "refactor/**"
+      - "docs/**"
+      - "enhancement/**"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: auto-pr-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Derive PR title
+        id: meta
+        run: |
+          # "feat/add-dark-mode" -> "feat: add dark mode"
+          prefix="${BRANCH%%/*}"
+          slug="${BRANCH#*/}"
+          title=$(echo "$slug" | tr '_-' '  ' | sed 's/  */ /g')
+          echo "title=${prefix}: ${title}" >> "$GITHUB_OUTPUT"
+
+      - name: Create or reuse pull request
+        run: |
+          if gh pr view "$BRANCH" --json state -q .state | grep -q OPEN; then
+            echo "An open PR already exists for $BRANCH"
+            exit 0
+          fi
+
+          commits=$(git log --format='- %s' "origin/main..HEAD" | head -20)
+
+          label_args=()
+          if gh label list --search auto-pr --json name -q '.[].name' | grep -qx auto-pr; then
+            label_args=(--label auto-pr)
+          fi
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "${{ steps.meta.outputs.title }}" \
+            "${label_args[@]}" \
+            --body "$(cat <<EOF
+          ## Auto-generated PR
+
+          Branch: \`$BRANCH\`
+
+          ### Commits
+          ${commits:-_No commits ahead of main_}
+
+          _Created automatically by the Auto PR workflow._
+          EOF
+          )"

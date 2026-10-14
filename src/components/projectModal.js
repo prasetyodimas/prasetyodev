@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react"
+import { createPortal } from "react-dom"
 import PropTypes from "prop-types"
 
 const ProjectModal = ({ project, onClose }) => {
@@ -30,7 +31,7 @@ const ProjectModal = ({ project, onClose }) => {
 
   if (!project) return null
 
-  return (
+  const modal = (
     <div
       className="project-modal-overlay"
       onClick={onClose}
@@ -140,6 +141,9 @@ const ProjectModal = ({ project, onClose }) => {
       </div>
     </div>
   )
+
+  if (typeof document === "undefined") return null
+  return createPortal(modal, document.body)
 }
 
 ProjectModal.propTypes = {
