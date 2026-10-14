@@ -10,7 +10,7 @@ module.exports = {
         summary:
           "Frontend and Fullstack Developer focusing on creating visually appealing and interactive websites and web applications. Expert in HTML, CSS, JavaScript, with a keen eye for design and usability.",
       },
-      siteUrl: "https://prasetyodev.netlify.app",
+      siteUrl: "https://prasetyodimas.my.id",
       image: "/og-image.png",
       keywords:
         "SEO, web development, frontend, fullstack, Dimas Prasetyo, Prasetyodev",
@@ -19,7 +19,7 @@ module.exports = {
           "Prasetyodev – Portfolio & blog Dimas Prasetyo (Prasetyodimas). Temukan proyek, keahlian, dan insight seputar pengembangan web.",
         robots: "index, follow",
         index: 2023,
-        canonical: "https://prasetyodev.netlify.app",
+        canonical: "https://prasetyodimas.my.id",
       },
       social: {
         twitter: "@prasetyodimas",
