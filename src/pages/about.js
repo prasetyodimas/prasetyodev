@@ -118,6 +118,12 @@ About.propTypes = {
   location: PropTypes.object,
 }
 
-export const Head = () => <Seo title="About" pathname="/about/" />
+export const Head = () => (
+  <Seo
+    title="About"
+    description="Tentang Dimas Prasetyo (Prasetyodimas) – Frontend & Fullstack Developer. Pengalaman, keahlian, dan perjalanan karier di pengembangan web."
+    pathname="/about/"
+  />
+)
 
 export default About

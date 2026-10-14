@@ -79,6 +79,12 @@ Blog.propTypes = {
   data: PropTypes.array,
 }
 
-export const Head = () => <Seo title="Blog" pathname="/blog/" />
+export const Head = () => (
+  <Seo
+    title="Blog"
+    description="Artikel dan insight seputar web development, frontend, dan fullstack oleh Dimas Prasetyo (Prasetyodimas)."
+    pathname="/blog/"
+  />
+)
 
 export default Blog

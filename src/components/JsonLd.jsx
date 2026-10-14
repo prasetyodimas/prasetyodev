@@ -24,6 +24,8 @@ export const personJsonLd = {
   sameAs: [
     "https://github.com/prasetyodimas",
     "https://linkedin.com/in/dimas-prasetyo",
+    "https://twitter.com/prasetyodimas",
+    "https://facebook.com/prasetyodimas",
   ],
   jobTitle: "Web Developer Specialist",
   worksFor: {

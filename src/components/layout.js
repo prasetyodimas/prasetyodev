@@ -10,7 +10,7 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading header-app">
+      <div className="main-heading header-app">
         <Typewriter
           onInit={typewriter => {
             typewriter
@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
               .start()
           }}
         />
-      </h1>
+      </div>
     )
   } else {
     header = (

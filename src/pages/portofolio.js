@@ -45,6 +45,12 @@ Portofolio.propTypes = {
   location: PropTypes.object,
 }
 
-export const Head = () => <Seo title="Portofolio" pathname="/portofolio/" />
+export const Head = () => (
+  <Seo
+    title="Portofolio"
+    description="Portofolio proyek Dimas Prasetyo (Prasetyodimas) – aplikasi web, frontend, dan fullstack yang pernah dibangun."
+    pathname="/portofolio/"
+  />
+)
 
 export default Portofolio
