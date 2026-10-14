@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import Typewriter from "typewriter-effect"
 import { StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Buttons from "../components/buttons"
 import Social from "../components/social"
 import BadgeYears from "../components/badgeYears"
+import ResumeModal from "../components/resumeModal"
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -21,6 +22,7 @@ const Hero = () => {
   `)
 
   const resume = data.allFile.edges[0]?.node
+  const [showResume, setShowResume] = useState(false)
 
   return (
     <section className="hero section-surface px-4 py-5">
@@ -70,13 +72,13 @@ const Hero = () => {
               View My Work
             </Buttons>
             {resume && (
-              <a
+              <button
+                type="button"
                 className="btn-download-cv"
-                href={resume.publicURL}
-                download="Dimas Prasetyo - Resume.pdf"
+                onClick={() => setShowResume(true)}
               >
                 Download CV
-              </a>
+              </button>
             )}
           </div>
 
@@ -118,6 +120,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {showResume && resume && (
+        <ResumeModal
+          fileUrl={resume.publicURL}
+          fileName="Dimas Prasetyo - Resume.pdf"
+          onClose={() => setShowResume(false)}
+        />
+      )}
     </section>
   )
 }

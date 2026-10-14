@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { SocialIcon } from "react-social-icons"
 import ThemeToggle from "./themeToggle"
+import ResumeModal from "./resumeModal"
 
 const Navbar = props => {
   const [navbarState, setNavbarState] = useState("d-none")
   const [isActive, setIsActive] = useState(false)
+  const [showResume, setShowResume] = useState(false)
 
   const data = useStaticQuery(graphql`
     {
@@ -26,22 +28,7 @@ const Navbar = props => {
     setNavbarState(menuClassActive)
   }
 
-  const handleDownload = async file => {
-    try {
-      const response = await fetch(file.node.publicURL)
-      const blob = await response.blob()
-      const url = window.URL.createObjectURL(blob)
-      const a = document.createElement("a")
-      a.href = url
-      a.download = `Dimas Prasetyo - Resume.pdf`
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
-      window.URL.revokeObjectURL(url)
-    } catch (error) {
-      console.error("Download failed:", error)
-    }
-  }
+  const resume = data.allFile.edges[0]?.node
 
   return (
     <nav className="navbar navbar-expand-lg" aria-label="Navbar site">
@@ -92,24 +79,30 @@ const Navbar = props => {
                 GitHub
               </a>
             </li>
-            {data.allFile.edges.map((file, index) => {
-              return (
-                <li className="nav-item" key={`pdf-${index}`}>
-                  <a
-                    className="nav-link nav-resume cursor-pointer"
-                    href="#"
-                    onClick={() => handleDownload(file)}
-                  >
-                    Resume
-                  </a>
-                </li>
-              )
-            })}
+            {resume && (
+              <li className="nav-item">
+                <button
+                  type="button"
+                  className="nav-link nav-resume cursor-pointer"
+                  onClick={() => setShowResume(true)}
+                >
+                  Resume
+                </button>
+              </li>
+            )}
           </ul>
         </div>
 
         <ThemeToggle />
       </div>
+
+      {showResume && resume && (
+        <ResumeModal
+          fileUrl={resume.publicURL}
+          fileName="Dimas Prasetyo - Resume.pdf"
+          onClose={() => setShowResume(false)}
+        />
+      )}
     </nav>
   )
 }

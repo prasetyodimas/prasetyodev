@@ -59,7 +59,9 @@ nav.navbar {
       display: flex;
       margin: 0;
 
-      a.nav-link {
+      a.nav-link,
+      button.nav-link {
+        border: 0;
         color: $color-text;
         text-decoration: none;
         border-radius: 30px;
@@ -69,7 +71,8 @@ nav.navbar {
         transition: color 0.2s, background-color 0.2s;
 
         &:hover,
-        &.active {
+        &.active,
+        &:focus {
           color: $color-primary;
           background-color: rgba(209, 0, 84, 0.08);
           text-decoration: none;
