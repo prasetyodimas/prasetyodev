@@ -52,11 +52,16 @@ jobs:
 
           commits=$(git log --format='- %s' "origin/main..HEAD" | head -20)
 
+          label_args=()
+          if gh label list --search auto-pr --json name -q '.[].name' | grep -qx auto-pr; then
+            label_args=(--label auto-pr)
+          fi
+
           gh pr create \
             --base main \
             --head "$BRANCH" \
             --title "${{ steps.meta.outputs.title }}" \
-            --label "auto-pr" \
+            "${label_args[@]}" \
             --body "$(cat <<EOF
           ## Auto-generated PR
 
