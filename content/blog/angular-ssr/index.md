@@ -2,6 +2,8 @@
 title: Angular SSR - Angular Universal Packages
 date: "2023-11-23T22:14:23.284Z"
 description: "This guide describes Angular Universal, a technology that renders Angular applications on the server."
+tags: ["angular", "ssr", "server-side-rendering"]
+cover: ./build-sc.png
 ---
 
 Pengertian dari teknik SSR, Server Side Rendering atau SSR merupakan salah satu jenis metode rendering, dimana proses kompilasi / rendering dilakukan pada sisi server.

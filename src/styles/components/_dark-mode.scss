@@ -259,6 +259,82 @@ html[data-theme="dark"] {
     background: $dark-surface;
   }
 
+  // Blog page
+  .post-card {
+    background: $dark-surface;
+    border-color: $dark-border;
+
+    &:hover {
+      border-color: rgba(255, 77, 148, 0.45);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    .post-card-title {
+      color: $dark-heading;
+    }
+
+    .post-card-excerpt,
+    .post-card-meta {
+      color: $dark-text-muted;
+    }
+
+    .post-card-tags .post-tag {
+      color: $dark-primary;
+      background: rgba(255, 77, 148, 0.14);
+    }
+  }
+
+  .blog-header {
+    .blog-title {
+      color: $dark-heading;
+    }
+
+    .blog-subtitle {
+      color: $dark-text-muted;
+    }
+
+    .blog-rss {
+      color: $dark-primary;
+    }
+  }
+
+  .blog-tags .tag-chip {
+    border-color: $dark-border;
+    color: $dark-text-muted;
+
+    &:hover {
+      border-color: $dark-primary;
+      color: $dark-primary;
+    }
+
+    &.active {
+      background: $dark-primary;
+      border-color: $dark-primary;
+      color: $dark-bg;
+    }
+  }
+
+  .blog-section-title {
+    color: $dark-heading;
+  }
+
+  .blog-upcoming .post-card.is-upcoming {
+    background: transparent;
+
+    &:hover {
+      border-color: $dark-border;
+    }
+
+    .post-card-title {
+      color: $dark-text-muted;
+    }
+
+    .upcoming-badge {
+      color: $dark-primary;
+      border-color: rgba(255, 77, 148, 0.4);
+    }
+  }
+
   // Theme toggle button
   .theme-toggle {
     color: $dark-text;

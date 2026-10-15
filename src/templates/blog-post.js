@@ -83,15 +83,30 @@ export const Head = ({ data: { markdownRemark: post, site } }) => {
     },
   }
 
+  const coverUrl = post.frontmatter.cover?.publicURL
+    ? `${siteUrl}${post.frontmatter.cover.publicURL}`
+    : undefined
+
   return (
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
       pathname={post.fields.slug}
       type="article"
+      image={coverUrl}
     >
       <meta property="article:published_time" content={publishedIso} />
-      <JsonLd data={articleJsonLd} />
+      <meta property="article:author" content={author.name} />
+      {(post.frontmatter.tags || []).map(tag => (
+        <meta key={tag} property="article:tag" content={tag} />
+      ))}
+      <JsonLd
+        data={{
+          ...articleJsonLd,
+          keywords: (post.frontmatter.tags || []).join(", "),
+          ...(coverUrl ? { image: coverUrl } : {}),
+        }}
+      />
     </Seo>
   )
 }
@@ -124,6 +139,10 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
+        cover {
+          publicURL
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
