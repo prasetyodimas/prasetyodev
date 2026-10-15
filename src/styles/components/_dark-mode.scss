@@ -335,6 +335,108 @@ html[data-theme="dark"] {
     }
   }
 
+  // Blog post / article detail
+  .post-hero {
+    .post-hero-title {
+      color: $dark-heading;
+    }
+
+    .post-hero-meta,
+    .post-back {
+      color: $dark-text-muted;
+    }
+
+    .post-back:hover {
+      color: $dark-primary;
+    }
+
+    .post-hero-tags .post-tag {
+      color: $dark-primary;
+      background: rgba(255, 77, 148, 0.14);
+    }
+
+    .post-hero-cover {
+      border-color: $dark-border;
+    }
+  }
+
+  .post-content {
+    color: $dark-text;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $dark-heading;
+    }
+
+    h2 {
+      border-bottom-color: $dark-border;
+    }
+
+    a {
+      color: $dark-primary;
+      border-bottom-color: rgba(255, 77, 148, 0.35);
+
+      &:hover {
+        border-bottom-color: $dark-primary;
+      }
+    }
+
+    code {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    table {
+      th,
+      td {
+        border-bottom-color: $dark-border;
+      }
+
+      thead th {
+        color: $dark-heading;
+      }
+    }
+
+    hr {
+      background: $dark-border;
+    }
+
+    details {
+      border-color: $dark-border;
+
+      summary {
+        color: $dark-heading;
+      }
+    }
+
+    figcaption {
+      color: $dark-text-muted;
+    }
+  }
+
+  .post-footer {
+    border-top-color: $dark-border;
+  }
+
+  .blog-post-nav .post-nav-card {
+    background: $dark-surface;
+    border-color: $dark-border;
+
+    &:hover {
+      border-color: rgba(255, 77, 148, 0.45);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .post-nav-label {
+      color: $dark-primary;
+    }
+
+    .post-nav-title {
+      color: $dark-heading;
+    }
+  }
+
   // Theme toggle button
   .theme-toggle {
     color: $dark-text;
