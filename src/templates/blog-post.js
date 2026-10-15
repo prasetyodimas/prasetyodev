@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -11,6 +12,8 @@ const BlogPostTemplate = ({
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
+  const cover = getImage(post.frontmatter.cover)
+  const tags = post.frontmatter.tags || []
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,44 +22,67 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="post-hero">
+          <Link to="/blog/" className="post-back">
+            ← Back to blog
+          </Link>
+          {tags.length > 0 && (
+            <ul className="post-hero-tags">
+              {tags.map(tag => (
+                <li key={tag} className="post-tag">
+                  #{tag}
+                </li>
+              ))}
+            </ul>
+          )}
+          <h1 className="post-hero-title" itemProp="headline">
+            {post.frontmatter.title}
+          </h1>
+          <div className="post-hero-meta">
+            <time dateTime={post.frontmatter.dateIso} itemProp="datePublished">
+              {post.frontmatter.date}
+            </time>
+            {post.timeToRead && (
+              <span className="post-hero-readtime">
+                {post.timeToRead} min read
+              </span>
+            )}
+          </div>
+          {cover && (
+            <div className="post-hero-cover">
+              <GatsbyImage image={cover} alt={post.frontmatter.title} />
+            </div>
+          )}
         </header>
+
         <section
+          className="post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
+
+        <footer className="post-footer">
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+
+      <nav className="blog-post-nav" aria-label="More posts">
+        {previous ? (
+          <Link to={previous.fields.slug} rel="prev" className="post-nav-card">
+            <span className="post-nav-label">← Previous</span>
+            <span className="post-nav-title">
+              {previous.frontmatter.title}
+            </span>
+          </Link>
+        ) : (
+          <span />
+        )}
+        {next && (
+          <Link to={next.fields.slug} rel="next" className="post-nav-card next">
+            <span className="post-nav-label">Next →</span>
+            <span className="post-nav-title">{next.frontmatter.title}</span>
+          </Link>
+        )}
       </nav>
     </Layout>
   )
@@ -132,16 +158,21 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       fields {
         slug
       }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        dateIso: date
         description
         tags
         cover {
           publicURL
+          childImageSharp {
+            gatsbyImageData(width: 1200, placeholder: BLURRED)
+          }
         }
       }
     }

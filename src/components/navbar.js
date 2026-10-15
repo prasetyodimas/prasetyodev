@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { SocialIcon } from "react-social-icons"
 import ThemeToggle from "./themeToggle"
 import ResumeModal from "./resumeModal"
 
