@@ -84,7 +84,7 @@ const journeys = [
       "Frontend-to-infrastructure mindset",
       "Reliable product delivery",
     ],
-    skills: ["Full-stack", "React", "Node.js", "AWS", "System Architecture"],
+    skills: ["Full-stack", "React", "Node.js", "Express", "Vultr", "System Architecture"],
   },
 ]
 
@@ -102,7 +102,9 @@ const EngineeringJourney = () => {
       </p>
 
       <ol className="engineering-journey-list">
-        {journeys.map((journey, index) => (
+        {[...journeys]
+          .sort((a, b) => Number(b.year) - Number(a.year))
+          .map((journey, index) => (
           <li
             className={`engineering-journey-item ${
               index % 2 === 0 ? "is-left" : "is-right"
@@ -141,7 +143,7 @@ const EngineeringJourney = () => {
               </div>
             </div>
           </li>
-        ))}
+          ))}
       </ol>
     </BlockElement>
   )

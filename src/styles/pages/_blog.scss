@@ -1,0 +1,243 @@
+@import "../variables/color";
+
+// BLOG PAGE
+// Featured post, tag filter, post grid, upcoming posts.
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .blog-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $color-heading;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-subtitle {
+    color: $color-text-light;
+    max-width: 560px;
+    margin: 0 auto 1rem;
+  }
+
+  .blog-rss {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Tag filter chips
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+
+  .tag-chip {
+    border: 1px solid rgba(26, 32, 44, 0.15);
+    background: transparent;
+    color: $color-text-light;
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+
+    &.active {
+      background: $color-primary;
+      border-color: $color-primary;
+      color: $white;
+    }
+  }
+}
+
+// Post grid
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.blog-featured {
+  margin-bottom: 3rem;
+}
+
+.blog-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $color-heading;
+  margin-bottom: 1.5rem;
+}
+
+.blog-empty {
+  text-align: center;
+  color: $color-text-light;
+  padding: 2rem 0;
+}
+
+// Post card
+.post-card {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(26, 32, 44, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(209, 0, 84, 0.35);
+    box-shadow: 0 16px 32px rgba(15, 15, 15, 0.1);
+  }
+
+  .post-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-card-cover {
+    .gatsby-image-wrapper {
+      aspect-ratio: 16 / 9;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .post-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.25rem 1.5rem 1.5rem;
+    flex: 1;
+  }
+
+  .post-card-meta {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 0.78rem;
+    color: $color-text-light;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    .post-card-readtime::before {
+      content: "·";
+      margin-right: 0.75rem;
+    }
+  }
+
+  .post-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: $color-heading;
+    margin: 0;
+  }
+
+  .post-card-excerpt {
+    font-size: 0.92rem;
+    color: $color-text-light;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0;
+
+    .post-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: $color-primary;
+      background: rgba(209, 0, 84, 0.08);
+      border-radius: 999px;
+      padding: 0.15rem 0.6rem;
+    }
+  }
+}
+
+// Featured post — horizontal layout on desktop
+.post-card--featured {
+  .post-card-link {
+    flex-direction: row;
+  }
+
+  .post-card-cover {
+    flex: 0 0 45%;
+  }
+
+  .post-card-body {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .post-card-title {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .post-card-link {
+      flex-direction: column;
+    }
+  }
+}
+
+// Upcoming posts
+.blog-upcoming {
+  .post-card.is-upcoming {
+    border-style: dashed;
+    background: transparent;
+    cursor: default;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: rgba(26, 32, 44, 0.2);
+    }
+
+    .post-card-title {
+      color: $color-text-light;
+    }
+  }
+
+  .upcoming-badge {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-primary;
+    border: 1px solid rgba(209, 0, 84, 0.4);
+    border-radius: 999px;
+    padding: 0.15rem 0.7rem;
+  }
+}

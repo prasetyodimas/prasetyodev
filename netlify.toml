@@ -7,6 +7,12 @@
     [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# Conventional sitemap URL → gatsby-plugin-sitemap index
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap/sitemap-index.xml"
+  status = 301
+
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 

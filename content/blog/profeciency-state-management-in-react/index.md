@@ -2,6 +2,8 @@
 title: Proficiency with state management patterns - React
 date: "2025-02-23T22:18:22.284Z"
 description: "Refers to a person's level of expertise or understanding in applying various state management patterns in application development"
+tags: ["react", "state-management", "zustand"]
+featured: true
 ---
 
 **Proficiency with state management patterns** refers to a person's level of expertise or understanding in applying various state management patterns in application development.
