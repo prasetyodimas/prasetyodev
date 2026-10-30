@@ -7,6 +7,9 @@ import StylusIcon from "../assets/icons/skils/stylus.svg"
 import BootstrapIcon from "../assets/icons/skils/bootstrap.svg"
 import StyledComponentIcon from "../assets/icons/skils/styled-component.svg"
 import MuireactIcon from "../assets/icons/skils/muireact.svg"
+import TailwindIcon from "../assets/icons/skils/tailwind.svg"
+import JssIcon from "../assets/icons/skils/jss.svg"
+import EmotionIcon from "../assets/icons/skils/emotion.svg"
 import ReactIcon from "../assets/icons/skils/react.svg"
 import VueIcon from "../assets/icons/skils/vue.svg"
 import VuetifyIcon from "../assets/icons/skils/vuetify.svg"
@@ -35,6 +38,10 @@ import NotionIcon from "../assets/icons/skils/notion.svg"
 import JiraIcon from "../assets/icons/skils/jira.svg"
 import GoogleAnalyticsIcon from "../assets/icons/skils/google-analytics.svg"
 import GoogleTagIcon from "../assets/icons/skils/google-tag.svg"
+import ClaudeIcon from "../assets/icons/skils/claude.svg"
+import ChatgptIcon from "../assets/icons/skils/chatgpt.svg"
+import GeminiIcon from "../assets/icons/skils/gemini.svg"
+import DevinIcon from "../assets/icons/skils/devin.svg"
 
 const skillGroups = [
   {
@@ -51,6 +58,9 @@ const skillGroups = [
       { name: "Bootstrap", icon: BootstrapIcon },
       { name: "Styled Components", icon: StyledComponentIcon },
       { name: "MUI React", icon: MuireactIcon },
+      { name: "Tailwind CSS", icon: TailwindIcon },
+      { name: "JSS", icon: JssIcon },
+      { name: "Emotion", icon: EmotionIcon },
     ],
   },
   {
@@ -107,6 +117,17 @@ const skillGroups = [
       { name: "Jira", icon: JiraIcon },
       { name: "Google Analytics", icon: GoogleAnalyticsIcon },
       { name: "Google Tag Manager", icon: GoogleTagIcon },
+    ],
+  },
+  {
+    id: "ai",
+    label: "AI Tools & Assistants",
+    description: "AI pair-programmers and assistants that speed up my workflow.",
+    skills: [
+      { name: "Claude", icon: ClaudeIcon },
+      { name: "ChatGPT", icon: ChatgptIcon },
+      { name: "Gemini", icon: GeminiIcon },
+      { name: "Devin AI", icon: DevinIcon },
     ],
   },
 ]
