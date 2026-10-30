@@ -1,0 +1,16 @@
+<svg height="70" width="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#D97757">
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(0 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(30 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(60 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(90 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(120 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(150 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(180 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(210 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(240 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(270 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(300 50 50)" />
+    <path d="M50 8 L54 38 L46 38 Z" transform="rotate(330 50 50)" />
+  </g>
+</svg>
