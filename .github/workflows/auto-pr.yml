@@ -1,19 +1,11 @@
 # Automatically opens (or updates) a pull request into `main` whenever a
-# branch with a conventional prefix (feat/, fix/, chore/, ...) is pushed.
+# branch containing a slash (feat/, fix/, bugfix/, ...) is pushed.
 name: Auto PR
 
 on:
   push:
     branches:
-      - "feat/**"
-      - "feature/**"
-      - "fix/**"
-      - "bugfix/**"
-      - "hotfix/**"
-      - "chore/**"
-      - "refactor/**"
-      - "docs/**"
-      - "enhancement/**"
+      - "*/*"
 
 permissions:
   contents: read
