@@ -9,7 +9,8 @@ const PortfolioIntro = () => {
           src="../../assets/icons/brands/brand.png"
           alt="Prasetyo Dimas"
           className="porto-brand-logo"
-          width={96}
+          width={272}
+          imgStyle={{ borderRadius: "50%" }}
           placeholder="none"
           objectFit="contain"
         />

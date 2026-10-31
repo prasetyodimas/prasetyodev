@@ -105,12 +105,55 @@ const totalPages = sortedJourneys.length + 2
 
 const EngineeringJourney = () => {
   const bookRef = useRef(null)
+  const wrapRef = useRef(null)
   const [mounted, setMounted] = useState(false)
   const [currentPage, setCurrentPage] = useState(0)
+  const [bookSize, setBookSize] = useState({
+    width: 1680,
+    height: 620,
+    portrait: false,
+  })
 
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  useEffect(() => {
+    if (!wrapRef.current) return undefined
+
+    const updateSize = () => {
+      const wrapWidth = wrapRef.current?.clientWidth || 0
+      if (!wrapWidth) return
+
+      // Reserve room for the side nav buttons on wider layouts
+      const sideNavSpace = wrapWidth >= 992 ? 116 : 0
+      const available = wrapWidth - sideNavSpace
+
+      let next
+      if (available >= 760) {
+        // Desktop / large tablet — two-page spread
+        const width = Math.min(620, Math.floor(available / 2))
+        next = { width, height: Math.round(width * 1.40), portrait: false }
+      } else {
+        // Mobile / small tablet — single portrait page
+        const width = Math.max(260, Math.min(available, 400))
+        next = { width, height: Math.round(width * 1.50), portrait: true }
+      }
+
+      setBookSize(prev =>
+        prev.width === next.width &&
+        prev.height === next.height &&
+        prev.portrait === next.portrait
+          ? prev
+          : next
+      )
+    }
+
+    updateSize()
+    const observer = new ResizeObserver(updateSize)
+    observer.observe(wrapRef.current)
+    return () => observer.disconnect()
+  }, [mounted])
 
   const flipPrev = () => bookRef.current?.pageFlip()?.flipPrev()
   const flipNext = () => bookRef.current?.pageFlip()?.flipNext()
@@ -126,7 +169,7 @@ const EngineeringJourney = () => {
         My career as a storybook — flip the pages to travel through the years.
       </p>
 
-      <div className="storybook-wrap">
+      <div className="storybook-wrap" ref={wrapRef}>
         {mounted ? (
           <>
             <button
@@ -138,95 +181,130 @@ const EngineeringJourney = () => {
             >
               ‹
             </button>
-            <HTMLFlipBook
-              ref={bookRef}
-              width={380}
-              height={520}
-              size="stretch"
-              minWidth={300}
-              maxWidth={480}
-              minHeight={420}
-              maxHeight={620}
-              showCover
-              mobileScrollSupport={false}
-              className="storybook"
-              onFlip={e => setCurrentPage(e.data)}
-            >
-              <div className="storybook-page storybook-cover">
-                <div className="storybook-cover-inner">
-                  <StaticImage
-                    src="../assets/icons/brands/brand.png"
-                    alt="Prasetyo Dimas"
-                    className="storybook-brand"
-                    width={96}
-                    placeholder="none"
-                    objectFit="contain"
-                  />
-                  <span className="storybook-cover-eyebrow">
-                    A Career Storybook
-                  </span>
-                  <h3 className="storybook-cover-title">
-                    Engineering
-                    <br />
-                    Journey
-                  </h3>
-                  <p className="storybook-cover-sub">
-                    2018 — present
-                  </p>
-                  <span className="storybook-cover-hint">
-                    Flip the corner to begin →
-                  </span>
-                </div>
-              </div>
-
-              {sortedJourneys.map((journey, index) => (
-                <div className="storybook-page" key={`page-${journey.year}`}>
-                  <div className="storybook-page-inner">
-                    <span className="storybook-page-chapter">
-                      Chapter {index + 1}
-                    </span>
-                    <span className="storybook-page-year">{journey.year}</span>
-                    <h4 className="storybook-page-title">{journey.title}</h4>
-                    <p className="storybook-page-desc">
-                      {journey.description}
-                    </p>
-                    <ul className="storybook-page-highlights">
-                      {journey.highlights.map((item, i) => (
-                        <li key={`hl-${index}-${i}`}>{item}</li>
-                      ))}
-                    </ul>
-                    <div className="storybook-page-skills">
-                      {journey.skills.map((skill, i) => (
-                        <span
-                          className="storybook-page-skill"
-                          key={`sk-${index}-${i}`}
-                        >
-                          {skill}
-                        </span>
-                      ))}
+            <div className="storybook-stage">
+              <HTMLFlipBook
+                key={bookSize.portrait ? "portrait" : "landscape"}
+                ref={bookRef}
+                width={bookSize.width}
+                height={bookSize.height}
+                size="stretch"
+                minWidth={460}
+                maxWidth={bookSize.width}
+                minHeight={360}
+                maxHeight={bookSize.height}
+                showCover
+                usePortrait={bookSize.portrait}
+                startPage={currentPage}
+                mobileScrollSupport={true}
+                className="storybook"
+                onFlip={e => setCurrentPage(e.data)}
+              >
+                <div className="storybook-page storybook-cover">
+                  <div className="storybook-cover-inner">
+                    <div className="storybook-cover-frame">
+                      <StaticImage
+                        src="../assets/icons/brands/brand.png"
+                        alt="Prasetyo Dimas"
+                        className="storybook-brand"
+                        width={272}
+                        imgStyle={{ borderRadius: 16 }}
+                        placeholder="none"
+                        objectFit="contain"
+                      />
+                      <span className="storybook-cover-eyebrow">
+                        A Career Storybook
+                      </span>
+                      <h3 className="storybook-cover-title">
+                        Engineering Journey
+                      </h3>
+                      <span className="storybook-cover-divider" />
+                      <p className="storybook-cover-sub">2018 — Present</p>
                     </div>
-                    <span className="storybook-page-num">
-                      {index + 2} / {totalPages}
+                    <span className="storybook-cover-hint">
+                      Flip to begin →
                     </span>
                   </div>
                 </div>
-              ))}
 
-              <div className="storybook-page storybook-backcover">
-                <div className="storybook-cover-inner">
-                  <h3 className="storybook-cover-title">The Next Chapter</h3>
-                  <p className="storybook-cover-sub">
-                    Could be written with your team.
-                  </p>
-                  <a
-                    className="storybook-cover-cta"
-                    href="#get-in-touch"
-                  >
-                    Get in touch →
-                  </a>
+                {sortedJourneys.map((journey, index) => (
+                  <div className="storybook-page" key={`page-${journey.year}`}>
+                    <div className="storybook-page-inner">
+                      <span className="storybook-page-chapter">
+                        Chapter {index + 1}
+                      </span>
+                      <span className="storybook-page-year">
+                        {journey.year}
+                      </span>
+                      <h4 className="storybook-page-title">{journey.title}</h4>
+                      <p className="storybook-page-desc">
+                        {journey.description}
+                      </p>
+                      <ul className="storybook-page-highlights">
+                        {journey.highlights.map((item, i) => (
+                          <li key={`hl-${index}-${i}`}>{item}</li>
+                        ))}
+                      </ul>
+                      <div className="storybook-page-skills">
+                        {journey.skills.map((skill, i) => (
+                          <span
+                            className="storybook-page-skill"
+                            key={`sk-${index}-${i}`}
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                      <span className="storybook-page-num">
+                        {index + 2} / {totalPages}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="storybook-page storybook-backcover">
+                  <div className="storybook-cover-inner">
+                    <div className="storybook-cover-frame">
+                      <span className="storybook-cover-eyebrow">
+                        The End — For Now
+                      </span>
+                      <h3 className="storybook-cover-title">
+                        The Next Chapter
+                      </h3>
+                      <span className="storybook-cover-divider" />
+                      <p className="storybook-cover-sub">
+                        Could be written with your team.
+                      </p>
+                      <a className="storybook-cover-cta" href="#get-in-touch">
+                        Get in touch →
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </HTMLFlipBook>
+              <div className="storybook-controls">
+                <button
+                  type="button"
+                  className="storybook-nav"
+                  onClick={flipPrev}
+                  disabled={currentPage === 0}
+                  aria-label="Previous page"
+                >
+                  ‹
+                </button>
+                <span className="storybook-progress">
+                  {Math.min(currentPage + 1, totalPages)} / {totalPages}
+                </span>
+                <button
+                  type="button"
+                  className="storybook-nav"
+                  onClick={flipNext}
+                  disabled={currentPage >= totalPages - 1}
+                  aria-label="Next page"
+                >
+                  ›
+                </button>
               </div>
-            </HTMLFlipBook>
+            </div>
             <button
               type="button"
               className="storybook-nav storybook-nav-next"

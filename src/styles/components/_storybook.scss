@@ -17,9 +17,33 @@
   color: $gray-600;
 }
 
+.storybook-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  padding: 20px;
+}
+
 .storybook {
   margin: 0 auto;
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.18));
+}
+
+.storybook-controls {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.storybook-progress {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: $gray-600;
+  min-width: 3.5rem;
+  text-align: center;
 }
 
 .storybook-nav {
@@ -145,64 +169,79 @@
 
 .storybook-cover,
 .storybook-backcover {
-  background: linear-gradient(
-    140deg,
-    $black,
-    darken($color-primary, 8%) 35%,
-    $color-primary
-  );
+  background: darken($color-primary, 12%);
   color: $white;
 }
 
 .storybook-cover-inner {
   height: 100%;
-  padding: 3rem 2rem;
+  padding: 1.4rem;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.storybook-cover-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
-  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.25);
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  outline: 1px solid rgba(255, 255, 255, 0.12);
+  outline-offset: 5px;
 }
 
 .storybook-cover-eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
-  opacity: 0.8;
+  letter-spacing: 0.3em;
+  opacity: 0.75;
   margin-bottom: 1rem;
 }
 
 .storybook-cover-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: $fontWeight-bold;
-  line-height: 1.2;
-  margin: 0 0 1rem;
+  line-height: 1.25;
+  margin: 0;
+  color: $white;
   font-family: inherit;
 }
 
+.storybook-cover-divider {
+  width: 42px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 1.1rem 0;
+}
+
 .storybook-cover-sub {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   opacity: 0.85;
-  margin: 0 0 1.5rem;
+  margin: 0;
 }
 
 .storybook-cover-hint {
-  margin-top: auto;
-  font-size: 0.75rem;
-  opacity: 0.75;
-  font-style: italic;
+  margin-top: 0.9rem;
+  align-self: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
 }
 
 .storybook-cover-cta {
   display: inline-block;
-  margin: 0.5rem auto 0;
-  padding: 0.6rem 1.6rem;
+  margin: 1.25rem auto 0;
+  padding: 0.55rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 999px;
   color: $white;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   transition: background 0.2s;
 
   &:hover {
@@ -211,13 +250,38 @@
   }
 }
 
-@media (max-width: 575.98px) {
-  .storybook-nav {
-    display: none;
-  }
-}
-
 .storybook-brand {
   display: block;
   margin: 0 auto 1.25rem;
+}
+
+// Tablets — tuck the side buttons in and shrink the book
+@media (max-width: 991.98px) {
+  .storybook-nav-prev,
+  .storybook-nav-next {
+    display: none;
+  }
+
+  .storybook-controls {
+    display: flex;
+  }
+
+  .storybook-wrap {
+    padding-bottom: 1.5rem;
+  }
+}
+
+// Small phones — tighten cover padding
+@media (max-width: 575.98px) {
+  .storybook-cover-frame {
+    padding: 1.5rem 1rem;
+  }
+
+  .storybook-cover-title {
+    font-size: 1.5rem;
+  }
+
+  .storybook-page-inner {
+    padding: 1.5rem 1.3rem 2.25rem;
+  }
 }
