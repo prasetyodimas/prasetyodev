@@ -107,7 +107,7 @@
 }
 
 .hero-title {
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   font-size: $fontSize-4;
@@ -117,8 +117,13 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
 
+  @media screen and (max-width: 991px) {
+    justify-content: center;
+  }
+
   @media screen and (max-width: 600px) {
     font-size: $fontSize-3;
+    justify-content: flex-start;
   }
 }
 
