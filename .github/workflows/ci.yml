@@ -7,15 +7,7 @@ on:
   push:
     branches:
       - "main"
-      - "feat/**"
-      - "feature/**"
-      - "fix/**"
-      - "bugfix/**"
-      - "hotfix/**"
-      - "chore/**"
-      - "refactor/**"
-      - "docs/**"
-      - "enhancement/**"
+      - "*/*"
   pull_request:
     branches: [ "main" ]
 

@@ -1,37 +1,33 @@
-# Automatically opens (or updates) a pull request into `main` whenever a
-# branch with a conventional prefix (feat/, fix/, chore/, ...) is pushed.
+# Automatically opens (or updates) a pull request into `main` after the CI
+# workflow succeeds on a branch containing a slash (feat/, fix/, bugfix/, ...).
 name: Auto PR
 
 on:
-  push:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
     branches:
-      - "feat/**"
-      - "feature/**"
-      - "fix/**"
-      - "bugfix/**"
-      - "hotfix/**"
-      - "chore/**"
-      - "refactor/**"
-      - "docs/**"
-      - "enhancement/**"
+      - "*/*"
 
 permissions:
   contents: read
   pull-requests: write
 
 concurrency:
-  group: auto-pr-${{ github.ref_name }}
+  group: auto-pr-${{ github.event.workflow_run.head_branch }}
   cancel-in-progress: true
 
 jobs:
   create-pr:
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      BRANCH: ${{ github.ref_name }}
+      BRANCH: ${{ github.event.workflow_run.head_branch }}
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 0
 
       - name: Derive PR title
@@ -70,6 +66,6 @@ jobs:
           ### Commits
           ${commits:-_No commits ahead of main_}
 
-          _Created automatically by the Auto PR workflow._
+          _Created automatically by the Auto PR workflow after CI passed._
           EOF
           )"

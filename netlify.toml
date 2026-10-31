@@ -19,6 +19,12 @@
   to = "/sitemap/sitemap-0.xml"
   status = 200
 
+# Conventional llms.txt location (rewrite, no redirect)
+[[redirects]]
+  from = "/.well-known/llms.txt"
+  to = "/llms.txt"
+  status = 200
+
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 
