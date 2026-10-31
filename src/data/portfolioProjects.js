@@ -293,6 +293,47 @@ const projects = [
     ],
     cta: "https://library.uiii.ac.id",
   },
+  {
+    slug: "harsu",
+    title: "Global Harsu Mandiri — Indonesia–Japan Recruitment Platform",
+    tagline: "Automating hiring from Indonesia to Japan",
+    tags: ["Web Application", "Recruitment", "Platform"],
+    role: "Fullstack Developer",
+    period: "2024",
+    images: ["../images/my-porto/harsu/harsu-hero.png"],
+    summary:
+      "An online platform for LPK Global Harsu Mandiri that automates the recruitment of Indonesian workers to Japan — connecting job seekers with Japanese employers through a streamlined, tech-driven hiring process.",
+    challenge:
+      "The Indonesia–Japan hiring process was manual, slow, and resource-intensive for both employers and candidates. Job seekers lacked easy access to verified job vacancies in Japan, while employers had no efficient way to search and select qualified Indonesian candidates.",
+    strategy:
+      "Built a user-friendly online platform where Indonesian job seekers can browse job vacancies in Japan open to foreign applicants, upload resumes and documents online, and apply directly. The platform also gives Japanese employers a searchable candidate database, streamlining recruitment and increasing workforce diversity.",
+    achievements: [
+      "Launched a bilingual platform for Indonesia–Japan recruitment",
+      "Built job vacancy database open to foreign applicants in Japan",
+      "Implemented online resume and document upload for job applications",
+      "Provided employer-facing candidate search and selection tools",
+      "Showcased LPK programs (language, work culture, technical skills) with government partner accreditation (BP2MI, Disnaker, Kemnaker, JITCO, OTIT)",
+    ],
+    techStack: [
+      "Angular",
+      "TypeScript",
+      "REST API",
+      "SASS/SCSS",
+      "Bootstrap",
+      "Netlify",
+      "Firebase",
+      "Google Analytics",
+      "Firebase Admin"
+    ],
+    responsibilities: [
+      "Developed the frontend application using the Angular framework",
+      "Built job listing and application flows for Indonesian job seekers",
+      "Implemented document upload and candidate profile features",
+      "Created program, portfolio, and team showcase sections",
+      "Deployed and hosted the site on Netlify",
+    ],
+    cta: "https://globalharsumandiri.id",
+  },
 ]
 
 export default projects

@@ -11,9 +11,9 @@ import GithubActivity from "../components/githubActivity"
 import GetInTouch from "../components/getInTouch"
 import PageSpeedInsight from "../components/pageSpeedInsight"
 import JamstackArchitecture from "../components/jamstackArchitecture"
+import SideProjects from "../components/sideProjects"
+import WhyHireMe from "../components/whyHireMe"
 import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
-// import ContactMe from "../components/contactMe"
-// import MyServices from "../components/myServices"
 
 export const pageQuery = graphql`
   {
@@ -49,14 +49,14 @@ const IndexSite = ({ data, location }) => {
       <JsonLd data={websiteJsonLd} />
       <JsonLd data={personJsonLd} />
       <Hero className="container" />
-      <EngineeringJourney />
-      <SungnikahCaseStudy />
+      <WhyHireMe />
       <ServicesSection />
+      <SungnikahCaseStudy />
+      <EngineeringJourney />
       <GithubActivity />
       <JamstackArchitecture />
+      <SideProjects />
       <GetInTouch />
-      {/* <MyServices /> */}
-      {/* <ContactMe /> */}
       <PageSpeedInsight />
     </Layout>
   )

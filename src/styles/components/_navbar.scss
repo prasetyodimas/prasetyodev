@@ -31,7 +31,7 @@ nav.navbar {
 
     &:hover,
     &:focus {
-      background-color: rgba(209, 0, 84, 0.06);
+      background-color: rgba(157, 2, 8, 0.06);
       box-shadow: none;
     }
   }
@@ -74,21 +74,21 @@ nav.navbar {
         &.active,
         &:focus {
           color: $color-primary;
-          background-color: rgba(209, 0, 84, 0.08);
+          background-color: rgba(157, 2, 8, 0.08);
           text-decoration: none;
         }
 
         &.nav-resume {
           color: $white;
-          background: linear-gradient(120deg, $color-primary, #ff4d94);
+          background: linear-gradient(120deg, $color-primary 40%, $black);
           border-radius: 30px;
           padding: 0.45rem 1.25rem;
-          box-shadow: 0 6px 14px rgba(209, 0, 84, 0.25);
+          box-shadow: 0 6px 14px rgba(157, 2, 8, 0.25);
           transition: transform 0.2s, box-shadow 0.2s;
 
           &:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(209, 0, 84, 0.35);
+            box-shadow: 0 10px 20px rgba(157, 2, 8, 0.35);
             color: $white;
           }
         }
@@ -102,7 +102,7 @@ nav.navbar {
           padding: 0.35rem;
 
           &:hover {
-            background-color: rgba(209, 0, 84, 0.08);
+            background-color: rgba(157, 2, 8, 0.08);
           }
         }
       }

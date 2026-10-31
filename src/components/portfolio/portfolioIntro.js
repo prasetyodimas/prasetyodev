@@ -1,9 +1,19 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 const PortfolioIntro = () => {
   return (
     <div className="row content-of-porto section-surface px-4 py-5">
       <div className="col-lg-9 col-md-10 mx-auto text-center">
+        <StaticImage
+          src="../../assets/icons/brands/brand.png"
+          alt="Prasetyo Dimas"
+          className="porto-brand-logo"
+          width={272}
+          imgStyle={{ borderRadius: "50%" }}
+          placeholder="none"
+          objectFit="contain"
+        />
         <span className="section-eyebrow">Selected Work</span>
         <h2 className="heading-porto font-weight font-bold mt-0">
           My Portofolio

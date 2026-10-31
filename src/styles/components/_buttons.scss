@@ -27,9 +27,9 @@
 
   &:hover {
     color: $white;
-    background: linear-gradient(120deg, $color-primary, #ff4d94);
+    background: linear-gradient(120deg, $color-primary 40%, $black);
     border-color: transparent;
-    box-shadow: 0 10px 22px rgba(209, 0, 84, 0.28);
+    box-shadow: 0 10px 22px rgba(157, 2, 8, 0.28);
     transform: translateY(-2px);
   }
 
@@ -55,15 +55,15 @@
   letter-spacing: 0.05em;
   color: $white;
   text-decoration: none;
-  background: linear-gradient(120deg, $color-primary, #ff4d94);
+  background: linear-gradient(120deg, $color-primary 40%, $black);
   border: 0;
   border-radius: 30px;
-  box-shadow: 0 6px 14px rgba(209, 0, 84, 0.25);
+  box-shadow: 0 6px 14px rgba(157, 2, 8, 0.25);
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 0 10px 22px rgba(209, 0, 84, 0.35);
+    box-shadow: 0 10px 22px rgba(157, 2, 8, 0.35);
     transform: translateY(-2px);
     color: $white;
   }

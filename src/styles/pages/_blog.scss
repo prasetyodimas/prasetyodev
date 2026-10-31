@@ -103,7 +103,7 @@
 
   &:hover {
     transform: translateY(-4px);
-    border-color: rgba(209, 0, 84, 0.35);
+    border-color: rgba(157, 2, 8, 0.35);
     box-shadow: 0 16px 32px rgba(15, 15, 15, 0.1);
   }
 
@@ -178,7 +178,7 @@
       font-size: 0.72rem;
       font-weight: 600;
       color: $color-primary;
-      background: rgba(209, 0, 84, 0.08);
+      background: rgba(157, 2, 8, 0.08);
       border-radius: 999px;
       padding: 0.15rem 0.6rem;
     }
@@ -236,7 +236,7 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: $color-primary;
-    border: 1px solid rgba(209, 0, 84, 0.4);
+    border: 1px solid rgba(157, 2, 8, 0.4);
     border-radius: 999px;
     padding: 0.15rem 0.7rem;
   }

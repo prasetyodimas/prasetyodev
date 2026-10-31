@@ -133,6 +133,17 @@ const projectImages = {
       className="img-fluid"
     />,
   ],
+  harsu: [
+    <StaticImage
+      key="harsu-0"
+      src="../../images/my-porto/harsu/harsu-hero.png"
+      alt="Global Harsu Mandiri Platform"
+      width={600}
+      height={400}
+      quality={95}
+      className="img-fluid"
+    />,
+  ],
   "uiii-library": [
     <StaticImage
       key="uiii-0"

@@ -78,6 +78,15 @@ const Navbar = props => {
                 GitHub
               </a>
             </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                activeClassName="active"
+                to="/generator"
+              >
+                Cover Letter
+              </Link>
+            </li>
             {resume && (
               <li className="nav-item">
                 <button
