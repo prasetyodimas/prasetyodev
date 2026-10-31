@@ -3,14 +3,14 @@
 // DARK MODE
 // Applied when <html data-theme="dark"> is set (see gatsby-ssr.js + themeToggle).
 
-$dark-bg: #0f1115;
-$dark-surface: #171a21;
-$dark-surface-raised: #1e222b;
+$dark-bg: #000000;
+$dark-surface: #0a0a0a;
+$dark-surface-raised: #141414;
 $dark-border: rgba(255, 255, 255, 0.09);
 $dark-text: #e6e8eb;
 $dark-heading: #f2f4f7;
 $dark-text-muted: #9aa3b2;
-$dark-primary: #ff4d94;
+$dark-primary: #e5383b;
 
 html[data-theme="dark"] {
   color-scheme: dark;
@@ -82,7 +82,7 @@ html[data-theme="dark"] {
       &:hover,
       &.active {
         color: $dark-primary;
-        background-color: rgba(255, 77, 148, 0.12);
+        background-color: rgba(229, 56, 59, 0.12);
       }
     }
   }
@@ -265,7 +265,7 @@ html[data-theme="dark"] {
     border-color: $dark-border;
 
     &:hover {
-      border-color: rgba(255, 77, 148, 0.45);
+      border-color: rgba(229, 56, 59, 0.45);
       box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
     }
 
@@ -280,7 +280,7 @@ html[data-theme="dark"] {
 
     .post-card-tags .post-tag {
       color: $dark-primary;
-      background: rgba(255, 77, 148, 0.14);
+      background: rgba(229, 56, 59, 0.14);
     }
   }
 
@@ -331,7 +331,7 @@ html[data-theme="dark"] {
 
     .upcoming-badge {
       color: $dark-primary;
-      border-color: rgba(255, 77, 148, 0.4);
+      border-color: rgba(229, 56, 59, 0.4);
     }
   }
 
@@ -352,7 +352,7 @@ html[data-theme="dark"] {
 
     .post-hero-tags .post-tag {
       color: $dark-primary;
-      background: rgba(255, 77, 148, 0.14);
+      background: rgba(229, 56, 59, 0.14);
     }
 
     .post-hero-cover {
@@ -376,7 +376,7 @@ html[data-theme="dark"] {
 
     a {
       color: $dark-primary;
-      border-bottom-color: rgba(255, 77, 148, 0.35);
+      border-bottom-color: rgba(229, 56, 59, 0.35);
 
       &:hover {
         border-bottom-color: $dark-primary;
@@ -424,7 +424,7 @@ html[data-theme="dark"] {
     border-color: $dark-border;
 
     &:hover {
-      border-color: rgba(255, 77, 148, 0.45);
+      border-color: rgba(229, 56, 59, 0.45);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
     }
 
@@ -444,7 +444,51 @@ html[data-theme="dark"] {
 
     &:hover {
       color: $dark-primary;
-      background-color: rgba(255, 77, 148, 0.12);
+      background-color: rgba(229, 56, 59, 0.12);
+    }
+  }
+
+  // Paper surfaces keep dark ink — they are light by design
+  .storybook-page {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-heading;
+    }
+
+    p,
+    li {
+      color: #374151;
+    }
+  }
+
+  .gen-paper {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-heading;
+    }
+
+    p,
+    li {
+      color: #1f2937;
+    }
+  }
+
+  .storybook-nav {
+    background: $dark-surface;
+    border-color: $dark-border;
+    color: $dark-primary;
+
+    &:hover:not(:disabled) {
+      background: $dark-primary;
+      color: $dark-bg;
     }
   }
 }
@@ -467,7 +511,7 @@ html[data-theme="dark"] {
 
   &:hover {
     color: $color-primary;
-    background-color: rgba(209, 0, 84, 0.08);
+    background-color: rgba(157, 2, 8, 0.08);
     border-color: transparent;
   }
 

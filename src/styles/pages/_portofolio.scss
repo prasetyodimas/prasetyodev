@@ -40,12 +40,12 @@
   &:hover,
   &:focus-within {
     transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(209, 0, 84, 0.12);
-    border-color: rgba(209, 0, 84, 0.35);
+    box-shadow: 0 16px 36px rgba(157, 2, 8, 0.12);
+    border-color: rgba(157, 2, 8, 0.35);
   }
 
   &:focus {
-    outline: 2px solid rgba(209, 0, 84, 0.5);
+    outline: 2px solid rgba(157, 2, 8, 0.5);
     outline-offset: 2px;
   }
 }
@@ -116,7 +116,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: $color-primary;
-  background: rgba(209, 0, 84, 0.08);
+  background: rgba(157, 2, 8, 0.08);
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
 }
@@ -342,7 +342,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: $color-primary;
-  background: rgba(209, 0, 84, 0.08);
+  background: rgba(157, 2, 8, 0.08);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
 }
@@ -388,7 +388,7 @@
   color: $color-heading;
   margin: 0 0 0.5rem 0;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(209, 0, 84, 0.15);
+  border-bottom: 2px solid rgba(157, 2, 8, 0.15);
 }
 
 .project-modal-section-text {
@@ -439,7 +439,7 @@
   transition: border-color 0.2s, color 0.2s;
 
   &:hover {
-    border-color: rgba(209, 0, 84, 0.35);
+    border-color: rgba(157, 2, 8, 0.35);
     color: $color-primary;
   }
 }
@@ -454,14 +454,14 @@
   letter-spacing: 0.05em;
   color: $white;
   text-decoration: none;
-  background: linear-gradient(120deg, $color-primary, #ff4d94);
+  background: linear-gradient(120deg, $color-primary 40%, $black);
   border-radius: 30px;
-  box-shadow: 0 6px 14px rgba(209, 0, 84, 0.25);
+  box-shadow: 0 6px 14px rgba(157, 2, 8, 0.25);
   transition: transform 0.2s, box-shadow 0.2s;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 22px rgba(209, 0, 84, 0.35);
+    box-shadow: 0 10px 22px rgba(157, 2, 8, 0.35);
     color: $white;
   }
 }
@@ -489,4 +489,9 @@
     font-weight: $fontWeight-bold;
     color: $color-primary;
   }
+}
+
+.porto-brand-logo {
+  display: block;
+  margin: 0 auto 1rem;
 }

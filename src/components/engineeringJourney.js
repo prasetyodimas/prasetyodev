@@ -1,4 +1,6 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
+import HTMLFlipBook from "react-pageflip"
+import { StaticImage } from "gatsby-plugin-image"
 import BlockElement from "../components/blockElement"
 
 const journeys = [
@@ -76,7 +78,7 @@ const journeys = [
   },
   {
     year: "2026",
-    title: "Software Engineer — Frontend → Backend → Infrastructure",
+    title: "Software Engineer — Full Spectrum",
     description:
       "Today I operate across the full stack: frontend experience, backend services, and infrastructure — shipping reliable systems end-to-end.",
     highlights: [
@@ -84,11 +86,35 @@ const journeys = [
       "Frontend-to-infrastructure mindset",
       "Reliable product delivery",
     ],
-    skills: ["Full-stack", "React", "Node.js", "Express", "Vultr", "System Architecture"],
+    skills: [
+      "Full-stack",
+      "React",
+      "Node.js",
+      "Express",
+      "Vultr",
+      "System Architecture",
+    ],
   },
 ]
 
+const sortedJourneys = [...journeys].sort(
+  (a, b) => Number(a.year) - Number(b.year)
+)
+
+const totalPages = sortedJourneys.length + 2
+
 const EngineeringJourney = () => {
+  const bookRef = useRef(null)
+  const [mounted, setMounted] = useState(false)
+  const [currentPage, setCurrentPage] = useState(0)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const flipPrev = () => bookRef.current?.pageFlip()?.flipPrev()
+  const flipNext = () => bookRef.current?.pageFlip()?.flipNext()
+
   return (
     <BlockElement
       className="engineering-journey section-surface px-4 py-5"
@@ -96,55 +122,125 @@ const EngineeringJourney = () => {
     >
       <span className="section-eyebrow">Career</span>
       <h4 className="text-center mt-0 mb-3">Engineering Journey</h4>
-      <p className="lead text-center text-body-secondary mb-5">
-        A clear path from writing my first UI to owning products across the
-        stack.
+      <p className="lead text-center text-body-secondary mb-4">
+        My career as a storybook — flip the pages to travel through the years.
       </p>
 
-      <ol className="engineering-journey-list">
-        {[...journeys]
-          .sort((a, b) => Number(b.year) - Number(a.year))
-          .map((journey, index) => (
-          <li
-            className={`engineering-journey-item ${
-              index % 2 === 0 ? "is-left" : "is-right"
-            }`}
-            key={`journey-${journey.year}-${index}`}
-          >
-            <div className="engineering-journey-track" aria-hidden="true">
-              <span className="engineering-journey-dot" />
-            </div>
-
-            <div className="engineering-journey-card">
-              <span className="engineering-journey-year">{journey.year}</span>
-              <h3 className="engineering-journey-title">{journey.title}</h3>
-              <p className="engineering-journey-desc">{journey.description}</p>
-
-              <div className="engineering-journey-highlights">
-                {journey.highlights.map((item, i) => (
-                  <span
-                    className="engineering-journey-highlight"
-                    key={`highlight-${index}-${i}`}
-                  >
-                    {item}
+      <div className="storybook-wrap">
+        {mounted ? (
+          <>
+            <button
+              type="button"
+              className="storybook-nav storybook-nav-prev"
+              onClick={flipPrev}
+              disabled={currentPage === 0}
+              aria-label="Previous page"
+            >
+              ‹
+            </button>
+            <HTMLFlipBook
+              ref={bookRef}
+              width={380}
+              height={520}
+              size="stretch"
+              minWidth={300}
+              maxWidth={480}
+              minHeight={420}
+              maxHeight={620}
+              showCover
+              mobileScrollSupport={false}
+              className="storybook"
+              onFlip={e => setCurrentPage(e.data)}
+            >
+              <div className="storybook-page storybook-cover">
+                <div className="storybook-cover-inner">
+                  <StaticImage
+                    src="../assets/icons/brands/brand.png"
+                    alt="Prasetyo Dimas"
+                    className="storybook-brand"
+                    width={96}
+                    placeholder="none"
+                    objectFit="contain"
+                  />
+                  <span className="storybook-cover-eyebrow">
+                    A Career Storybook
                   </span>
-                ))}
+                  <h3 className="storybook-cover-title">
+                    Engineering
+                    <br />
+                    Journey
+                  </h3>
+                  <p className="storybook-cover-sub">
+                    2018 — present
+                  </p>
+                  <span className="storybook-cover-hint">
+                    Flip the corner to begin →
+                  </span>
+                </div>
               </div>
 
-              <div className="engineering-journey-skills">
-                {journey.skills.map((skill, i) => (
-                  <span
-                    className="engineering-journey-skill"
-                    key={`skill-${index}-${i}`}
+              {sortedJourneys.map((journey, index) => (
+                <div className="storybook-page" key={`page-${journey.year}`}>
+                  <div className="storybook-page-inner">
+                    <span className="storybook-page-chapter">
+                      Chapter {index + 1}
+                    </span>
+                    <span className="storybook-page-year">{journey.year}</span>
+                    <h4 className="storybook-page-title">{journey.title}</h4>
+                    <p className="storybook-page-desc">
+                      {journey.description}
+                    </p>
+                    <ul className="storybook-page-highlights">
+                      {journey.highlights.map((item, i) => (
+                        <li key={`hl-${index}-${i}`}>{item}</li>
+                      ))}
+                    </ul>
+                    <div className="storybook-page-skills">
+                      {journey.skills.map((skill, i) => (
+                        <span
+                          className="storybook-page-skill"
+                          key={`sk-${index}-${i}`}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                    <span className="storybook-page-num">
+                      {index + 2} / {totalPages}
+                    </span>
+                  </div>
+                </div>
+              ))}
+
+              <div className="storybook-page storybook-backcover">
+                <div className="storybook-cover-inner">
+                  <h3 className="storybook-cover-title">The Next Chapter</h3>
+                  <p className="storybook-cover-sub">
+                    Could be written with your team.
+                  </p>
+                  <a
+                    className="storybook-cover-cta"
+                    href="#get-in-touch"
                   >
-                    {skill}
-                  </span>
-                ))}
+                    Get in touch →
+                  </a>
+                </div>
               </div>
-            </div>
-          </li>
-          ))}
-      </ol>
+            </HTMLFlipBook>
+            <button
+              type="button"
+              className="storybook-nav storybook-nav-next"
+              onClick={flipNext}
+              disabled={currentPage >= totalPages - 1}
+              aria-label="Next page"
+            >
+              ›
+            </button>
+          </>
+        ) : (
+          <div className="storybook-loading">Opening the book…</div>
+        )}
+      </div>
     </BlockElement>
   )
 }

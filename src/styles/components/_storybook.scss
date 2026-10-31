@@ -1,0 +1,223 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.storybook-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.storybook-loading {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray-600;
+}
+
+.storybook {
+  margin: 0 auto;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.18));
+}
+
+.storybook-nav {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid $gray-200;
+  background: $white;
+  color: $color-primary;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+
+  &:hover:not(:disabled) {
+    background: $color-primary;
+    color: $white;
+  }
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+}
+
+.storybook-page {
+  background: #fdfbf7;
+  font-family: Georgia, "Times New Roman", "Liberation Serif", serif;
+  overflow: hidden;
+}
+
+.storybook-page-inner {
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.9rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.06),
+    transparent 6%,
+    transparent 94%,
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.storybook-page-chapter {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: $gray-600;
+  margin-bottom: 0.5rem;
+}
+
+.storybook-page-year {
+  font-size: 2.1rem;
+  font-weight: $fontWeight-bold;
+  color: $color-primary;
+  line-height: 1.1;
+}
+
+.storybook-page-title {
+  font-size: 1.05rem;
+  font-weight: $fontWeight-bold;
+  margin: 0.4rem 0 0.75rem;
+  font-family: inherit;
+}
+
+.storybook-page-desc {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #374151;
+  margin: 0 0 0.9rem;
+}
+
+.storybook-page-highlights {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  li {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: #374151;
+    padding-left: 1rem;
+    position: relative;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: $color-primary;
+    }
+  }
+}
+
+.storybook-page-skills {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.storybook-page-skill {
+  font-size: 0.65rem;
+  font-family: $font-family-overpas-serif;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid $gray-200;
+  border-radius: 999px;
+  color: $gray-600;
+}
+
+.storybook-page-num {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.65rem;
+  color: $gray-600;
+}
+
+.storybook-cover,
+.storybook-backcover {
+  background: linear-gradient(
+    140deg,
+    $black,
+    darken($color-primary, 8%) 35%,
+    $color-primary
+  );
+  color: $white;
+}
+
+.storybook-cover-inner {
+  height: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.25);
+}
+
+.storybook-cover-eyebrow {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.storybook-cover-title {
+  font-size: 2rem;
+  font-weight: $fontWeight-bold;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  font-family: inherit;
+}
+
+.storybook-cover-sub {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin: 0 0 1.5rem;
+}
+
+.storybook-cover-hint {
+  margin-top: auto;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.storybook-cover-cta {
+  display: inline-block;
+  margin: 0.5rem auto 0;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  color: $white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: $white;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .storybook-nav {
+    display: none;
+  }
+}
+
+.storybook-brand {
+  display: block;
+  margin: 0 auto 1.25rem;
+}
