@@ -80,6 +80,9 @@ const Hero = () => {
                 Download CV
               </button>
             )}
+            <a className="btn-download-cv" href="#get-in-touch">
+              Hire Me
+            </a>
           </div>
 
 

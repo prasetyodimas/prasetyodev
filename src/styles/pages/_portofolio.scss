@@ -465,3 +465,28 @@
     color: $white;
   }
 }
+
+.side-projects-anchor {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.side-project-card {
+  color: inherit;
+  cursor: pointer;
+
+  .porto-card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .side-project-link {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-size: $fontSize-0;
+    font-weight: $fontWeight-bold;
+    color: $color-primary;
+  }
+}

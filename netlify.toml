@@ -13,6 +13,12 @@
   to = "/sitemap/sitemap-index.xml"
   status = 301
 
+# Serve sitemap-0.xml content at /sitemap/sitemap.xml (rewrite, no redirect) for GSC
+[[redirects]]
+  from = "/sitemap/sitemap.xml"
+  to = "/sitemap/sitemap-0.xml"
+  status = 200
+
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 
