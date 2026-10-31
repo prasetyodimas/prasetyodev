@@ -4,7 +4,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://prasetyodimas.my.id",
-        sitemap: "https://prasetyodimas.my.id/sitemap.xml",
+        sitemap: "https://prasetyodimas.my.id/sitemap/sitemap-index.xml",
         policy: [
           {
             userAgent: "*",
