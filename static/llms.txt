@@ -1,0 +1,23 @@
+# Prasetyo Dev
+
+> Portfolio & blog of Dimas Prasetyo (Prasetyodimas) — Frontend and Fullstack Developer focusing on visually appealing, interactive websites and web applications. Expert in HTML, CSS, JavaScript, with a keen eye for design and usability.
+
+## Pages
+
+- [Home](https://prasetyodimas.my.id/): Portfolio intro, bio, and engineering journey
+- [About](https://prasetyodimas.my.id/about/): About Dimas Prasetyo
+- [Blog](https://prasetyodimas.my.id/blog/): Articles on web development
+- [Portfolio](https://prasetyodimas.my.id/portofolio/): Selected projects and work
+- [Personalities](https://prasetyodimas.my.id/personalities/): Personal profiles and traits
+- [Generator](https://prasetyodimas.my.id/generator/): Cover letter generator tool
+
+## Blog Posts
+
+- [Angular SSR - Angular Universal Packages](https://prasetyodimas.my.id/angular-ssr/): A guide to Angular Universal, a technology that renders Angular applications on the server
+- [Proficiency with state management patterns - React](https://prasetyodimas.my.id/profeciency-state-management-in-react/): Expertise in applying state management patterns in React application development
+
+## Contact
+
+- [X](https://x.com/dimasetyos): @dimasetyos
+- [LinkedIn](https://linkedin.com/in/dimas-prasetyo): in/dimas-prasetyo
+- [Facebook](https://www.facebook.com/prasetyodimas): prasetyodimas
