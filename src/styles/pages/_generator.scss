@@ -1,0 +1,227 @@
+@import "../variables/color";
+@import "../variables/typography";
+
+.gen-wizard {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 0;
+}
+
+.gen-rail {
+  width: 190px;
+  flex-shrink: 0;
+  padding: 1.25rem 0.75rem;
+  border-right: 1px solid $gray-200;
+  background: $gray-100;
+}
+
+.gen-rail-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gen-rail-step {
+  position: relative;
+  padding-left: 0.25rem;
+
+  &:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 34px;
+    bottom: -4px;
+    width: 2px;
+    background: $gray-200;
+  }
+
+  &.is-done:not(:last-child)::before {
+    background: #198754;
+  }
+}
+
+.gen-rail-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(209, 0, 84, 0.05);
+  }
+}
+
+.gen-rail-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: $fontWeight-bold;
+  background: $white;
+  border: 2px solid $gray-200;
+  color: $gray-600;
+  position: relative;
+  z-index: 1;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.gen-rail-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.gen-rail-label {
+  font-size: 0.82rem;
+  font-weight: $fontWeight-bold;
+  line-height: 1.3;
+}
+
+.gen-rail-sub {
+  font-size: 0.7rem;
+  color: $gray-600;
+  line-height: 1.3;
+}
+
+.gen-rail-step.is-active {
+  .gen-rail-num {
+    background: $color-primary;
+    border-color: $color-primary;
+    color: $white;
+  }
+
+  .gen-rail-label {
+    color: $color-primary;
+  }
+}
+
+.gen-rail-step.is-done {
+  .gen-rail-num {
+    background: #198754;
+    border-color: #198754;
+    color: $white;
+  }
+
+  .gen-rail-label {
+    color: #198754;
+  }
+}
+
+.gen-content {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gen-content-head {
+  margin-bottom: 1rem;
+}
+
+.gen-header-count {
+  font-size: 0.7rem;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $gray-600;
+}
+
+.gen-header-title {
+  margin: 0.15rem 0 0;
+  font-size: $fontSize-2;
+  font-weight: $fontWeight-bold;
+}
+
+.gen-step-body {
+  flex: 1;
+  min-height: 200px;
+}
+
+.gen-content-foot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid $gray-200;
+  margin-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .gen-wizard {
+    flex-direction: column;
+  }
+
+  .gen-rail {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid $gray-200;
+    padding: 0.75rem;
+  }
+
+  .gen-rail-steps {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .gen-rail-step:not(:last-child)::before {
+    display: none;
+  }
+
+  .gen-rail-sub {
+    display: none;
+  }
+}
+
+.gen-paper {
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 16px 40px rgba(0, 0, 0, 0.08);
+  padding: 3rem 2.75rem;
+  min-height: 640px;
+  position: sticky;
+  top: 90px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+  font-family: Georgia, "Times New Roman", "Liberation Serif", serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #1f2937;
+
+  p {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    margin-bottom: 1rem;
+  }
+
+  b,
+  strong {
+    font-family: inherit;
+    font-weight: $fontWeight-bold;
+  }
+
+  .display-6 {
+    font-family: inherit;
+  }
+}
