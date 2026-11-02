@@ -29,7 +29,7 @@ const GetInTouch = () => {
           dimasprasetyo485@gmail.com
         </a>
         <p className="get-in-touch-meta">
-          Yogyakarta, Indonesia · UTC+7 (GMT+7) · Remote / Hybrid
+          Depok, Jawa Barat, Indonesia · UTC+7 (GMT+7) · Remote / Hybrid
         </p>
       </div>
     </BlockElement>

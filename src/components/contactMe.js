@@ -127,9 +127,6 @@ const ContactMe = () => {
               <span className="contact__information-icon">
                 <i className="bx bx-map" />
               </span>
-              {/* <span className="contact__information-data">
-                Yogyakarta, Indonesia
-              </span> */}
             </div>
 
             <div className="contact__information-item">
