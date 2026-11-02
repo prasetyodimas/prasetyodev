@@ -13,6 +13,7 @@ import PageSpeedInsight from "../components/pageSpeedInsight"
 import JamstackArchitecture from "../components/jamstackArchitecture"
 import SideProjects from "../components/sideProjects"
 import WhyHireMe from "../components/whyHireMe"
+import Recommendations from "../components/recommendations"
 import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
 
 export const pageQuery = graphql`
@@ -57,6 +58,7 @@ const IndexSite = ({ data, location }) => {
       <JamstackArchitecture />
       <SideProjects />
       <GetInTouch />
+      <Recommendations />
       <PageSpeedInsight />
     </Layout>
   )

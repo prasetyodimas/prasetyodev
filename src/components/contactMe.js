@@ -115,9 +115,6 @@ const ContactMe = () => {
               <span className="contact__information-icon">
                 <i className="bx bx-envelope" />
               </span>
-              {/* <span className="contact__information-data">
-                dimasprasetyo485@gmail.com
-              </span> */}
             </div>
 
             <div className="contact__information-item">

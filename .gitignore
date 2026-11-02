@@ -136,3 +136,6 @@ public
 lighthouse-report.json
 # Local Netlify folder
 .netlify
+
+# LinkedIn data export (contains personal data — do not commit)
+data-import/

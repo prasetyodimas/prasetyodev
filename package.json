@@ -72,6 +72,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "import:recommendations": "node scripts/import-linkedin-recommendations.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "allowScripts": {
@@ -80,7 +81,7 @@
     "@parcel/watcher@2.6.0": true,
     "core-js@2.6.12": true,
     "core-js@3.50.0": true,
-    "core-js-pure@3.50.0": true,
+    "core-js-pure@3.50.0": true,  
     "es5-ext@0.10.64": true,
     "fsevents@2.3.3": true,
     "gatsby@5.16.1": true,
