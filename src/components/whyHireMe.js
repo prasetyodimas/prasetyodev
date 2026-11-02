@@ -2,7 +2,7 @@ import React from "react"
 import BlockElement from "./blockElement"
 
 const stats = [
-  { value: "8+", label: "Years of Experience" },
+  { value: "9+", label: "Years of Experience" },
   { value: "10+", label: "Products Shipped" },
   { value: "5", label: "Industries (Fintech, SaaS, Health, Gov, Edu)" },
   { value: "Lead", label: "Frontend Team Leadership" },

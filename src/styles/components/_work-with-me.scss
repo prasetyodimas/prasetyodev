@@ -1,0 +1,66 @@
+/* ── Freelance rate cards ── */
+
+.rate-card {
+  position: relative;
+
+  &--highlight {
+    border-color: rgba(157, 2, 8, 0.5);
+    box-shadow: 0 12px 24px rgba(157, 2, 8, 0.1);
+  }
+}
+
+.rate-card-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: $fontWeight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-primary;
+  background-color: rgba(157, 2, 8, 0.08);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.rate-card-price {
+  margin-bottom: 0.5rem;
+}
+
+.rate-card-amount {
+  font-size: $fontSize-5;
+  font-weight: $fontWeight-black;
+  color: $color-heading;
+}
+
+.rate-card-unit {
+  font-size: $fontSize-0;
+  color: $color-text-light;
+}
+
+.rate-card-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+
+  li {
+    font-size: $fontSize-0;
+    color: $color-text-light;
+    padding-left: 1.25rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+
+    &::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: $color-primary;
+      font-weight: $fontWeight-bold;
+    }
+  }
+}
+
+.work-with-me-anchor {
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}

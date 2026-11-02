@@ -13,6 +13,7 @@ import PageSpeedInsight from "../components/pageSpeedInsight"
 import JamstackArchitecture from "../components/jamstackArchitecture"
 import SideProjects from "../components/sideProjects"
 import WhyHireMe from "../components/whyHireMe"
+import WorkWithMe from "../components/workWithMe"
 import Recommendations from "../components/recommendations"
 import JsonLd, { websiteJsonLd, personJsonLd } from "../components/JsonLd"
 
@@ -57,6 +58,7 @@ const IndexSite = ({ data, location }) => {
       <GithubActivity />
       <JamstackArchitecture />
       <SideProjects />
+      <WorkWithMe />
       <GetInTouch />
       <Recommendations />
       <PageSpeedInsight />
