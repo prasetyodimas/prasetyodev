@@ -1,0 +1,29 @@
+/* ── LinkedIn recommendations ── */
+
+.recommendation-card {
+  cursor: default;
+}
+
+.recommendation-quote-mark {
+  display: block;
+  font-size: $fontSize-6;
+  line-height: 1;
+  color: rgba(157, 2, 8, 0.5);
+  font-family: $font-body-primary;
+  margin-bottom: 0.5rem;
+}
+
+.recommendation-text {
+  font-style: italic;
+}
+
+.recommendation-title {
+  font-weight: 400;
+  color: $gray-600;
+  margin-top: 0.25rem;
+}
+
+.recommendation-link {
+  font-weight: 600;
+  text-decoration: none;
+}

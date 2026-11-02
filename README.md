@@ -183,6 +183,15 @@ If you want to use the project template that I use, I will share it for free. I 
 
 _For more examples, please refer to the [Documentation](https://www.gatsbyjs.com/)_
 
+## Updating LinkedIn recommendations
+
+The homepage "Testimonials" section is generated from LinkedIn's official data export:
+
+1. LinkedIn → **Settings & Privacy → Data privacy → Get a copy of your data** → export "Recommendations".
+2. Place the file at `data-import/linkedin/Recommendations Received.csv` (the `data-import/` folder is gitignored).
+3. Run `npm run import:recommendations` — it regenerates `src/data/recommendations.js`.
+4. Commit and deploy as usual. The section hides itself automatically when the list is empty.
+
 ## Contact
 
 Linkedin : [@Dimas Prasetyo](https://www.linkedin.com/in/dimas-prasetyo)
