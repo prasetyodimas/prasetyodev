@@ -109,9 +109,6 @@ const ContactMe = () => {
               <span className="contact__information-icon">
                 <i className="bx bx-phone" />
               </span>
-              {/* <span className="contact__information-data">
-                +62 85-803-256-647
-              </span> */}
             </div>
 
             <div className="contact__information-item">
